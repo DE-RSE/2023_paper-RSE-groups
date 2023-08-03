@@ -1,7 +1,7 @@
 # 2023_paper-RSE-groups
 
 
-## Interactive RSE plotter
+## Interactive RSE composition plotter
 
 This is an interactive version of the plot provided by Frank Löffler.
 
