@@ -9,6 +9,7 @@ import plotly.graph_objs as go
 import datetime
 import os
 import json
+
 # change this if dash complains about the port being in use.
 dash_port = 8014
 
@@ -343,15 +344,21 @@ def save_submission(
     activity_weights,
     activity_widths,
 ):
- 
-
     # check if the user has given all required values
-    check_inputs = bool(institution_name and institution_citation and institution_contact and institution_text)
-        
-    check_weights = not all(1 == x for x in activity_weights ) # return false if all values are 1
-    check_widths = not all(0.5 == x for x in activity_widths ) # return false if all values are 1
+    check_inputs = bool(
+        institution_name
+        and institution_citation
+        and institution_contact
+        and institution_text
+    )
 
-       
+    check_weights = not all(
+        1 == x for x in activity_weights
+    )  # return false if all values are 1
+    check_widths = not all(
+        0.5 == x for x in activity_widths
+    )  # return false if all values are 1
+
     if not check_inputs:
         message = "Please fill in all required fields at the top."
         return message, {"color": "red"}
@@ -363,8 +370,6 @@ def save_submission(
         message = "Please adjust your centralization values."
         return message, {"color": "red"}
 
-
-
     submission_dict = {
         "institution_name": institution_name,
         "institution_citation": institution_citation,
@@ -373,7 +378,6 @@ def save_submission(
         "activity_names": activity_names,
         "activity_weights": activity_weights,
         "activity_widths": activity_widths,
-
     }
 
     # get current date and time
@@ -389,12 +393,13 @@ def save_submission(
 
     # create a file name for the submission
     institution_name_strip = institution_name.replace(" ", "_")
-    submissions_file = os.path.join(submissions_dir, f"{institution_name_strip}_{date}.json")
+    submissions_file = os.path.join(
+        submissions_dir, f"{institution_name_strip}_{date}.json"
+    )
 
     # write the submission to a json file
     with open(submissions_file, "w") as f:
         json.dump(submission_dict, f, indent=4)
-
 
     if os.path.isfile(submissions_file):
         message = "Your submission has been saved."
@@ -403,9 +408,6 @@ def save_submission(
         message = "Something went wrong. Please try again."
 
     return message, {"color": "green"}
-
-
-
 
 
 if __name__ == "__main__":
@@ -467,7 +469,6 @@ if __name__ == "__main__":
     app.callback(
         Output("submission_result_text", "children"),
         Output("submission_result_text", "style"),
-
         Input("submit-button", "n_clicks"),
         State("institution_name", "value"),
         State("institution_citation", "value"),
