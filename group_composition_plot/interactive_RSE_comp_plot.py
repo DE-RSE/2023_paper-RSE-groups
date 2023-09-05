@@ -403,11 +403,13 @@ def save_submission(
 
     if os.path.isfile(submissions_file):
         message = "Your submission has been saved."
+        return message, {"color": "green"}
 
     else:
         message = "Something went wrong. Please try again."
+        return message, {"color": "red"}
 
-    return message, {"color": "green"}
+
 
 
 if __name__ == "__main__":
