@@ -15,15 +15,15 @@ dash_port = 8014
 
 # These can be freely changed. The order of the dict determines the order in the graph. (only inverted)
 activities_explanations = {
-    "RSE Network": "Activities that bring RSEs together to share knowledge, identify synergies and support RSEs. Examples: Organizing workshops, code reviews, …",
+    "RSE Network": "Activities that bring RSEs from within the organization together to share knowledge, identify synergies and support RSEs. Examples: Organizing workshops, code reviews, coding dojos etc.",
     "Partner Network": "Activities to network with organizational stakeholders that require software management. Examples: Coordinate offers by and needs from computing center, library, legal services and large grant structures.",
-    "RSE Teaching": "Similar to consultations but larger in scale. Examples: Software Carpentry courses.",
+    "RSE Teaching": "Teach software engineering best practices to researchers. Examples: Software Carpentry courses.",
     "RSE Consultation": "Advising research (projects) by sharing knowledge. Examples: (Software) Project Management, grant proposal requirements, SMPs, licensing.",
-    "SW Development": "Writing software as a (bookable) service for research projects. Examples: UI or App development",
-    "SW Maintenance": "Keeping research software usable is an ongoing task. Examples: ",
-    "RSE Infrastructure": "Collaborative or centralized provisioning of IT platforms that support RSEngineering. Examples: Coordinating access to JupyterHUB.",
-    "RSE Research": "Community building outside the organization. Examples: Lobbying.",
-    "RSE Outreach": "Investigating current issues in RSEngineering. Examples: Security of research software.",
+    "SW Development": "Writing software as a (bookable) service for research projects.",
+    "SW Maintenance": "Maintaining existing research software (also beyond project lifetime)",
+    "RSE Infrastructure": "Collaborative or centralized provisioning of IT platforms that support RSEngineering. Examples: Coordinating access to JupyterHub.",
+    "RSE Research": "Investigating current issues in RSEngineering and publication about these. Examples: Security of research software, software citation.",
+    "RSE Outreach": "Community building outside the organization.",
 }
 
 
@@ -273,13 +273,29 @@ def create_submission_header():
     submission_header = html.Div(
         [
             dbc.Row(
-                html.H1("Test header "),
+                html.H1("de-RSE survey on existing RSE departments in research institutions"),
             ),
-            dbc.Row(html.P("some more text")),
+            dbc.Row(html.P(
+                """
+                The association of german RSEs, de-RSE e.V., is currently writing a position paper on
+                establishing RSE departments in research institutions. The paper aims to convince local
+                decision makers of the value of dedicated RSE departments and should provide blueprints
+                for such departments. In the process of writing we realized that existing RSE departments
+                across the globe differ quite a bit w.r.t. the services they offer and the working areas
+                they put special focus on. Another important observation was that RSE work can typically
+                be either done by a central RSE institution or by more narrowly-focussed, domain-specific
+                RSEs that are embedded into a network of RSEs. We use the terms hub (central) and spokes
+                (decentral) for these. We would be very greatful for feedback about your RSE department.
+                To participate, just fill the fields below and adjust the weights of the RSE task areas
+                below. The "Centralization" field means: How much of this work happens at the "hub"
+                (higher number, more centralized), how much at the spokes? Do not forget to hit submit
+                after filling the form in.
+                """
+                )),
             dbc.Row(
                 dbc.InputGroup(
                     [
-                        dbc.InputGroupText("Institution Name", style={"width": "20%"}),
+                        dbc.InputGroupText("RSE Institution Name", style={"width": "20%"}),
                         dbc.Input(
                             placeholder="Enter your institution name",
                             type="text",
@@ -295,7 +311,7 @@ def create_submission_header():
                             "Institution Citation", style={"width": "20%"}
                         ),
                         dbc.Input(
-                            placeholder="Please provide a citation for your group.",
+                            placeholder="If you want us to cite your institution in a specific way (paper, website etc.), please provide it here.",
                             type="text",
                             id="institution_citation",
                         ),
@@ -322,7 +338,7 @@ def create_submission_header():
                             style={"width": "20%"},
                         ),
                         dbc.Textarea(
-                            placeholder="Here you can write a free text about your institution",
+                            placeholder="You can use this to give us feedback on whether the below classification of RSE work matches your institution or whether an important aspect of your work is missing.",
                             id="institution_text",
                         ),
                     ],
