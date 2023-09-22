@@ -322,18 +322,6 @@ def create_submission_header():
             dbc.Row(
                 dbc.InputGroup(
                     [
-                        dbc.InputGroupText("Your contact", style={"width": "20%"}),
-                        dbc.Input(
-                            placeholder="Please provide a contact for your group.",
-                            type="text",
-                            id="institution_contact",
-                        ),
-                    ]
-                )
-            ),
-            dbc.Row(
-                dbc.InputGroup(
-                    [
                         dbc.InputGroupText(
                             "Do these categories represent your institution?",
                             style={"width": "20%"},
@@ -355,7 +343,6 @@ def save_submission(
     n_clicks,
     institution_name,
     institution_citation,
-    institution_contact,
     institution_text,
     activity_names,
     activity_weights,
@@ -365,7 +352,6 @@ def save_submission(
     check_inputs = bool(
         institution_name
         and institution_citation
-        and institution_contact
         and institution_text
     )
 
@@ -390,7 +376,6 @@ def save_submission(
     submission_dict = {
         "institution_name": institution_name,
         "institution_citation": institution_citation,
-        "institution_contact": institution_contact,
         "institution_text": institution_text,
         "activity_names": activity_names,
         "activity_weights": activity_weights,
@@ -492,7 +477,6 @@ if __name__ == "__main__":
         Input("submit-button", "n_clicks"),
         State("institution_name", "value"),
         State("institution_citation", "value"),
-        State("institution_contact", "value"),
         State("institution_text", "value"),
         State(
             {
