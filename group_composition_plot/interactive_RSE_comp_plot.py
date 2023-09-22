@@ -442,6 +442,7 @@ if __name__ == "__main__":
                 )
             ),
             dbc.Row(html.P(id="submission_result_text")),
+            dbc.Row(html.A("Impressum", href="https://www.zedif.uni-jena.de/de/legalnotice.html")),
         ],
         style={"margin-left": "10px", "margin-right": "10px"},
     )
