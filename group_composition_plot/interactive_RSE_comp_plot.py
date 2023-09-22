@@ -23,7 +23,7 @@ activities_explanations = {
     "SW Development": "Writing software as a (bookable) service for research projects.",
     "SW Maintenance": "Maintaining existing research software (also beyond project lifetime)",
     "RSE Infrastructure": "Collaborative or centralized provisioning of IT platforms that support RSEngineering. Examples: Coordinating access to JupyterHub.",
-    "RSE Research": "Investigating current issues in RSEngineering and publication about these. Examples: Security of research software, software citation.",
+    "RSE Research": "Investigating current issues in RSEngineering and publication about these. Examples: Security of research software, software citation. Note that we explicitly only mention RSE research here, not arbitrary domain-specific research, although many times RSEs would also be dual-affiliated with a department where they carry out research.",
     "RSE Outreach": "Community building outside the organization.",
 }
 
