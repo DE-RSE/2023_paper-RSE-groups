@@ -7,6 +7,7 @@ from dash import dcc, html, Input, Output, Dash, ALL, State
 import dash_bootstrap_components as dbc
 import plotly.graph_objs as go
 import datetime
+import re
 import os
 import json
 
@@ -409,6 +410,7 @@ def save_submission(
 
     # create a file name for the submission
     institution_name_strip = institution_name.replace(" ", "_")
+    institution_name_strip = re.sub(r'\W+', '', institution_name_strip)
     submissions_file = os.path.join(
         submissions_dir, f"{institution_name_strip}_{date}.json"
     )
@@ -516,4 +518,4 @@ if __name__ == "__main__":
         prevent_initial_call=True,
     )(save_submission)
 
-    app.run_server(debug=True, port=dash_port)
+    app.run_server(host='0.0.0.0', port=dash_port)
