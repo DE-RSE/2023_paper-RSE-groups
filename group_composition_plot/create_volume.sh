@@ -6,3 +6,6 @@ else
     mkfs.ext4 submissions.volume
 fi
 mkdir -p submissions
+if ! mountpoint submissions; then
+    mount -o loop submissions.volume submissions
+fi

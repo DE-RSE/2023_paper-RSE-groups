@@ -416,7 +416,9 @@ def save_submission(
 
 
 if __name__ == "__main__":
-    app = Dash("RSE Overview", external_stylesheets=[dbc.themes.BOOTSTRAP])
+    app = Dash("RSE Overview",
+               external_stylesheets=[dbc.themes.BOOTSTRAP],
+               url_base_pathname='/survey/')
     app.layout = html.Div(
         [
             dbc.Row(create_submission_header()),
