@@ -5,7 +5,9 @@ services:
       - "9000:8080"
     volumes:
       - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+    restart: unless-stopped
   survey:
     build: .
     volumes:
       - "./submissions:/script/submissions"
+    restart: unless-stopped
