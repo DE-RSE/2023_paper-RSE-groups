@@ -1,41 +1,17 @@
-# 2023_paper-RSE-groups
+# de-RSE Community paper on "Establishing RSE departments in German research institutions"
 
+This repository hosts the draft for a community paper by the de-RSE e.V. community.
 
-## Interactive RSE composition plotter
+## Contents
 
-This is an interactive version of the plot provided by Frank Löffler.
+* The paper draft itself is located in `paper.tex`.
+* The `group_composition_plot` directory contains everything related to the conducted RSE department survey
 
-To run you need to install numpy, Dash, dash-bootstrap-components and plotly.
+## Contributing
 
-```bash 
-pip install numpy dash plotly dash-bootstrap-components
-python interactive_RSE_comp_plot.py
-```
+This paper is a community effort and everybody who feels part of the German RSE community
+is invited to contribute.
 
-After running the file dash will tell you an ip address where you GUI will be displayed.
-Should the port already be used please change the `dash_port` variable to a new number.
+The contribution process is organized through pull requests against this repository.
 
-## Hosting
-
-For hosting we package interactive_RSE_comp_plot.py into a Docker image.
-We mount a fixed size ext4 formatted file and use it as a volume to store the submissions, to cap the maximum used disk space.
-
-The mountable file, `submissions.volume`, and the mount point, `submissions`, are created and mounted by executing
-
-```
-sh create_volume.sh
-```
-
-which makes sure to not override an existing file or remount an already mounted file.
-
-We build and run the docker image using Docker Compose.
-The file `compose.yaml` describes how to set the container up.
-In addition an Nginx container is started that makes sure the survey is accessible under `/survey/` instead of the root path.
-
-To run the survey execute
-
-```
-docker compose up -d
-```
-
-The survey is then accessible on port 9000 on the host under path `/survey/`.
+If you contribute, do not forget to add yourself to the list of authors.
