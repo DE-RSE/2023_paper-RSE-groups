@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[]{biblatex}
+\usepackage{hyperref}
 \addbibresource{bibliography.bib}
 \addbibresource{positionpaper.bib}
 \title{Establishing RSE departments in German research institutions}
@@ -60,11 +61,11 @@ Policies for research software management and guidelines involving responsible r
 \subsection{Tasks - Why do central software services make sense?}
 
 One of the services a centralized RSE department likely will provide is training to improve the often low-quality code developed by beginners [REF low-quality].
-Examples for organizational training efforts are the Helmholtz HIFIS group [https://events.hifis.net/category/4/], the Scientific Software Center in Heidelberg [https://www.ssc.uni-heidelberg.de/en], the Competence Center Digital Research in Jena (zedif: [https://www.zedif.uni-jena.de/en/]), and the SURESOFT workshops series in Braunschweig [https://www.tu-braunschweig.de/suresoft].
+Examples for organizational training efforts are the Helmholtz HIFIS group [https://events.hifis.net/category/4/], the Scientific Software Center in Heidelberg [https://www.ssc.uni-heidelberg.de/en], the Competence Center Digital Research in Jena (zedif: [https://www.zedif.uni-jena.de/en/]), and the SURESOFT workshops series in Braunschweig \autocite{SURESOFTLink}.
 Another national pioneer is the Göttingen State and University Library who set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more. They reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels \autocite{schimavoigt2023}.
 The demand for such services appears to be ever-increasing.
 
-Cite for international comparison https://doi.org/10.1109/MCSE.2023.3264113 Princeton RSE group model
+Cite for international comparison \autocite{Cosden2022} Princeton RSE group model
 
 \subsection{Structure}
 
@@ -91,8 +92,8 @@ One of the most under-used possibilities they have is to offer permanent positio
 RSE departments act as knowledge hubs in a network of academic developers[REF: Dissertation zur Verstetigung von Netzwerken].
 This enables the embedded experts to maintain in-depth knowledge and to assess current trends and developments, both in research as well as technology.
 According to [SUB Goettingen] the employee satisfaction significantly increases with RSE services.
-The SUB library department “Software and Digital Services” was founded to support their (research) software needs [REF https://doi.org/10.5281/zenodo.7727987].
-Soon after, this department received inquiries from the campus at large, showcasing the need for such services [SuccessStory from a university library, e.g. https://zenodo.org/records/7727988]. The Carpentries [Footnote: https://carpentries.org/] exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/]. Requests or suggestions for even more training show the need for such services.
+The SUB library department “Software and Digital Services” was founded to support their (research) software needs \autocite{schimavoigt2023}.
+Soon after, this department received inquiries from the campus at large, showcasing the need for such services [SuccessStory from a university library, e.g. \autocite{schimavoigt2023}. The Carpentries \autocite{Carpentries} exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/]. Requests or suggestions for even more training show the need for such services.
 RSE services which benefit all disciplines/departments may represent a unique selling point for organizations competing for the brightest minds.
 See the examples from leading universities above.
 
@@ -116,10 +117,10 @@ Such experts are to be employed in advanced research projects like “Collaborat
 These data experts support research projects in several aspects including DMPlans, grant applications, data availability for journal publications, compliance, FAIRification and more.
 With the increasing recognition of software as a research object/result, it is easy to see how projects will require and benefit from very similar support in software needs in the near future.
 
-The latest DFG grant application templates require discussion of data and software management (in line with their GWP guidelines [REF]).
+The latest DFG grant application templates require discussion of data and software management (in line with their GWP guidelines \autocite{dfg_gsp}).
 We also see the first grant applications [REF welcome trust? or others] requiring Software Management Plans (SMP).
 A few journals started asking for code submission [REF CHORUS? Nature?].
-The rather complex assessment of FAIRness [REF apples to apples] has widened from data to software [REF software FAIR assessment, 10.15497/RDA00068]. 
+The rather complex assessment of FAIRness [REF apples to apples] has widened from data to software \autocite{fair_data_maturity_model_working_group_2020}.
 
 A decentralized RSE will provide training, improve software, support research publications, in close relationship with the local research team.
 
@@ -142,7 +143,7 @@ Publication effort for better software will increase discoverability which in tu
 Scarce resources like professional staff, time and money are not put to waste. Instead, better software (publications) will lead to outstanding reputation.
 
 A professionalization in software development and management can be expected to lead from research project prototypes to software products to the benefit of everyone.
-Less technical debt [Footnote: https://www.gartner.com/en/information-technology/glossary/technical-debt] will be amassed, which is beneficial for reuse.
+Less technical debt \footnote{\url{https://www.gartner.com/en/information-technology/glossary/technical-debt}} will be amassed, which is beneficial for reuse.
 
 Necessary software management activities like (git-based) version control are assumed to improve collaboration among researchers.
 
@@ -247,10 +248,10 @@ It allows building up highly specialized technical expertise with a long term pe
 Examples of topics that would benefit from such expertise pooling are e.g. mobile app development (University of Manchester: https://research-it.manchester.ac.uk/services/mobile-development-service-mds/ - use as \#SuccessStory?) and UI/UX development.
 
 RSE departments that offer development services at all scales have proven to be a success story at many research institutions and have rapidly grown in size due to the influx of third party funding.
-Notable examples are e.g. Manchester [REF], Notre-Dame [REF], STANFORD, PRINCETON [https://arxiv.org/pdf/2210.16261.pdf].
+Notable examples are e.g. Manchester [REF], Notre-Dame [REF], STANFORD, Princeton \autocite{Cosden2022}.
 
 [SuccessStory]
-Founded in January 2017, the Research Computing department of Princeton University has experienced a tremendous growth from the initial two FTEs to a total of 18 FTEs in the span of five years [https://arxiv.org/pdf/2210.16261.pdf].
+Founded in January 2017, the Research Computing department of Princeton University has experienced a tremendous growth from the initial two FTEs to a total of 18 FTEs in the span of five years \autocite{Cosden2022}.
 This growth is based on a continuous influx of new funded projects once successful projects showcase the additional value of RSE services to researchers.
 
 \subsection{Teaching Services}
@@ -311,7 +312,7 @@ This allows the staff working at the hub to contribute to and shape the emerging
 
 \subsection{Software Maintenance Service}
 
-Funder policies such as [DFG Regeln der Guten Wissenschaftlichen Praxis] require long-term preservation of used research data and software in an adequate way.
+Funder policies such as \autocite{dfg_gsp} require long-term preservation of used research data and software in an adequate way.
 For research data, established procedures to implement this requirement exist.
 For research software, dedicated archiving solutions such as Software Heritage [REF] or Zenodo's GitHub integration [REF] exist.
 
