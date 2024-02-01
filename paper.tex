@@ -1,6 +1,11 @@
 \documentclass{article}
 \usepackage[]{biblatex}
 \usepackage{hyperref}
+\usepackage{xspace}
+
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+
 \addbibresource{bibliography.bib}
 \addbibresource{positionpaper.bib}
 \title{Establishing RSE departments in German research institutions}
@@ -34,7 +39,7 @@ It has been established that most research requires research software for its re
 To solve pressing research challenges, better software is crucial [REF].
 During the past decade, it gained ever-growing attention and is becoming accepted as a research result on its own.
 The term “Research software” is still defined somewhat differently within the community.
-We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in \autocite{Gruenpeter2021}.
+We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in~\autocite{Gruenpeter2021}.
 
 The number of people developing software in academia is constantly rising [REF].
 Research Software Engineering are actions necessary to create, adapt or maintain Research Software or train others to do so.
@@ -61,8 +66,8 @@ Policies for research software management and guidelines involving responsible r
 \subsection{Tasks - Why do central software services make sense?}
 
 One of the services a centralized RSE department likely will provide is training to improve the often low-quality code developed by beginners [REF low-quality].
-Examples for organizational training efforts are the Helmholtz HIFIS group [https://events.hifis.net/category/4/], the Scientific Software Center in Heidelberg [https://www.ssc.uni-heidelberg.de/en], the Competence Center Digital Research in Jena (zedif: [https://www.zedif.uni-jena.de/en/]), and the SURESOFT workshops series in Braunschweig \autocite{SURESOFTLink}.
-Another national pioneer is the Göttingen State and University Library who set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more. They reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels \autocite{schimavoigt2023}.
+Examples for organizational training efforts are the Helmholtz HIFIS group [https://events.hifis.net/category/4/], the Scientific Software Center in Heidelberg [https://www.ssc.uni-heidelberg.de/en], the Competence Center Digital Research in Jena (zedif: [https://www.zedif.uni-jena.de/en/]), and the SURESOFT workshops series in Braunschweig ~\autocite{SURESOFTLink}.
+Another national pioneer is the Göttingen State and University Library who set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more. They reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels~\autocite{schimavoigt2023}.
 The demand for such services appears to be ever-increasing.
 
 Cite for international comparison \autocite{Cosden2022} Princeton RSE group model
@@ -92,8 +97,8 @@ One of the most under-used possibilities they have is to offer permanent positio
 RSE departments act as knowledge hubs in a network of academic developers[REF: Dissertation zur Verstetigung von Netzwerken].
 This enables the embedded experts to maintain in-depth knowledge and to assess current trends and developments, both in research as well as technology.
 According to [SUB Goettingen] the employee satisfaction significantly increases with RSE services.
-The SUB library department “Software and Digital Services” was founded to support their (research) software needs \autocite{schimavoigt2023}.
-Soon after, this department received inquiries from the campus at large, showcasing the need for such services [SuccessStory from a university library, e.g. \autocite{schimavoigt2023}. The Carpentries \autocite{Carpentries} exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/]. Requests or suggestions for even more training show the need for such services.
+The SUB library department “Software and Digital Services” was founded to support their (research) software needs~\autocite{schimavoigt2023}.
+Soon after, this department received inquiries from the campus at large, showcasing the need for such services [SuccessStory from a university library, \eg ~\autocite{schimavoigt2023}. The Carpentries~\autocite{Carpentries} exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/]. Requests or suggestions for even more training show the need for such services.
 RSE services which benefit all disciplines/departments may represent a unique selling point for organizations competing for the brightest minds.
 See the examples from leading universities above.
 
@@ -117,10 +122,10 @@ Such experts are to be employed in advanced research projects like “Collaborat
 These data experts support research projects in several aspects including DMPlans, grant applications, data availability for journal publications, compliance, FAIRification and more.
 With the increasing recognition of software as a research object/result, it is easy to see how projects will require and benefit from very similar support in software needs in the near future.
 
-The latest DFG grant application templates require discussion of data and software management (in line with their GWP guidelines \autocite{dfg_gsp}).
+The latest DFG grant application templates require discussion of data and software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
 We also see the first grant applications [REF welcome trust? or others] requiring Software Management Plans (SMP).
 A few journals started asking for code submission [REF CHORUS? Nature?].
-The rather complex assessment of FAIRness [REF apples to apples] has widened from data to software \autocite{fair_data_maturity_model_working_group_2020}.
+The rather complex assessment of FAIRness [REF apples to apples] has widened from data to software~\autocite{fair_data_maturity_model_working_group_2020}.
 
 A decentralized RSE will provide training, improve software, support research publications, in close relationship with the local research team.
 
@@ -241,17 +246,17 @@ Depending on the scale of the involvement, the RSE department can either be incl
 
 If the research within the research institution heavily relies on specific pieces of research software, sustaining these pieces of research software is of vital importance for the long term success of the research institution.
 Relying on a workforce that is subject to academic labor turnover poses a risk of knowledge loss.
-If the development is done in an RSE department, institutional memory about critical research software infrastructures can be created and the long term availability of these infrastructures can be improved. This applies both to domain-specific research software (e.g. simulation frameworks widely used throughout the institution) and to domain-agnostic research software and data infrastructure (e.g. Jupyter, workflow management systems, data repository software).
+If the development is done in an RSE department, institutional memory about critical research software infrastructures can be created and the long term availability of these infrastructures can be improved. This applies both to domain-specific research software (e.g. simulation frameworks widely used throughout the institution) and to domain-agnostic research software and data infrastructure (\eg Jupyter, workflow management systems, data repository software).
 
 While all of the above development services can be flexibly performed either at the RSE hub or its spokes, there are advantages of having a hub in the process:
 It allows building up highly specialized technical expertise with a long term perspective and reuse it across the entire institution.
 Examples of topics that would benefit from such expertise pooling are e.g. mobile app development (University of Manchester: https://research-it.manchester.ac.uk/services/mobile-development-service-mds/ - use as \#SuccessStory?) and UI/UX development.
 
 RSE departments that offer development services at all scales have proven to be a success story at many research institutions and have rapidly grown in size due to the influx of third party funding.
-Notable examples are e.g. Manchester [REF], Notre-Dame [REF], STANFORD, Princeton \autocite{Cosden2022}.
+Notable examples are e.g. Manchester [REF], Notre-Dame [REF], STANFORD, Princeton~\autocite{Cosden2022}.
 
 [SuccessStory]
-Founded in January 2017, the Research Computing department of Princeton University has experienced a tremendous growth from the initial two FTEs to a total of 18 FTEs in the span of five years \autocite{Cosden2022}.
+Founded in January 2017, the Research Computing department of Princeton University has experienced a tremendous growth from the initial two FTEs to a total of 18 FTEs in the span of five years~\autocite{Cosden2022}.
 This growth is based on a continuous influx of new funded projects once successful projects showcase the additional value of RSE services to researchers.
 
 \subsection{Teaching Services}
@@ -312,7 +317,7 @@ This allows the staff working at the hub to contribute to and shape the emerging
 
 \subsection{Software Maintenance Service}
 
-Funder policies such as \autocite{dfg_gsp} require long-term preservation of used research data and software in an adequate way.
+Funder policies such as~\autocite{dfg_gsp} require long-term preservation of used research data and software in an adequate way.
 For research data, established procedures to implement this requirement exist.
 For research software, dedicated archiving solutions such as Software Heritage [REF] or Zenodo's GitHub integration [REF] exist.
 
