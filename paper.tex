@@ -1,4 +1,6 @@
 \documentclass{article}
+\usepackage[]{biblatex}
+\addbibresource{bibliography.bib}
 \title{Establishing RSE departments in German research institutions}
 \author{
     Bernd Flemisch
@@ -30,7 +32,7 @@ It has been established that most research requires research software for its re
 To solve pressing research challenges, better software is crucial [REF].
 During the past decade, it gained ever-growing attention and is becoming accepted as a research result on its own.
 The term “Research software” is still defined somewhat differently within the community.
-We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in [REF https://doi.org/10.5281/zenodo.5504016].
+We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in \autocite{Gruenpeter2021}.
 
 The number of people developing software in academia is constantly rising [REF].
 Research Software Engineering are actions necessary to create, adapt or maintain Research Software or train others to do so.
@@ -408,7 +410,8 @@ To fill gaps, the RSE department can also maintain a roster of freelance workers
 In order to retain RSEs it should be possible for them to become experts in a field and hence this should make this job more attractive to young RSEs, in order to mitigate the problem that some will only see this job as a one-year stint after their PhD and then move on to something else. To facilitate the retention of skilled people, industry has long identified education as an effective tool. For RSEs this should be helped by to be formed academic facilities that enable them to keep on learning skills after their first professional qualification, supported by the respective certification programs. In the longer run, Research Software Engineering should be integrated into the existing study programmes. One option here would be the creation of an RSE master as a specialization for a computer science bachelor. This should be complemented by adding a minor in application-domain study programs such as biology, physics, engineering etc. to facilitate the communication between the corresponding two groups of RSEs.
 [\#SuccessStory: Msc “Scientific Computing” at TU Berlin, maybe use others from list as well https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/scientific-computing-m-sc/ ]
 
-\begin{thebibliography}{9}
-\end{thebibliography}
+%\begin{thebibliography}{9}
+%\end{thebibliography}
+\printbibliography[heading=bibintoc]
 
 \end{document}
