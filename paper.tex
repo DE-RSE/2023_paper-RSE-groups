@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[]{biblatex}
+\usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{xspace}
 
@@ -292,7 +293,7 @@ and to domain-agnostic research software and data infrastructure (\eg Jupyter, w
 
 While all of the above development services can be flexibly performed either at the RSE hub or its spokes, there are advantages of having a hub in the process:
 It allows building up highly specialized technical expertise with a long term perspective and reuse it across the entire institution.
-Examples of topics that would benefit from such expertise pooling are \eg mobile app development (University of Manchester: https://research-it.manchester.ac.uk/services/mobile-development-service-mds/ - use as \#SuccessStory?) and UI/UX development.
+Examples of topics that would benefit from such expertise pooling are \eg mobile app development and UI/UX development.
 
 RSE departments that offer development services at all scales have proven to be a success story at many research institutions and have rapidly grown in size due to the influx of third party funding.
 Notable examples are \eg Manchester [REF], Notre-Dame [REF], STANFORD, Princeton~\autocite{Cosden2022}.
@@ -300,6 +301,14 @@ Notable examples are \eg Manchester [REF], Notre-Dame [REF], STANFORD, Princeton
 [SuccessStory]
 Founded in January 2017, the Research Computing department of Princeton University has experienced a tremendous growth from the initial two FTEs to a total of 18 FTEs in the span of five years~\autocite{Cosden2022}.
 This growth is based on a continuous influx of new funded projects once successful projects showcase the additional value of RSE services to researchers.
+
+[Success Story]
+The University of Manchester Software and Data Science group has successfully established specialized development services within their institution:
+The "Mobile Development Service" \autocite{manchester_mobile} team consists of RSEs that focus solely on developing and deploying mobile apps.
+Without a central RSE department to anchor such specialized expertise, it would probably be infeasible to establish such a service.
+Also, having this expertise centralized allows for synergies in the deployment procedure for mobile apps:
+The RSE department can create institutional accounts with the app stores and manage the time consuming deployment process including hard-to-setup procedures like code signing.
+Besides the technical benefits of this central deployment procedure, the institution will also benefit from the increased visibility and potentially be able to build a brand with its technological output.
 
 \subsection{Teaching Services}
 \label{sec:teaching}
@@ -400,8 +409,30 @@ The RSE department thus contributes to the RSE communities on a regional, nation
 It organizes the bidirectional exchange between the local and the global community and is the central hub for information coming both ways.
 Furthermore, the RSE department should advocate the use of RSE techniques and best-practices within their institutions actively to increase the local community and to reach out to new groups whenever possible.
 
+\section{Existing Implementations}
+
+A number of successful installations of RSE departments already exist in Germany and many more exist in other countries, especially the UK and the US.
+In order to understand the service portfolio of these existing RSE departments, we conducted a survey that received a total of twelve responses from Germany, the UK and the US.
+We asked departments for the composition of their service portfolio - the results are shown in figure~\ref{fig:survey}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{./group_composition_plot/group_composition_plot.pdf}
+\caption{National and international examples of RSE departments and their service portfolio: Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}
+\end{figure}
+
+From the gathered data and the additional free text information of the participants we conclude that the service components that we have identified in section~\ref{sec:vision} are indeed relevant for existing RSE departments.
+Additionally, we see a large diversity in the weighting of these components, which is to be expected given the different environments of the RSE departments.
+Within this diverse data, we identified two rather different archetypes of RSE departments: Those that offer development services and those that do not.
+The departments offering such services would typically invest a lot of their resources into this component, where as others put a much larger emphasis on teaching and consultation services.
+We should note however, that our survey did not collect information about the size of the department.
+It is likely that the departments offering development services are also larger in size, and that their total resource commitment to teaching and consultation services is similar to that of the departments that do not offer development services.
+
+When setting up a new RSE department, it is important to find the best service portfolio composition for the local environment.
+This depends on the demand by scientists at the institution, existing structures and the available funding.
 
 \section{Realization strategy}
+\label{sec:realization}
 
 We propose a realization strategy for a central institutional RSE department.
 We start by listing different possibilities for funding RSE positions at a research institution.
@@ -507,8 +538,7 @@ With the additional acquired funds, the service portfolio of the RSE department 
 
 \subsection{Outsourcing}
 
-Another possibility for the realization of local RSE service providers is by forming a spin-off and pooling the RSE skills into an external company,
-which has benefits but also drawbacks. [\#SuccessStory Outsourcing]
+Another possibility for the realization of local RSE Service providers is by forming a spin-off and pooling the RSE Skills into an external company, which has benefits but also drawbacks. [\#SuccessStory Outsourcing]
 Among the most obvious benefits is that this enables the creation of contracts outside of the WissZeitVG.
 This also widens the customer base of the department since the newly founded company may obtain contracts from industry.
 If this company is university backed/branded this enables another possibility for a university to interact with the local society. 
@@ -537,7 +567,8 @@ For RSEs this should be helped by to be formed academic facilities that enable t
 In the longer run, Research Software Engineering should be integrated into the existing study programmes.
 One option here would be the creation of an RSE master as a specialization for a computer science bachelor.
 This should be complemented by adding a minor in application-domain study programs such as biology, physics, engineering etc. to facilitate the communication between the corresponding two groups of RSEs.
-[\#SuccessStory: Msc “Scientific Computing” at TU Berlin, maybe use others from list as well https://www.tu.berlin/en/studying/study-programs/all-programs-offered/study-course/scientific-computing-m-sc/ ]
+There are already some master's programs available, (\eg in Berlin, Munich and Stuttgart) that develop this specialization on top of a domain bachelor.
+And of course there are data science curricula in the process of being created. A curated and continuously updated list of these programs is available at \cite{learnandteachlearn}.
 
 %\begin{thebibliography}{9}
 %\end{thebibliography}

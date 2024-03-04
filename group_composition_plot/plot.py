@@ -51,7 +51,7 @@ axs[1, 0].set_title('Research Software Engineering\n The University of Reading',
 fig.legend(activities, title="Activities", loc="center right", bbox_to_anchor=(1.1, 0.5), fontsize=20)
 
 
-fig.savefig("group_composition_plot.png", dpi=300, bbox_inches='tight')
+fig.savefig("group_composition_plot.pdf", bbox_inches='tight')
 # # Adjust layout
 # plt.tight_layout()
 # plt.show()
