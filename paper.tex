@@ -206,6 +206,7 @@ However, these nine modules together with assumed weights for each are part of a
 The nine modules are defined as follows:
 
 \subsection{Foster a network of RSEs}
+\label{sec:network}
 
 One of the core responsibilities of an RSE department is to act as a coordinator of RSE activities within that organization.
 At virtually every academic institution there are employees that assume at least part-time the role of a software engineer, with tasks within only a part of that organization; we call them decentralized RSEs.
@@ -235,6 +236,7 @@ This gives an opportunity to gauche how the new colleague can benefit from the d
 Similarly an off-boarding process can help to make sure that all acquired knowledge that is relevant to the institution is passed on to someone who stays, even when within a single research group alone that might pose a problem.
 
 \subsection{Consultation Services}
+\label{sec:consultation}
 
 With the majority of researchers being self-taught programmers [REF], there is a huge demand for expertise on how to develop better research software.
 Here, "better" can refer to a number of quality metrics such as correctness, reproducibility, maintainability, extendability, usability, portability, interoperability, performance or scalability [REF].
@@ -266,6 +268,7 @@ Having access to such an institutional network of professional software consulta
 It also improves proposals (acceptance rates) [REF] thereby amortizing the investment into RSE departments.
 
 \subsection{Development Services}
+\label{sec:development}
 
 There is a huge demand for the development and customization of research software tailored to the needs of specific research projects.
 Many times, the correct solution to this is to educate researchers to write their own software according to RSE best practices.
@@ -308,6 +311,7 @@ The RSE department can create institutional accounts with the app stores and man
 Besides the technical benefits of this central deployment procedure, the institution will also benefit from the increased visibility and potentially be able to build a brand with its technological output.
 
 \subsection{Teaching Services}
+\label{sec:teaching}
 
 A central RSE department can provide or organize training for researchers and decentralized RSEs in an institution.
 This can replace self-education for foundational software development skills for many.
@@ -320,6 +324,7 @@ For more complex software development projects, a central RSE department can off
 In both cases the expert RSEs from the central RSE department can pass on their knowledge precisely adapted to the concrete needs of those that they support.
 
 \subsection{Create a network of institutional partners}
+\label{sec:partners}
 
 Within a research institution, a lot of groups or departments touch the topic of research software one way or another.
 However, their coverage of RSE-related needs of researchers is often a lot large and their main responsibility typically lies elsewhere.
@@ -349,6 +354,7 @@ In contrast to most other organisations mentioned within this section,
 the requirements on their respective members and members of an RSE group are so similar that organisations might consider focus on one merged RSE \& FDM department.
 
 \subsection{RSE infrastructure provisioning}
+\label{sec:infrastructure}
 
 Although IT infrastructure provisioning is usually the purview of an institution's IT department and/or the computing center,
 a central RSE department can provide extra services by acting as an intermediary for RSE infrastructure and by hosting pilot instances of new tools.
@@ -366,6 +372,7 @@ Once this bilateral collaboration between RSE and IT departments has been establ
 Overall, by acting as an intermediary for RSE infrastructure related requests, the central RSE department can relieve the IT department and provide decentralized RSEs with the specific support they require.
 
 \subsection{Research Software Engineering research}
+\label{sec:rseresearch}
 
 If software engineering research about research software is conducted at the research institution, an RSE department can serve as a valuable resource and experimentation field to these researchers.
 It might therefore be of mutual benefit to co-locate SE researchers and RSEs.
@@ -373,6 +380,7 @@ Additionally, RSEs employed at the hub can be given the opportunity to conduct r
 This allows the staff working at the hub to contribute to and shape the emerging field of Research Software Engineering.
 
 \subsection{Software Maintenance Service}
+\label{sec:maintenance}
 
 Funder policies such as~\autocite{dfg_gsp} require long-term preservation of used research data and software in an adequate way.
 For research data, established procedures to implement this requirement exist.
@@ -392,6 +400,7 @@ In order for this to be feasible two criteria need to be met:
 \end{itemize}
 
 \subsection{RSE Outreach}
+\label{sec:outreach}
 
 One of the central tasks for the RSE department is to connect the local RSE activities and RSEs to regional, national and international initiatives and hence establish a network of RSEs and RSE activities.
 This can be achieved by contributing to events, position papers and the initiatives themselves,
@@ -400,18 +409,14 @@ The RSE department thus contributes to the RSE communities on a regional, nation
 It organizes the bidirectional exchange between the local and the global community and is the central hub for information coming both ways.
 Furthermore, the RSE department should advocate the use of RSE techniques and best-practices within their institutions actively to increase the local community and to reach out to new groups whenever possible.
 
-\section{Realization Strategy}
-
-In the following, we propose a realization strategy for a central institutional RSE department.
-We describe a possible transition pathway, starting from existing structures (described below) that have grown in research alliances such as collaborative research centers or clusters of excellence, or also in research departments of an institution.
-
-\subsection{Service Portfolio and existing implementations}
+\section{Existing Implementations}
 
 A number of successful installations of RSE departments already exist in Germany and many more exist in other countries, especially the UK and the US.
 In order to understand the service portfolio of these existing RSE departments, we conducted a survey that received a total of twelve responses from Germany, the UK and the US.
 We asked departments for the composition of their service portfolio - the results are shown in figure~\ref{fig:survey}.
 
 \begin{figure}
+\label{fig:survey}
 \centering
 \includegraphics[width=\textwidth]{./group_composition_plot/group_composition_plot.pdf}
 \caption{National and international examples of RSE departments and their service portfolio: Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}
@@ -425,59 +430,112 @@ We should note however, that our survey did not collect information about the si
 It is likely that the departments offering development services are also larger in size, and that their total resource commitment to teaching and consultation services is similar to that of the departments that do not offer development services.
 
 When setting up a new RSE department, it is important to find the best service portfolio composition for the local environment.
-This depends on the demand by scientists at the institution, existing structures and the availability of funding.
+This depends on the demand by scientists at the institution, existing structures and the available funding.
 
-\subsection{Network of RSEs}
+\section{Realization strategy}
+\label{sec:realization}
 
-Forming a network of RSEs localized at an institution is a most natural first step which doesn’t require any explicit funding resources.
-It can be initiated by any existing RSE individual or group that is preferably already in contact with other RSEs at the institution.
+We propose a realization strategy for a central institutional RSE department.
+We start by listing different possibilities for funding RSE positions at a research institution.
+Following that, we describe a potential transition pathway, starting from existing structures that have grown in research alliances such as collaborative research centers or also in research departments of an institution.
+This is complemented by discussing the opportunity of outsourcing RSE services and the challenging task of identifying and hiring suitable RSE candidates.
+
+\subsection{Funding possibilities}
+\label{sec:funding}
+
+We see four basic options for financing RSE positions, which we will briefly explain below:
+\begin{enumerate}
+\item ordinary budget positions,
+\item the overhead of externally funded projects,
+\item explicitly requested person-months in externally funded projects, and
+\item dedicated RSE calls.
+\end{enumerate}
+At research institutions, it is important to resolve the conflict between time-limited research funding and the need for permanent positions in order to be competitive with industry. Experience is also an essential component of software engineering, which makes long-term employment indispensable. In principle, pooling of positions and funds makes it possible to finance permanent positions from changing and mixed sources. Nevertheless, convincing the institution to take the corresponding risk of failing to raise external funds may be a very challenging task.
+\begin{enumerate}
+\item It seems natural to allocate ordinary budget positions for RSEs. However, particularly at German universities, it is usually impossible to create completely new budget positions and the only feasible way is to rededicate an existing position after its corresponding holder has left. Depending on the local circumstances at an institution, this can be a cumbersome and time-consuming process for each such position.
+\item Funding organizations additionally allocate a portion of the direct project funds as overhead, which is typically divided between the institution and the applicant. We propose using a small percentage of the overhead agglomorated at the institution to permanently finance central RSE positions. Assuming a third-party funding income of EUR 50 million annually and a 20\% overhead, EUR 100,000 in permanent funding requirements for one person-year would only account for 1\% of this overhead.
+\item In project applications involving the development of research software, corresponding person-months should be applied for to finance RSE tasks.
+      In this way, an applicant can book a fixed number of working hours from the RSE pool and pay for the costs accordingly.
+      This model has been successfully implemented at several UK universities.
+      In order to scale, it needs to be supported by an institutional policy.
+      Larger collaborative projects can apply for funding as part of a central INF project.
+\item Funding organizations are increasingly recognizing the need for sustainable research software
+      development and are setting up correspondingly designated funding programmes.
+      The DFG has already organized three calls for proposals in 2016\footnote{\href{https://www.dfg.de/resource/blob/172674/1bcb181a6451fdac9d94421776b52798/161026-dfg-ausschreibung-forschungssoftware-de-data.pdf}{Nachhaltigkeit von Forschungssoftware}}, 2019\footnote{\href{https://www.dfg.de/de/aktuelles/neuigkeiten-themen/info-wissenschaft/2019/info-wissenschaft-19-44}{Qualitätssicherung von Forschungssoftware durch ihre nachhaltige Nutzbarmachung}}, and 2022\footnote{\href{https://www.dfg.de/en/news/news-topics/announcements-proposals/2022/info-wissenschaft-22-85}{Research Software – Quality Assured and Re-usable}}.
+      It is to be expected that even more programs will be launched in the future.
+      An already established RSE concept at an institution increases the chances of being successful in such calls.
+\end{enumerate}
+
+% We see two possibilities to acquire additional funds.
+% Some can come from the convergence of existing central structures.
+% Other funds must come from the departments.
+% One possibility is that a share of all overheads goes to the RSE department.
+% This solution is simple in principle and also immediately makes the department known, but will also require effective reporting to determine the required share.
+% However, it might be difficult to realize the required reallocation of resources.
+% Another possibility is the pooling of RSE funds from different departments, which brings its own administrative burden, and is probably not generating long-term positions.
+% To generate these RSE funds it is required to obtain them from external funders like the DFG, a strategy that can be supported by an institutional policy to ask for these.
+% This mixed funding scheme brings us to organizational topics that facilitate the money generation.
+% From the side of the funding agencies this can be supported by requiring a digital support strategy from proposals similar to RDM plans.
+% If this strategy/policy is followed institution-wide, we believe that a consistent stream of income can be generated that enhances the bare-level support that is generated by the fixed funding from the central budget.
+
+\subsection{Transition pathway}
+
+We present a possible transition pathway from RSEs distributed over an institution and associated purely with research working groups and corresponding projects towards an institutional RSE department. After starting with initial measures not requiring dedicated funding, we discuss the conceptualization phase, followed by the department's foundation, and concluded by measures for promoting its growth.
+
+\subsubsection{Initial measures not requiring dedicated funding}
+The following measures initialize the two modules presented in \autoref{sec:network} and \autoref{sec:teaching}.
+
+\paragraph{Network of RSEs}
+Forming a network of RSEs localized at an institution can be initiated by any existing RSE individual or group that is preferably already in contact with other RSEs at the institution.
 An institutional dedicated mailing list, chat group and possibly other communication platforms can be created and a request for participation can be circulated via institutional channels such as an employee newsletter.
 First common events such as social gatherings or RSE-related seminar talks can be organized and announced via the communication platform.
 This process can be accompanied, facilitated and strengthened by founding a local de-RSE chapter.
-Such network-building has been successfully initiated and implemented at several German research organizations.
+Such network-building has been successfully initiated and implemented at several German research institutions.
 
-\subsection{Pooling of existing teaching materials and training offers}
-
-Depending on local RSE efforts, teaching materials and associated training formats are likely to already exist distributed over individual institutional groups.
+\paragraph{Pooling of existing teaching materials and training offers}
+Depending on local RSE efforts, teaching materials and associated training formats are likely to already exist,
+distributed over individual institutional groups.
 With the established network, the materials can be pooled and joint training can be offered to a wider institutional audience.
-This step can be facilitated and formalized by offering introductory courses with a recognized curriculum as offered by the carpentries
-\footnote{Examples \url{https://software-carpentry.org/lessons/}}
-or coderefinery 
-\footnote{Examples \url{https://coderefinery.org/lessons/}}.
+This step can be facilitated and formalized by offering introductory courses with a recognized curriculum as provided by the carpentries\footnote{Examples \url{https://software-carpentry.org/lessons/}}
+or coderefinery\footnote{Examples \url{https://coderefinery.org/lessons/}}.
 
-\subsection{Foundation of the department}
+\subsubsection{Conceptualization}
+Decision makers at an institution usually require a concept upon which they will decide about the installation of an RSE department. Such a concept should specify the idea of the department, its responsibilities and offerings as a subset of the nine modules presented in \autoref{sec:vision}, and the resulting benefits for the institution and its researchers.
 
-A canonical place to allocate a new RSE department would be a new subunit of an institutional body close to software, training services and computing such as the institution's IT department or library.
+A rather difficult and crucial question can be the localization of the department within the organizational structure of the institution.
+A canonical place would be a new subunit of an institutional body close to software,
+training services and computing such as the institution's IT department or library.
 Since most institutions already have an RDM department, it seems natural to add the RSE department as a parallel structure.
-We consider it necessary that there is a certain amount of base funding provided by the institution that covers a basic RSE department because most RSE work is not project based.
-These central funds can offer some base level support in the software lifecycle when the project funds have ended.
-A first task of the centrally funded structure is to define a basic service portfolio together with the departments centered around training and networking.
-The initial staffing of the RSE department depends crucially on the local institutional conditions. 
+Another choice for the superordinate body, particularly at universities, is the faculty for computer science.
+Determining the best place may involve discussing with several stakeholders at the institution and can already be beneficial for creating a
+network of institutional partners, the module described in \autoref{sec:partners}.
+
+The concept should also address funding for the department's initial staff.
+We consider it necessary that there is a certain amount of base funding provided by the institution that covers a basic RSE department because much RSE work is not project based.
+While possibilities can be drawn from the discussion above, specific ideas should be discussed beforehand with the decision makers. For facilitating the expansion of the department in the longer term, the installment of an institutional policy for requesting person-months in externally funded projects dedicated to RSE should be proposed.
+
+Another part of the concept should be the governance structure of the department. One of the decisions to be made is if the department head is supposed to be part of the department itself or if the department will be headed by a person from its outside. Additionally, installing an advisory board can be proposed in the concept, recruiting from the prospective institutional partners.
+
+\subsubsection{Installation of the department}
+Once the concept has been approved by the institution, the RSE department can be installed accordingly.
+The initial staffing depends crucially on the local institutional conditions. 
 One promising possibility is to start with two positions. The first one would be an RSE coordinator.
 They will be the contact person for all institutional RSEs, organizing meetings, developing training programs, reporting to superordinate bodies, etc.
-The second position would be a central RSE, responsible for providing selected services and infrastructure as described in \autoref{sec:vision}.
+The second position would be a central RSE, responsible for providing selected services and infrastructure.
 These central positions will be complemented by the existing RSEs organized in the network to form a pool of institutional RSEs associated with the department.
-An extension of the initial service portfolio requires the acquisition of further funding and installation of further positions, see below.
 
-\subsection{Acquisition of further funding}
+Drawing from the concept and considering the actual initial staff situation, a first task of the centrally funded structure is to define a basic service portfolio according to the modules described in \autoref{sec:vision}.
+In addition to the already mentioned networking and teaching cf. \autoref{sec:network} and \autoref{sec:teaching}, it seems natural to start with consultation cf. \autoref{sec:consultation}, as this allows to evaluate the potential necessities for other services such as development, infrastructure provisioning and maintenance.
+An extension of the initial service portfolio for a larger target audience requires the acquisition of further funding and installation of further positions, see below.
 
-We see two possibilities to acquire additional funds.
-Some can come from the convergence of existing central structures.
-Other funds must come from the departments.
-One possibility is that a share of all overheads goes to the RSE department.
-This solution is simple in principle and also immediately makes the department known, but will also require effective reporting to determine the required share.
-However, it might be difficult to realize the required reallocation of resources.
-This model has been successfully implemented at several UK universities.
-Another possibility is the pooling of RSE funds from different departments, which brings its own administrative burden, and is probably not generating long-term positions.
-To generate these RSE funds it is required to obtain them from external funders like the DFG, a strategy that can be supported by an institutional policy to ask for these.
-This mixed funding scheme brings us to organizational topics that facilitate the money generation.
-First, the credibility of a research proposal that is asking for RSE funds is greatly enhanced if the RSE department is part of this proposal from the beginning, hence this should be part of an organization-wide policy.
-From the side of the funding agencies this can be supported by requiring a digital support strategy from proposals similar to RDM plans.
-If this strategy/policy is followed institution-wide, we believe that a consistent stream of income can be generated that enhances the bare-level support that is generated by the fixed funding from the central budget.
+\subsubsection{Growth of the department}
 
-\subsection{Offering of additional services}
+\paragraph{Acquisition of further funding}
+The most promising possibilities to acquire further funding seem to be explicitly requesting person-months in externally funded projects and dedicated RSE calls, as discussed in \autoref{sec:funding}. We believe that the credibility of a research proposal that is asking for RSE funds is greatly enhanced if the RSE department is part of this proposal from the beginning. Over time, more and more researchers and proposals are expected to follow the institutional policy such that a consistent stream of income can be generated.
 
-With the additional acquired funds, the service portfolio of the RSE department can be enhanced in the areas of consultation, development, teaching and maintenance as described above.
+\paragraph{Offering of additional services}
+With the additional acquired funds, the service portfolio of the RSE department can be enhanced regarding the modules described in \autoref{sec:vision}. Obviously, the selection of modules and their share in the overall portfolio depend on the services that have been applied for in the corresponding proposals. As this is strongly connected to hiring persons with the required expertise, this has to be carefully planned, see also below.
+
 
 \subsection{Outsourcing}
 
