@@ -1,75 +1,57 @@
-#!/usr/bin/python3
-# author: Frank Löffler <frank.loeffler@uni-jena.de>
-# license: CC0
-
-import numpy as np
 import matplotlib.pyplot as plt
+import json
 
-# preliminary names
-names = ["RSE Network",
-         "Partner Network",
-         "RSE Teaching",
-         "RSE Consultation",
-         "SW Development",
-         "SW Maintenance",
-         "RSE Infrastructure",
-         "RSE Research",
-         "RSE Outreach",
-        ]
-# some example values
-data = np.array([[1, 0.2],
-                 [3, 0.6,],
-                 [1, 0.1,],
-                 [3, 0.2,],
-                 [4, 0.4,],
-                 [3, 0.3,],
-                 [0, 0.8,],
-                 [2, 0.6,],
-                 [3, 1,],
-                ])
+def read_data(filename):
+    with open(filename) as f:
+        data = json.load(f)
+    return data["activity_weights"]
 
-fig = plt.figure(figsize=(10,5))
+# Read data
+princeton = read_data("./2023-12-06_submissions/Princeton_University_2023-11-29_18-33-21.json")
+reading = read_data("./2023-12-06_submissions/University_of_Reading_2023-12-11_10-18-14.json")
+heidelberg = read_data("./2023-12-06_submissions/Scientific_Software_Center_2023-12-21_13-13-27.json")
+jena = read_data("./2023-12-06_submissions/Friedrich_Schiller_University_Jena_2023-12-06_10-43-44.json")
 
-# percentages of the widths of the left and middle section of the plot, with the right
-# part being calculated from those (assuming 100% plot width)
-widths = [0.2, 0.1]
-widths.append(1-sum(widths))
-ax_l = fig.add_axes((0,                   0, widths[0], 1))
-ax_c = fig.add_axes((widths[0],           0, widths[1], 1))
-ax_r = fig.add_axes((widths[0]+widths[1], 0, widths[2], 1))
+activities = [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ]
+colors = plt.cm.Paired(range(len(activities)))
 
-xstep = 0.1
+# Mapping activities to colors
+activity_to_color = {activity: colors[i] for i, activity in enumerate(activities)}
 
-# eps: small value to ensure that where-clauses do not leave some range un-plotted
-# should roughly be half of the smallest step-size you want in x-direction
-eps = xstep/2
+# Creating the joint plot
+fig, axs = plt.subplots(2, 2, figsize=(16, 16))
 
-x =  np.arange(0, 1+eps, xstep)
-y = [np.repeat(0, len(x))]
-p = [np.repeat(0, len(x))]
-ye = [[0, 0],]
-ysum = np.sum(data[:,0])
-for i in np.arange(len(data)):
-  y.append(np.repeat(data[i,0], len(x))/ysum + y[-1])
-  p.append(np.repeat(data[i,1], len(x)))
-  ye.append([(i+1)/len(data), y[-1][0]])
+# Plot for Jena
+axs[0, 0].pie(jena, colors=colors, startangle=140)
+axs[0, 0].set_title('Kompetenzzentrum Digitale Forschung\n Friedrich Schiller University Jena', fontsize=20)
 
-for i in np.arange(len(data))+1:
-  ax_l.fill_between([0,1], [ye[i][0], ye[i][0]], facecolor="none", edgecolor='k')
-  ax_l.text(0.05, (ye[i][0]+ye[i-1][0])/2, names[i-1])
+# Plot for Heidelberg
+axs[0, 1].pie(heidelberg, colors=colors, startangle=140)
+axs[0, 1].set_title('Scientific Software Center\n Heidelberg University', fontsize=20)
 
-  ax_c.fill_between([0,1], ye[i], facecolor="none", edgecolor='k')
+# Plot for Princeton
+axs[1, 1].pie(princeton, colors=colors, startangle=140)
+axs[1, 1].set_title('Research Software Engineering Group\n Princeton University', fontsize=20)
 
-  ax_r.fill_between(x, y[i-1], y[i], facecolor="none", edgecolor='k', hatch='/',  where=p[i]>x-eps)
-  ax_r.fill_between(x, y[i-1], y[i], facecolor="none", edgecolor='k', hatch='\\', where=p[i]<x+eps)
+# Plot for Reading
+axs[1, 0].pie(reading, colors=colors, startangle=140)
+axs[1, 0].set_title('Research Software Engineering\n The University of Reading', fontsize=20)
 
-for ax in [ax_l, ax_c, ax_r]:
-  ax.set_xlim(0,1)
-  ax.set_ylim(0,1)
-  ax.set_xticks([])
-  ax.set_yticks([])
+# Shared legend
+fig.legend(activities, title="Activities", loc="center right", bbox_to_anchor=(1.1, 0.5), fontsize=20)
 
 
-
-plt.savefig("group_composition_plot.pdf")
-#plt.show()
+fig.savefig("group_composition_plot.pdf", bbox_inches='tight')
+# # Adjust layout
+# plt.tight_layout()
+# plt.show()
