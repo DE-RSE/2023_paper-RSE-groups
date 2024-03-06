@@ -7,10 +7,10 @@ def read_data(filename):
     return data["activity_weights"]
 
 # Read data
-princeton = read_data("./submissions/2023-12-06_submissions/Princeton_University_2023-11-29_18-33-21.json")
-reading = read_data("./submissions/2023-12-06_submissions/University_of_Reading_2023-12-11_10-18-14.json")
-heidelberg = read_data("./submissions/2023-12-06_submissions/Scientific_Software_Center_2023-12-21_13-13-27.json")
-jena = read_data("./submissions/2023-12-06_submissions/Friedrich_Schiller_University_Jena_2023-12-06_10-43-44.json")
+princeton = read_data("./2023-12-06_submissions/Princeton_University_2023-11-29_18-33-21.json")
+reading = read_data("./2023-12-06_submissions/University_of_Reading_2023-12-11_10-18-14.json")
+heidelberg = read_data("./2023-12-06_submissions/Scientific_Software_Center_2023-12-21_13-13-27.json")
+jena = read_data("./2023-12-06_submissions/Friedrich_Schiller_University_Jena_2023-12-06_10-43-44.json")
 
 activities = [
         "RSE Network",
