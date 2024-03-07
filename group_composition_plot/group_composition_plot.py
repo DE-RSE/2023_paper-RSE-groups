@@ -1,58 +1,60 @@
 #!/usr/bin/env python3
+import sys, argparse
 import matplotlib.pyplot as plt
 import json
+from pprint import pprint
 
-def read_data(filename):
-    with open(filename) as f:
-        data = json.load(f)
-    return data["activity_weights"]
+def errorexit(msg='internal error', code=1):
+    print(msg, file=sys.stderr)
+    sys.exit(code)
 
-# Read data
-princeton = read_data("./2023-12-06_submissions/Princeton_University_2023-11-29_18-33-21.json")
-reading = read_data("./2023-12-06_submissions/University_of_Reading_2023-12-11_10-18-14.json")
-heidelberg = read_data("./2023-12-06_submissions/Scientific_Software_Center_2023-12-21_13-13-27.json")
-jena = read_data("./2023-12-06_submissions/Friedrich_Schiller_University_Jena_2023-12-06_10-43-44.json")
+parser = argparse.ArgumentParser(
+    description="Plot activity fields of different institutions", add_help=False)
+parser.add_argument('infiles', metavar='infile', nargs="+",
+                    help="json files containing compositions of individual institutions")
+parser.add_argument('--legend', action='store_true',
+                    help="add a legend")
+args = vars(parser.parse_args())
 
-activities = [
-        "RSE Network",
-        "Partner Network",
-        "RSE Teaching",
-        "RSE Consultation",
-        "SW Development",
-        "SW Maintenance",
-        "RSE Infrastructure",
-        "RSE Research",
-        "RSE Outreach"
-    ]
-colors = plt.cm.Paired(range(len(activities)))
+data = {}
+activity_names = None
+for infilename in args['infiles']:
+    try:
+        infile = open(infilename, 'r')
+    except:
+        errorexit(f'Error: cannot read file {infilename}')
+    try:
+        data[infilename] = json.loads(infile.read())
+    except:
+        errorexit(f'Error: cannot parse data in file {infilename}')
+    if activity_names and data[infilename]['activity_names'] != activity_names:
+        errorexit(f'Error: inconsitent activity names between {infilename} and others in {data.keys()}')
+    else:
+        activity_names = data[infilename]['activity_names']
+
+colors = plt.cm.Paired(range(len(activity_names)))
 
 # Mapping activities to colors
-activity_to_color = {activity: colors[i] for i, activity in enumerate(activities)}
+activity_to_color = {activity: colors[i] for i, activity in enumerate(activity_names)}
 
 # Creating the joint plot
-fig, axs = plt.subplots(2, 2, figsize=(16, 16))
+iymax = (len(data)+1)//2
+fig, axs = plt.subplots(iymax, 2, figsize=(16, 8*iymax))
 
-# Plot for Jena
-axs[0, 0].pie(jena, colors=colors, startangle=140)
-axs[0, 0].set_title('Kompetenzzentrum Digitale Forschung\n Friedrich Schiller University Jena', fontsize=20)
-
-# Plot for Heidelberg
-axs[0, 1].pie(heidelberg, colors=colors, startangle=140)
-axs[0, 1].set_title('Scientific Software Center\n Heidelberg University', fontsize=20)
-
-# Plot for Princeton
-axs[1, 1].pie(princeton, colors=colors, startangle=140)
-axs[1, 1].set_title('Research Software Engineering Group\n Princeton University', fontsize=20)
-
-# Plot for Reading
-axs[1, 0].pie(reading, colors=colors, startangle=140)
-axs[1, 0].set_title('Research Software Engineering\n The University of Reading', fontsize=20)
+ix = iy = 0
+for inst, idata in data.items():
+    axs[iy, ix].pie(idata['activity_weights'], colors=colors, startangle=140)
+    inst_name = idata['institution_name']
+    if 'group_name' in idata:
+        inst_name = idata['group_name'] + "\n" + inst_name
+    axs[iy, ix].set_title(inst_name, fontsize=20)
+    iy += ix
+    ix = 1 if ix == 0 else 0
 
 # Shared legend
-fig.legend(activities, title="Activities", loc="center right", bbox_to_anchor=(1.1, 0.5), fontsize=20)
+if args['legend']:
+  fig.legend(activity_names, title="Activities", loc="center right", bbox_to_anchor=(1.1, 0.5), fontsize=20)
 
-
+plt.tight_layout()
 fig.savefig("group_composition_plot.pdf", bbox_inches='tight')
-# # Adjust layout
-# plt.tight_layout()
 # plt.show()
