@@ -1,0 +1,38 @@
+{
+    "institution_name": "Friedrich Schiller University Jena",
+    "institution_citation": "https://www.uni-jena.de/",
+    "institution_text": "yes",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        1,
+        1,
+        4,
+        4,
+        0.5,
+        0.4,
+        0.3,
+        0.4,
+        0.4
+    ],
+    "activity_widths": [
+        0.9,
+        0.7,
+        0.9,
+        0.9,
+        0.5,
+        0.5,
+        0.5,
+        0.9,
+        0.9
+    ]
+}
