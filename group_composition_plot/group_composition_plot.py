@@ -12,6 +12,8 @@ parser = argparse.ArgumentParser(
     description="Plot activity fields of different institutions", add_help=False)
 parser.add_argument('infiles', metavar='infile', nargs="+",
                     help="json files containing compositions of individual institutions")
+parser.add_argument('--outfile', default='group_composition_plot.pdf',
+                    help="specifies output file name, and by extension also the output format")
 parser.add_argument('--legend', action='store_true',
                     help="add a legend")
 args = vars(parser.parse_args())
@@ -38,8 +40,9 @@ colors = plt.cm.Paired(range(len(activity_names)))
 activity_to_color = {activity: colors[i] for i, activity in enumerate(activity_names)}
 
 # Creating the joint plot
+scaling = .9
 iymax = (len(data)+1)//2
-fig, axs = plt.subplots(iymax, 2, figsize=(16, 8*iymax))
+fig, axs = plt.subplots(iymax, 2, figsize=(scaling*16, scaling*8*iymax))
 
 ix = iy = 0
 for inst, idata in data.items():
@@ -53,8 +56,8 @@ for inst, idata in data.items():
 
 # Shared legend
 if args['legend']:
-  fig.legend(activity_names, title="Activities", loc="center right", bbox_to_anchor=(1.1, 0.5), fontsize=20)
+  fig.legend(activity_names, title="Activities", loc="center right", bbox_to_anchor=(1.2, 0.5), fontsize=20)
 
 plt.tight_layout()
-fig.savefig("group_composition_plot.pdf", bbox_inches='tight')
+fig.savefig(args['outfile'], bbox_inches='tight')
 # plt.show()

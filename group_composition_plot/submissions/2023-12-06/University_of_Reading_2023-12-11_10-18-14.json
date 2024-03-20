@@ -1,5 +1,6 @@
 {
-    "institution_name": "University of Reading",
+    "group_name": "Research Software Engineering",
+    "institution_name": "The University of Reading",
     "institution_citation": "rse.reading.ac.uk",
     "institution_text": "I think the below covers broadly what RSE@UoR at reading is doing/trying to achieve, but as we are a very small team, we aren't able to work continuously in all of these areas, it's more of a pick and mix, with RSE Research being left to embedded RSEs within research groups.",
     "activity_names": [
