@@ -1,0 +1,38 @@
+{
+    "institution_name": "University of Bath",
+    "institution_citation": "https://www.bath.ac.uk/professional-services/research-computing/",
+    "institution_text": "As we have a very low number of RSEs at the moment, 1 central, 3 decentral, it was difficult to classify. I have classified as we currently work, but this isn't necessarily completely reflective of how we want to operate with a bigger team. Otherwise, I think the categories cover many of the important responsibilities of an RSE / team. ",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1
+    ],
+    "activity_widths": [
+        1,
+        1,
+        0.7,
+        0.5,
+        0.7,
+        0,
+        1,
+        1,
+        1
+    ]
+}
