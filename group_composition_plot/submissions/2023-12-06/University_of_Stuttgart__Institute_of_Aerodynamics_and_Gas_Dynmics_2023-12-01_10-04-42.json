@@ -1,5 +1,6 @@
 {
-    "institution_name": "University of Stuttgart - Institute of Aerodynamics and Gas Dynmics",
+    "group_name": "Institute of Aerodynamics and Gas Dynmics",
+    "institution_name": "University of Stuttgart",
     "institution_citation": "USTUTT-IAG",
     "institution_text": "Actually, we are not an RSE department, but do a lot of RS development for our own research. Thus the answers are more of a \"wish list\" for a RSE departement established for the entire university than a current status.",
     "activity_names": [

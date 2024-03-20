@@ -1,5 +1,6 @@
 {
-    "institution_name": "STFC Scientific Computing (part of the UKRI)",
+    "group_name": "STFC Scientific Computing",
+    "institution_name": "UK Research and Innovation",
     "institution_citation": "https://www.scd.stfc.ac.uk/Pages/home.aspx",
     "institution_text": "To some extent they do, to some they don't because we do SE beyond RSE as cyber security, data pipelines, facility interfaces, etc.  However, our work ultimately contributes to the advancement of research and knowledge.",
     "activity_names": [
