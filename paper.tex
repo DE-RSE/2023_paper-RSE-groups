@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{xspace}
+\usepackage{caption,tikzpagenodes,everypage,ifthen}
 
 \newcommand*{\eg}{e.g.\@\xspace}
 \newcommand*{\ie}{i.e.\@\xspace}
@@ -33,6 +34,8 @@
 }
 
 \date{\today}
+
+\include{marginplots.tex}
 
 \begin{document}
 
@@ -420,16 +423,16 @@ Furthermore, the RSE department should advocate the use of RSE techniques and be
 
 \section{Existing Implementations}
 
-A number of successful installations of RSE departments already exist in Germany and many more exist in other countries, especially the UK and the US.
-In order to understand the service portfolio of these existing RSE departments, we conducted a survey that received a total of twelve responses from Germany, the UK and the US.
-We asked departments for the composition of their service portfolio - the results are shown in figure~\ref{fig:survey}.
-
 \begin{figure}
 \label{fig:survey}
 \centering
 \includegraphics[width=\textwidth]{./group_composition_plot/pdf/group_composition_plot_the_fantastic_four.pdf}
 \caption{National and international examples of RSE departments and their service portfolio: Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}
 \end{figure}
+
+A number of successful installations of RSE departments already exist in Germany and many more exist in other countries, especially the UK and the US.
+In order to understand the service portfolio of these existing RSE departments, we conducted a survey that received a total of twelve responses from Germany, the UK and the US.
+We asked departments for the composition of their service portfolio - the results are shown in figure~\ref{fig:survey}.
 
 From the gathered data and the additional free text information of the participants we conclude that the service components that we have identified in section~\ref{sec:vision} are indeed relevant for existing RSE departments.
 Additionally, we see a large diversity in the weighting of these components, which is to be expected given the different environments of the RSE departments.
