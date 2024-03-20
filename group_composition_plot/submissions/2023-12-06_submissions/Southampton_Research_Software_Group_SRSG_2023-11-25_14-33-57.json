@@ -1,0 +1,38 @@
+{
+    "institution_name": "Southampton Research Software Group (SRSG)",
+    "institution_citation": "University of Southampton",
+    "institution_text": "They're representative of the views of the SRSG and we represent RSEs at the University of Southampton. However, they won't be formal University policy, because there isn't currently a policy on RSE.",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        1,
+        1,
+        4,
+        2,
+        12,
+        4,
+        1,
+        2,
+        1
+    ],
+    "activity_widths": [
+        1,
+        1,
+        0.8,
+        1,
+        0.8,
+        1,
+        0.5,
+        1,
+        0.5
+    ]
+}

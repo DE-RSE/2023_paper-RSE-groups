@@ -1,0 +1,38 @@
+{
+    "institution_name": "STFC Scientific Computing (part of the UKRI)",
+    "institution_citation": "https://www.scd.stfc.ac.uk/Pages/home.aspx",
+    "institution_text": "To some extent they do, to some they don't because we do SE beyond RSE as cyber security, data pipelines, facility interfaces, etc.  However, our work ultimately contributes to the advancement of research and knowledge.",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        0.1,
+        0.5,
+        0.1,
+        0.5,
+        1,
+        0.5,
+        0.2,
+        0.1,
+        0.1
+    ],
+    "activity_widths": [
+        0.1,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.1,
+        0.1
+    ]
+}
