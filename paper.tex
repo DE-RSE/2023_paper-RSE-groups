@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage[]{biblatex}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -30,6 +30,10 @@
     Leyla Jael Castro
     \and
     Philipp S. Sommer
+    \and
+    Markus Ankenbrand
+    \and
+    Jean-Noël Grad
 }
 
 \date{\today}
@@ -85,14 +89,19 @@ Several stakeholder perspectives are discussed and supported by (inter)national 
 
 Research Data Management has proved to benefit data quality through training researchers, the reusability through data repositories and to avoid duplication of effort.
 [TODO elaborate parallels to RDM SuccessStory] For over a decade, research funders and organizations made a significant effort to establish RDM and teams around it.
+[TODO: should we list examples of RDM teams?] See for example the Utrecht University Research Data Management Support~\autocite{UtrechtRDM}, University of Stuttgart FoKUS team~\autocite{Boehlke2024}.
 We assume that research software will follow a similar trajectory.
-\footnote{For arguments why research software is unlike data, see REF .}
+\footnote{For arguments why research software is unlike data, see \autocite{Lamprecht2020}.}
 While we focus on Germany here, it is beneficial to review how other countries approach research software.
 In the UK, for example, many universities started initiating dedicated RSE departments about a decade ago~\autocite{Crouch2013}.
 The successful establishment of such staff roles is a role model for similar academic organizations worldwide.
 A range of already-existing departments can be seen in this map: https://society-rse.org/community/rse-groups/ 
 
-Policies for research software management and guidelines involving responsible research practices detailing software handling are the precursors for a research software engineering environment. [REF Helmholtz, AllianzInitiative, Utrecht, …]
+Policies for research software management and guidelines involving responsible research practices detailing software handling are the precursors for a research software engineering environment.
+See for example position papers by the Helmholtz Open Science Office~\autocite{Helmholtz2019a,Helmholtz2019b},
+the AllianzInitiative~\autocite{Konrad2021},
+the University Utrecht~\autocite{Utrecht2016b},
+and the German Research Council~\autocite{dfg_gsp}.
 
 \subsection{Tasks - Why do central software services make sense?}
 
@@ -101,7 +110,7 @@ Examples of organizational training efforts are the Helmholtz HIFIS group [https
 Another national pioneer is the Göttingen State and University Library which set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more. They reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels~\autocite{schimavoigt2023}.
 The demand for such services appears to be ever-increasing.
 
-Cite for international comparison \autocite{Cosden2022} Princeton RSE group model
+Cite for international comparison the Princeton RSE group model~\autocite{Cosden2022a}.
 
 
 
@@ -130,7 +139,7 @@ The second problem is the severe shortage of people with the skills necessary fo
 While this is a problem already today, it is expected to get a lot worse in the future due to both an aging society and an ever-increasing demand for these individuals.
 Thus, it is in the best interest of research organisations to avoid losing the RSEs they employ to industry.
 One of the most under-used possibilities they have is to offer permanent positions. 
-RSE departments act as knowledge hubs in a network of academic developers[REF: Dissertation zur Verstetigung von Netzwerken].
+RSE departments act as knowledge hubs in a network of academic developers~\autocite{Elsholz2006}.
 This enables the embedded experts to maintain in-depth knowledge and to assess current trends and developments, both in research as well as technology.
 According to [SUB Goettingen] employee satisfaction significantly increases with RSE services.
 The SUB library department “Software and Digital Services” was founded to support their (research) software needs~\autocite{schimavoigt2023}.
@@ -154,7 +163,7 @@ There, grant applications (almost always) include software development in their 
 This allocated money can then be utilized to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
 
 Coming back to RDM again for comparison: The most recent funding guidelines suggest “data stewards” in data-driven research.
-Such experts are to be employed in advanced research projects like “Collaborative Research Centers” (CRC)[Footnote Sonderforschungsbereich (SFB)] or “Clusters of Excellence”
+Such experts are to be employed in advanced research projects like “Collaborative Research Centers” (CRC) \footnote{Sonderforschungsbereich (SFB)} or “Clusters of Excellence”
 \footnote{Cluster der Exzellenzinitiative}.
 These data experts support research projects in several aspects including DMPlans, grant applications, data availability for journal publications, compliance, FAIRification and more.
 With the increasing recognition of software as a research object/result, it is easy to see how projects will require and benefit from very similar support in software needs in the near future.
@@ -162,7 +171,7 @@ With the increasing recognition of software as a research object/result, it is e
 The latest DFG grant application templates require discussion of data and software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
 We also see the first grant applications [REF welcome trust? or others] requiring Software Management Plans (SMP).
 A few journals started asking for code submission [REF CHORUS? Nature?].
-The rather complex assessment of FAIRness [REF apples to apples] has widened from data to software~\autocite{fair_data_maturity_model_working_group_2020}.
+The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} has widened from data to software~\autocite{Lamprecht2020}.
 
 A decentralized RSE will provide training, improve software, and support research publications, in close relationship with the local research team.
 
@@ -388,7 +397,7 @@ This allows the staff working at the hub to contribute to and shape the emerging
 
 Funder policies such as~\autocite{dfg_gsp} require long-term preservation of used research data and software in an adequate way.
 For research data, established procedures to implement this requirement exist.
-For research software, dedicated archiving solutions such as Software Heritage [REF] or Zenodo's GitHub integration [REF] exist.
+For research software, dedicated archiving solutions such as Software Heritage~\autocite{DiCosmo2020,DiCosmo2023} or Zenodo's GitHub integration~\autocite{GitHubZenodo} exist.
 
 In contrast to research data, the long-term availability and usability of research software requires more than an adequate archiving method:
 Software maintenance is the ongoing change process of software after its release.
@@ -422,7 +431,7 @@ We asked departments for the composition of their service portfolio - the result
 \begin{figure}
 \label{fig:survey}
 \centering
-\includegraphics[width=\textwidth]{./group_composition_plot/group_composition_plot.pdf}
+\includegraphics[width=\textwidth]{./group_composition_plot/pdf/group_composition_plot_the_fantastic_four.pdf}
 \caption{National and international examples of RSE departments and their service portfolio: Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}
 \end{figure}
 
@@ -454,6 +463,8 @@ We see four basic options for financing RSE positions, which we will briefly exp
 \item explicitly requested person-months in externally funded projects, and
 \item dedicated RSE calls.
 \end{enumerate}
+While each option stands for itself, in reality, an institutional RSE department will most certainly finance its personnel by an appropriate mixture of possibly all four options. The mixture at a particular institution depends heavily on the local conditions.
+
 At research institutions, it is important to resolve the conflict between time-limited research funding and the need for permanent positions in order to be competitive with industry. Experience is also an essential component of software engineering, which makes long-term employment indispensable. In principle, pooling of positions and funds makes it possible to finance permanent positions from changing and mixed sources. Nevertheless, convincing the institution to take the corresponding risk of failing to raise external funds may be a very challenging task.
 \begin{enumerate}
 \item It seems natural to allocate ordinary budget positions for RSEs. However, particularly at German universities, it is usually impossible to create completely new budget positions and the only feasible way is to rededicate an existing position after its corresponding holder has left. Depending on the local circumstances at an institution, this can be a cumbersome and time-consuming process for each such position.
@@ -484,10 +495,10 @@ At research institutions, it is important to resolve the conflict between time-l
 
 \subsection{Transition pathway}
 
-We present a possible transition pathway from RSEs distributed over an institution and associated purely with research working groups and corresponding projects towards an institutional RSE department. After starting with initial measures not requiring dedicated funding, we discuss the conceptualization phase, followed by the department's foundation, and concluded by measures for promoting its growth.
+We present a possible transition pathway from RSEs distributed over an institution and associated purely with research working groups and corresponding projects towards an institutional RSE department. After starting with initial measures not necessarily requiring dedicated funding, we discuss the conceptualization phase, followed by the department's foundation, and concluded by measures for promoting its growth.
 
-\subsubsection{Initial measures not requiring dedicated funding}
-The following measures initialize the two modules presented in \autoref{sec:network} and \autoref{sec:teaching}.
+\subsubsection{Initial measures}
+The following measures initialize the two modules presented in \autoref{sec:network} and \autoref{sec:teaching}. While dedicated funding certainly is beneficial already for this initialization, it is not mandatory. Once the two measures are in place, they can be used to illustrate the need for institutional RSE activities and therefore support funding proposals.
 
 \paragraph{Network of RSEs}
 Forming a network of RSEs localized at an institution can be initiated by any existing RSE individual or group that is preferably already in contact with other RSEs at the institution.

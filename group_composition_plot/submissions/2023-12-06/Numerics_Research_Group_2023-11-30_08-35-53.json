@@ -1,0 +1,38 @@
+{
+    "institution_name": "Numerics Research Group",
+    "institution_citation": "IAG",
+    "institution_text": "???? Which categories ???",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+    ],
+    "activity_widths": [
+        0.5,
+        0.5,
+        0,
+        0.5,
+        0,
+        0,
+        0.5,
+        0,
+        0.5
+    ]
+}
