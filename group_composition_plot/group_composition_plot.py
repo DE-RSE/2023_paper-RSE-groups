@@ -16,6 +16,8 @@ parser.add_argument('--outfile', default='group_composition_plot.pdf',
                     help="specifies output file name, and by extension also the output format")
 parser.add_argument('--legend', action='store_true',
                     help="add a legend")
+parser.add_argument('--hide-titles', action='store_true',
+                    help="hide the pie plot titles")
 args = vars(parser.parse_args())
 
 data = {}
@@ -50,7 +52,8 @@ for inst, idata in data.items():
     inst_name = idata['institution_name']
     if 'group_name' in idata:
         inst_name = idata['group_name'] + "\n" + inst_name
-    axs[iy, ix].set_title(inst_name, fontsize=20)
+    if not args['hide_titles']:
+        axs[iy, ix].set_title(inst_name, fontsize=20)
     iy += ix
     ix = 1 if ix == 0 else 0
 
