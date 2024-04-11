@@ -83,24 +83,20 @@ hence those that are at most sporadically performing RSE actions.
 
 \section{Motivation}
 
+
+\begin{quotation}
+      \textit{Better Software, Better Research}\\(Mission statement of the UK Software Sustainability Institute)
+\end{quotation}
+
 In this chapter, we motivate dedicated RSE groups in German research organizations.
 Several stakeholder perspectives are discussed and supported by (inter)national examples, including that of RSEs within RSE groups, RSEs embedded in research groups, Researchers in need of RSE resources, organizational management and that of funders.
 
 Research Data Management has proved to benefit data quality through training researchers, the reusability through data repositories and to avoid duplication of effort.
-For over a decade, research funders and organizations made a significant effort to establish RDM and teams around it, See for example the Utrecht University Research Data Management Support~\autocite{UtrechtRDM}, University of Stuttgart FoKUS team~\autocite{Boehlke2024} or TUBS.researchdata~\autocite{Grunwald2022} at TU Braunschweig.
+For over a decade, research funders and organizations made a significant effort to establish RDM and teams around it, for example the Utrecht University Research Data Management Support~\autocite{UtrechtRDM}, University of Stuttgart FoKUS team~\autocite{Boehlke2024} or TUBS.researchdata~\autocite{Grunwald2022} at TU Braunschweig.
 We assume that research software will follow a similar trajectory.
 \footnote{For arguments when research software is unlike data, see \autocite{Lamprecht2020}.}
 While we focus on Germany here, it is beneficial to review how other countries approach research software.
 In the UK, for example, many universities started initiating dedicated RSE departments about a decade ago~\autocite{Crouch2013}.
-The successful establishment of such staff is a role model for similar academic organizations worldwide.
-A range of already-existing departments can be seen in this map: https://society-rse.org/community/rse-groups/ 
-
-Policies for research software management and guidelines involving responsible research practices detailing software handling are the precursors for a research software engineering environment.
-See for example position papers by the Helmholtz Open Science Office~\autocite{Helmholtz2019a,Helmholtz2019b},
-the AllianzInitiative~\autocite{Konrad2021},
-the University Utrecht~\autocite{Utrecht2016b},
-and the German Research Council~\autocite{dfg_gsp}.
-%% TODO: Double-check that DLR guidelines are referenced.
 
 \subsection{Tasks}
 
@@ -141,12 +137,6 @@ Similarly, RSEs will encourage scientists to publish software with rich metadata
 With the increasing recognition of software as a research object/result, it is easy to see how projects will require and benefit from support in software needs in the near future.
 
 
-
-
-\subsection{People}
-
-
-
 The Carpentries~\autocite{Carpentries} exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/]. Requests or suggestions for even more training show the need for such services.
 RSE services which benefit all disciplines/departments may represent a unique selling point for organizations competing for the brightest minds.
 See the examples from leading universities above.
@@ -155,42 +145,67 @@ Given that RDM training or coordination is a centralized effort in most organiza
 Such a group may extend or include RDM or collaborate with such service teams.
 See the Vision and Realization sections below for more details.
 
-\subsection{Benefits - Why centralized RSEs would become a success story}
+\subsection{International Comparison and Current Developments}
 
 
-Selected research institutions in the UK have long been role models for RSE deployment into research projects [REF].
-There, grant applications (almost always) include software development in their budget.
+Selected research institutions in the UK have pioneered the deployment of RSEs into research projects~\autocite{Crouch2013}. The successful establishment of such staff is a role model for similar academic organizations worldwide.
+A range of already-existing departments can be seen in this map: https://society-rse.org/community/rse-groups/
+
+In the UK, for example, almost all grant applications include software development in their budget.
 This allocated money can then be utilized to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
 
+We welcome that the latest DFG grant application templates require discussion of both, data \textbf{and} software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
+%We also see the first grant applications [REF welcome trust? or others] requiring Software Management Plans (SMP).
+In addition, dedicated Data Management Plans (DMP) have become mandatory in several funding calls (e.g., ...) and we expect to see a similar development for SMPs in the future. (There have been funding calls in the UK that required a SMP. [no ref?]) 
 
-The latest DFG grant application templates require discussion of data and software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
-We also see the first grant applications [REF welcome trust? or others] requiring Software Management Plans (SMP).
-A few journals started asking for code submission [REF CHORUS? Nature?].
-The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} has widened from data to software~\autocite{Lamprecht2020}.
+Policies for research software management and guidelines involving responsible research practices detailing software handling are the precursors for a research software engineering environment.
+See for example position papers by the Helmholtz Open Science Office~\autocite{Helmholtz2019a,Helmholtz2019b},
+the AllianzInitiative~\autocite{Konrad2021},
+the University Utrecht~\autocite{Utrecht2016b},
+and the German Research Council~\autocite{dfg_gsp}.
+%% TODO: Double-check that DLR guidelines are referenced.
 
+RSE groups offer consulting on creating management documents as well as implementing the policies.
 
+As another parallel to federal RDM initiatives (HeFDI, SaxFDM, FDM-BBB, FDM-Nds. etc...), there are first ideas and grant proposals to establish similar structures for research software. 
 
-\subsection{Better Software, Better Research}
+Another development taking place worldwide is the encouragement of authors to submit both, data and software, for peer review. As an example, the journal "Nature" initiated such a policy\footnote{\url{https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards}} in 2018~\autocite{Nature2018}.
+This is another activity that can be supported by RSE groups. 
 
-High-quality software is likely to be published, cited and reused.
-This will benefit researchers, organizations, funders and society.
-Such software is assumed to have a much longer life cycle and may be more evolvable or extensible due to better code quality and architectural decisions that ease reuse.
+The global FAIR movement originated from RDM has enlarged their focus to research software. The FAIR principles for Research Software (FAIR4RS)~\autocite{ChueHong2022} have been adopted worldwide~\autocite{Barker2024} 
+including the German Ministry of Education and Research (BMBF) and the German Research Foundation (DFG). 
+% adoption of FAIR4RS (inter)nationally
+The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} has also widened from data to software~\autocite{Lamprecht2020}.
 
-\subsection{Measures}
+%\subsection{Better Software, Better Research}
+%Such software is assumed to have a much longer life cycle and may be more evolvable or extensible due to better code quality and architectural decisions that ease reuse.
 
-Publication efforts for better software will increase discoverability which in turn will decrease duplication of effort.
-Scarce resources like professional staff, time and money are not put to waste. Instead, better software (publications) will lead to outstanding reputation.
+\subsection{Towards a Thriving Future}
 
-A professionalization in software development and management can be expected to lead from research project prototypes to software products to the benefit of everyone.
+In conclusion, we observed that RSE groups already do support research software development, publication, and development among many important tasks. 
+
+%Publication efforts for better software will increase discoverability which in turn will decrease duplication of effort.
+%Scarce resources like professional staff, time and money are not put to waste. 
+%Instead, better software (publications) will lead to outstanding reputation.
+
+A professionalization in software development and management can be expected to improve the transition from prototypes to software products.% to the benefit of everyone.
 Less technical debt \footnote{\url{https://www.gartner.com/en/information-technology/glossary/technical-debt}} will be amassed, which is beneficial for reuse.
 
-Necessary software management activities like (git-based) version control are assumed to improve collaboration among researchers.
+High-quality software is likely to be published, cited, and reused.
+Better software is assumed to have a much longer life cycle and may be more evolvable or extensible due to better code quality and architectural decisions that ease reuse.
+This will benefit researchers, organizations, funders, and society.
 
-Software development and management training efforts included in the "studium generale" (or similar education strategies) will further the knowledge of students and early career researchers.
+%Necessary software management activities like (git-based) version control are assumed to improve collaboration among researchers.
 
-Organizations lacking such knowledge need to purchase professional support - in the industry often realized via consulting.
-Academic research hardly has the resources to compete for effective consulting.
-Academic research is assumed to aim for sovereignty and independence of third-party providers.
+
+
+
+% move to vision
+%Software development and management training efforts included in the "studium generale" (or similar education strategies) will further the knowledge of students and early career researchers.
+
+%In contrast, organizations lacking such RSE knowledge need to purchase professional support - in the industry often realized via consulting.
+%Academic research hardly has the resources to compete for effective consulting.
+%Academic research is assumed to aim for sovereignty and independence of third-party providers.
 
 \section{Vision}
 \label{sec:vision}
