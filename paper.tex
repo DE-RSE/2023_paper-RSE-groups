@@ -31,11 +31,13 @@ During the past decade, it gained ever-growing attention and is becoming accepte
 %We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in~\autocite{Gruenpeter2021}.
 
 The number of people developing software in academia is constantly rising~\autocite{Hannay2009, Hettrick2015}.
-Research Software Engineering consists of actions necessary to create, adapt, or maintain Research Software or train others to do so.
+Research Software Engineering consists of actions necessary to create, adapt or maintain Research Software or train others to do so.
 These actions are very diverse and so are the environments they are performed in.
 This position paper focuses on (groups of) research software engineers and researchers who require RSE for their research.
+We advocate the establishment and support of dedicated, central RSE groups in German research organizations, with clearly defined tasks, contact points, and, in particular, sustained funding.
+We provide an overview of the various task these teams have and discuss potential realization strategies, learning from already existing examples of such an RSE unit.
 
-\subsection{Terminology}
+Before we motivate the topic of this position paper further, we first introduce the terminology used throught this work.
 Depending on the national research
 environments and processes that readers are familiar with, the notion of the terms \emph{software} and \emph{research} might differ.
 The term “Research software” is also defined somewhat differently within the community.
@@ -63,6 +65,10 @@ on the development of research software.\\
 We refer by researchers to all others involved in research or in research supporting organizations such as \eg libraries,
 hence those that are at most sporadically performing RSE actions.
 
+Furthermore, we will use the general term \textbf{RSE Hub} for the central RSE team throughout this paper. 
+These RSE Hubs can take the form of, e.g., full RSE departments, smaller RSE groups, Open Source Program Office (OSPOs), virtually across multiple units or combined under one single leader, depending on the evironment of the particular research organization under consideration.
+All of these implementations are considered here, taking into account the large variety of research environments in Germany.
+
 \section{Motivation}
 
 
@@ -74,7 +80,7 @@ In this chapter, we motivate dedicated RSE groups in German research organizatio
 Several stakeholder perspectives are discussed and supported by (inter)national examples, including that of RSEs within RSE groups, RSEs embedded in research groups, Researchers in need of RSE resources, organizational management and that of funders.
 
 We will draw parallels to research data here, because both, data and software, play a fundamental role in all of the research. Over the past decades, Research Data Management (RDM) has evolved into a topic of national interest with NFDI consortia for all disciplines and a research data law. 
-Federal state RDM initiatives\footnote{e.g. HeFDI, SaxFDM, FDM-BBB, FDM-NDS and others} accelerate the topic further providing regional training, networking and other supporting services. 
+Federal state RDM initiatives\footnote{\url{https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/deutschland/}} accelerate the topic further and provide regional training, networking and other supporting services. 
 Many research organisations have established central RDM groups that support research projects in all aspects from grant proposals to hands-on support and maintaining Data Management Plans (DMP). 
 Funding agencies acknowledge the importance of research data and started to make RDM mandatory in research projects. 
 Due to the similar nature of both, data and software, and their importance in today's digital research, it is reasonable to expect a similar trajectory in the development of research software as a topic.
@@ -155,15 +161,12 @@ the University Utrecht~\autocite{Utrecht2016b},
 and the German Research Council~\autocite{dfg_gsp}.
 %% TODO: Double-check that DLR guidelines are referenced.
 
-RSE groups offer consulting on creating management documents as well as implementing the policies.
-
-As another parallel to federal RDM initiatives, there are first ideas and grant proposals to establish similar structures for research software. 
-
 Another development taking place worldwide is the encouragement of authors to submit both, data and software, for peer review. As an example, the journal "Nature" initiated such a policy\footnote{\url{https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards}} in 2018~\autocite{Nature2018}.
-This is another activity that can be supported by RSE groups. 
+RSE groups are able to offer researchers consulting tailored to their specific needs on how to implement and document those policies.
 
-The global FAIR movement originated from RDM has enlarged their focus to research software. The FAIR principles for Research Software (FAIR4RS)~\autocite{ChueHong2022} have been adopted worldwide~\autocite{Barker2024} 
-including the German Ministry of Education and Research (BMBF) and the German Research Foundation (DFG). 
+The global FAIR movement originated from RDM and widened their focus to include research software.
+However, it also has become clear in that process that software is not “just another type of data" and, e.g., the FAIR principles are not sufficient for software.
+The FAIR principles for Research Software (FAIR4RS)~\autocite{ChueHong2022} have been adopted worldwide~\autocite{Barker2024}, including the German Ministry of Education and Research (BMBF) and the German Research Foundation (DFG).
 % adoption of FAIR4RS (inter)nationally
 The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} has also widened from data to software~\autocite{Lamprecht2020}.
 
@@ -343,9 +346,11 @@ With the dedicated help of RSEs, research software can be enabled to be added to
 At the same time, through collaboration with the library, the RSE group can address the first two letters of FAIR: Findability and Accessibility.
 
 Topics of RSE and RDM do have noticeable similarities.
-Thus, while software often does require different solutions than data, collaboration between an RSE department and an RDM department will in practice be really close.
-In contrast to most other organisations mentioned within this section,
-the requirements on their respective members and members of an RSE group are so similar that organisations might consider focus on one merged RSE \& RDM department.
+While software often does require different solutions than data, collaboration between an RSE department and an FDM department will in practice be really close.
+The main reasons for that are that both provide services that are inherently research-oriented and that both deal with the digital side of research.
+Requests by researchers in that direction often touch both aspects, RSE and RDM.
+Thus, often a close collaboration between RSE and FDM groups helps everyone: both RSE and RDM groups by being able to offer a more comprehensive service than when working alone, as well as the researcher, who benefits from receiving this single coordinated service, instead of dealing with two independent entities.
+The question whether RSE and RDM should be located in two separate groups or should be combined in one common group is intentionally left open, as the answer depends on local, pre-existing circumstances.
 
 \subsection{Module 6: RSE Infrastructure Provisioning}
 \label{sec:infrastructure}
