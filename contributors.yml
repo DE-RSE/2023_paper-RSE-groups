@@ -58,12 +58,19 @@ authors:
   - author: "Frank Löffler"
     firstName: Frank
     lastName: Löffler
+    initials: FL
     affiliations:
-      - Friedrich Schiller University Jena, Jena, Germany
-      - Michael Stifel Center Jena, Jena, Germany
+      - Competence Center Digital Research, Michael Stifel Center Jena, Friedrich Schiller University Jena, Jena, Germany
     orcid: 0000-0001-6643-6323
     email: frank.loeffler@uni-jena.de
 
-  - author: "Philipp Schäfer"
+  - author: "Philipp Matthias Schäfer"
+    firstName: Philipp Matthias
+    lastName: Schäfer
+    initials: PMS
+    affiliations:
+      - Competence Center Digital Research, Michael Stifel Center Jena, Friedrich Schiller University Jena, Jena, Germany
+    orcid: 0000-0003-3931-6670
+    email: philipp.matthias.schaefer@uni-jena.de
 
   - author: "Alexander Struck"
