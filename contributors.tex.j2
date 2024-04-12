@@ -1,0 +1,6 @@
+{%- for author in data.authors %}
+\author[{{ author.affiliations|join(", ") }}]{{ "{" }}{{ author.author }}{{ "}" }}
+{%- endfor %}
+{%- for affiliation, index in data.affiliations.items() %}
+\affil[{{ index }}]{{ "{" }}{{ affiliation }}{{ "}" }}
+{%- endfor %}
