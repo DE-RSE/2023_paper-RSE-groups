@@ -1,0 +1,39 @@
+{
+    "group_name": "Project Z03",
+    "institution_name": "University of Würzburg",
+    "institution_citation": "Project Z03",
+    "institution_text": "RSE research makes no sense at spokes.",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        2,
+        1,
+        3,
+        4,
+        2,
+        2,
+        2,
+        0,
+        2
+    ],
+    "activity_widths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "institution_name": "University of Exeter",
+    "institution_citation": "N/A",
+    "institution_text": "The categories represent our institution pretty well. At Exeter RSEs embedded in department tend to be scientists or reseachers who do a lot of coding and have very little to do with the RSE Community-type work including teaching, consultation (outside of their department), RSE infrastructure and outreach. These roles are performed by the central group.",
+    "activity_names": [
+        "RSE Network",
+        "Partner Network",
+        "RSE Teaching",
+        "RSE Consultation",
+        "SW Development",
+        "SW Maintenance",
+        "RSE Infrastructure",
+        "RSE Research",
+        "RSE Outreach"
+    ],
+    "activity_weights": [
+        1,
+        1,
+        3,
+        1,
+        7,
+        1,
+        1,
+        1,
+        1
+    ],
+    "activity_widths": [
+        1,
+        0.7,
+        1,
+        0.8,
+        0.5,
+        0.3,
+        1,
+        0.9,
+        0.8
+    ]
+}

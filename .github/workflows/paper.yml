@@ -11,6 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+
+      - name: Install Python requirements
+        run: pip install -r requirements.txt
+
+      - name: Create contributor snippet
+        run: python contributors.py
       
       - uses: xu-cheng/latex-action@v3
         with:
