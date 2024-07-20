@@ -1,0 +1,86 @@
+authors:
+  - author: "Markus Ankenbrand"
+
+  - author: "Bernd Flemisch"
+
+  - author: "Florian Goth"
+    firstName: Florian
+    lastName: Goth
+    initials: FG
+    affiliations:
+      - Institute for Theoretical Physics and Astrophysics, University of Würzburg, Germany
+    orcid: 0000-0003-2707-4790
+    email: florian.goth@uni-wuerzburg.de
+    acknowledgements: |
+      FG acknowledges funding from the Deutsche Forschungsgemeinschaft
+      (DFG, German Research Foundation) through the SFB 1170 “Tocotronics”,
+      project Z03 - project number \geprislink{258499086}.
+
+  - author: "Jean-Noël Grad"
+    firstName: Jean-Noël
+    lastName: Grad
+    initials: JNG
+    affiliations:
+      - Institute for Computational Physics, University of Stuttgart, Germany
+    orcid: 0000-0002-5821-4912
+    email: jgrad@icp.uni-stuttgart.de
+    acknowledgements: |
+      JNG acknowledges funding from the Deutsche Forschungsgemeinschaft
+      (DFG, German Research Foundation) - project number \geprislink{391126171}
+      (PI: Holm) and from the European Union – this work has received funding
+      from the European High Performance Computing Joint Undertaking (JU) and
+      countries participating in the project under grant agreement
+      No [101093169](https://doi.org/10.3030/101093169).
+
+  - author: "Dominic Kempf"
+    firstName: Dominic
+    lastName: Kempf
+    initials: DK
+    affiliations:
+      - Heidelberg University, Scientific Software Center, Germany
+    orcid: 0000-0002-6140-2332
+    email: dominic.kempf@iwr.uni-heidelberg.de
+    acknowledgements: |
+      DK acknowledges support from the Scientific Software Center which is funded as part
+      of the Excellence Strategy of the German Federal and State Governments.
+
+  - author: "Jan Linxweiler"
+    firstName: Jan
+    lastName: Linxweiler
+    initials: JL
+    affiliations:
+      - Technische Universität Braunschweig, Germany
+    orcid: 0000-0002-2755-5087
+    email: j.linxweiler@tu-braunschweig.de
+
+  - author: "Axel Loewe"
+
+  - author: "Frank Löffler"
+    firstName: Frank
+    lastName: Löffler
+    initials: FL
+    affiliations:
+      - Competence Center Digital Research, Michael Stifel Center Jena, Friedrich Schiller University Jena, Jena, Germany
+    orcid: 0000-0001-6643-6323
+    email: frank.loeffler@uni-jena.de
+
+  - author: "Philipp Matthias Schäfer"
+    firstName: Philipp Matthias
+    lastName: Schäfer
+    initials: PMS
+    affiliations:
+      - Competence Center Digital Research, Michael Stifel Center Jena, Friedrich Schiller University Jena, Jena, Germany
+    orcid: 0000-0003-3931-6670
+    email: philipp.matthias.schaefer@uni-jena.de
+
+  - author: "Alexander Struck"
+    firstName: Alexander
+    lastName: Struck
+    initials: AS
+    affiliations:
+      - Cluster of Excellence Matters of Activity. Image Space Material at Humboldt-Universitaet zu Berlin
+    orcid: 0000-0002-1173-9228
+    email: alexander.struck@hu-berlin.de
+    acknowledgements: |
+      AS acknowledges the support of the Cluster of Excellence »Matters of Activity. Image Space Material« funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2025 – 390648296.
+
