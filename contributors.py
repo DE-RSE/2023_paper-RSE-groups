@@ -9,9 +9,10 @@ with open("contributors.yml") as f:
 
 # Ensure that we have unique indices for the affiliations
 affiliations = list()
-for authors in data["authors"]:
-    affiliations.extend(authors.get("affiliations", []))
-data["affiliations"] = {aff: i + 1 for i, aff in enumerate(set(affiliations))}
+for author in data["authors"]:
+    affiliations.extend(author.get("affiliations", []))
+data["affiliations"] = {aff: i + 1 for i, aff in enumerate(list(dict.fromkeys(affiliations)))}
+print(data['affiliations'])
 for author in data["authors"]:
     author["affiliations"] = [data["affiliations"][aff] for aff in author.get("affiliations", [])]
 
