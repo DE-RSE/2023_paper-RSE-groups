@@ -4,7 +4,7 @@
 % For changes to the author information, change contributors.yml.
 %
 {%- for author in data.authors %}
-\author[{{ author.affiliations|join(", ") }}]{{ "{" }}{{ author.author }}{{ "}" }}
+\author[{{ author.affiliations|join(", ") }}]{{ "{" }}{{ author.author }}{% if author.orcid is defined %}\texorpdfstring{\thinspace\orcidlink{ {{-author.orcid-}} }}{}{% endif %}{{ "}" }}
 {%- endfor %}
 {%- for affiliation, index in data.affiliations.items() %}
 \affil[{{ index }}]{{ "{" }}{{ affiliation }}{{ "}" }}
