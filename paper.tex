@@ -1,13 +1,32 @@
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 \documentclass[a4paper]{article}
 \usepackage{authblk}
-\usepackage[]{biblatex}
+\usepackage[alldates=iso,seconds=true]{biblatex}
 \usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+
+
+\usepackage{libertine}
+\usepackage{orcidlink}
+\renewcommand\Affilfont{\small}
+
 \usepackage{hyperref}
+\urlstyle{same}
 \usepackage{xspace}
 \usepackage{caption,tikzpagenodes,everypage,ifthen}
 
 \newcommand*{\eg}{e.g.\@\xspace}
 \newcommand*{\ie}{i.e.\@\xspace}
+
+\hypersetup{
+  %pdftitle={},
+  %pdfkeywords={},
+  colorlinks=true,
+  linkcolor={darkgray},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+}
 
 \addbibresource{bibliography.bib}
 \addbibresource{positionpaper.bib}
@@ -15,7 +34,7 @@
 
 \include{contributors.tex}
 
-\date{\today}
+\date{2024-07-25}
 
 \include{marginplots.tex}
 
@@ -428,10 +447,10 @@ Furthermore, the RSE unit should advocate the use of RSE techniques and best-pra
 \section{Existing Implementations}
 
 \begin{figure}
-\label{fig:survey}
 \centering
 \includegraphics[width=\textwidth]{./group_composition_plot/pdf/group_composition_plot_the_fantastic_four.pdf}
 \caption{National and international examples of RSE units and their service portfolio: Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}
+\label{fig:survey}
 \end{figure}
 
 A number of successful installations of RSE units already exist in Germany and many more exist in other countries, especially the UK and the US.
