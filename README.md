@@ -45,5 +45,9 @@ While contributors keep the copyright to their work, they agree to publish the t
 
 ### Local builds
 
-The paper should build using `latexmk -pdflatex paper.tex`.
-
+The paper should build using `latexmk -pdflatex paper.tex` after creating the necessary images using
+```
+cd group_composition_plot
+./create_paper_plots.sh
+cd -
+```
