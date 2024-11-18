@@ -44,17 +44,17 @@ activity_to_color = {activity: colors[i] for i, activity in enumerate(activity_n
 # Creating the joint plot
 scaling = .9
 iymax = (len(data)+1)//2
-fig = plt.figure(figsize=(scaling*16, scaling*8*iymax))
+fig = plt.figure(figsize=(scaling*16, scaling*9/2*iymax))
 
 i = 1
 for inst, idata in data.items():
     ax = fig.add_subplot(iymax, min(2, len(data)), i)
-    ax.pie(idata['activity_weights'], colors=colors, startangle=140)
+    ax.pie(idata['activity_weights'], colors=colors, startangle=140, shadow=True, radius=.8)
     inst_name = idata['institution_name']
     if 'group_name' in idata:
         inst_name = idata['group_name'] + "\n" + inst_name
     if not args['hide_titles']:
-        ax.set_title(inst_name, fontsize=20)
+        ax.set_title(inst_name, fontsize=20, y=-0.05)
     i += 1
 
 # Shared legend
