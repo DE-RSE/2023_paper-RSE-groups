@@ -42,3 +42,8 @@ All authors, regardless of the size of the contributions are mentioned in the au
 Tier 1 authors are mentioned before Tier 2 authors using the "equal contribution" marker.
 
 While contributors keep the copyright to their work, they agree to publish the text under **CC-BY 4.0**
+
+### Local builds
+
+The paper should build using `latexmk -pdflatex paper.tex`.
+
