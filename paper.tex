@@ -83,51 +83,25 @@ These RSE Hubs can take the form of, e.g., full RSE units, smaller RSE groups, O
 All of these implementations are considered, taking into account the large variety of research environments in Germany.
 
 \section{Motivation for central RSE units}
-
 \begin{quotation}
       \textit{Better Software, Better Research}\\(Mission statement of the UK Software Sustainability Institute)
 \end{quotation}
 
-In this chapter, we motivate dedicated RSE groups in German research organisations.
-Several stakeholder perspectives are discussed and supported by (inter)national examples, including that of RSEs within RSE groups, RSEs embedded in research groups, Researchers in need of RSE resources, organisational management and that of funders.
+The quote above is the shortes possible summary of this chapter: most if not all motivation to provide RSE services stems from improving research.
+Tasks RSEs perform include training, e.g.\ to improve the often low-quality code developed by beginners~\autocite{Ostlund2023}, consultation services, e.g.\ regarding frameworks or algorithm selection, licensing.
+For an overview of typical tasks of RSEs and the competencies required, see~\autocite{competencies-paper}, especially section\ 4.4:\ “RSE tasks and responsibilities”.
 
-We will draw parallels to research data here, because both, data and software, play a fundamental role in all of the research.
-Over the past decades, Research Data Management (RDM) has evolved into a topic of national interest with NFDI consortia for all disciplines and a research data law.
-Federal state RDM initiatives\footnote{\url{https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/deutschland/}} accelerate the topic further and provide regional training, networking and other supporting services.
-Many research organisations have established central RDM groups that support research projects in all aspects from grant proposals to hands-on support and maintaining Data Management Plans (DMP).
-Funding agencies acknowledge the importance of research data and started to make RDM mandatory in research projects.
-Due to the similar nature of both, data and software, and their importance in today's digital research, it is reasonable to expect a similar trajectory in the development of research software as a topic.
-%such output has become more important over the last two decades. Since research software can be considered valuable research output as well, we expect a similar trajectory for software.
-%gh training researchers, the reusability through data repositories and to avoid duplication of effort.
-%For over a decade, research funders and organisations made a significant effort to establish RDM and teams around it, for example the Utrecht University Research Data Management Support~\autocite{UtrechtRDM}, University of Stuttgart FoKUS team~\autocite{Boehlke2024} or TUBS.researchdata~\autocite{Grunwald2022} at TU Braunschweig.
-%We assume that research software will follow a similar trajectory.
-%\footnote{For arguments when research software is unlike data, see \autocite{Lamprecht2020}.}
+\subsection{Pooling: a necessary ingredient}
+As undoubtedly beneficial RSEs are for research, the main focus of the present paper lies on central RSE teams.
+Their main advantages all stem from pooling of ressources.
+There are at least three pooling dimensions for research instititions to benefit from: funding, diverse knowledge, and support contacts.
+The first, pooling of \textbf{funding}, allows organisations to invest in human resources through long-term expert RSEs, where they otherwise could only support short-term partial-position RSEs scattered across the organisation.
+Without long-term job security RSE experts are likely to leave the organisation and without RSEs, the research (service) suffers.
 
-
-While we focus on Germany here, it is beneficial to review how other countries approach research software.
-In the UK, for example, many universities started initiating dedicated RSE units about a decade ago~\autocite{Crouch2013}.
-
-\subsection{Tasks}
-
-One of the services a centralized RSE unit likely will provide is training to improve the often low-quality code developed by beginners~\autocite{Ostlund2023}.
-Examples of organisational training efforts are
- the Helmholtz HIFIS group\footnote{\url{https://events.hifis.net/category/4/}},
- the Scientific Software Center in Heidelberg\footnote{\url{https://www.ssc.uni-heidelberg.de/en}},
- the Competence Center Digital Research (zedif) in Jena\footnote{\url{https://www.zedif.uni-jena.de/en/}},
- and the SURESOFT workshops series in Braunschweig\footnote{\url{https://suresoft.dev/}}~\autocite{Blech2022}.
-Another national pioneer is the Göttingen State and University Library which set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more.
-They reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels~\autocite{schimavoigt2023}.
-The demand for such services appears to be ever-increasing.
-Other tasks include code review (REF? Charite), consultation services regarding frameworks or algorithm selection, licensing, and more.
-RSEs have always embraced and supported collaborative infrastructure and tools, e.g.\ GitLab, Containerisation, etc.\ and thus enabled fellow researchers utilising such infrastructure.
-In some national and international organisations, established RSE groups already develop solutions for (and guided by) research projects.
-This approach assures high quality research software and allows domain scientists to focus on their research challenges.
-This is likely to save time and accelerate publication of results.
-
-
-
-\subsection{Structure}
-
+A second and equally important pooling is that of \textbf{diverse knowledge}.
+Groups of RSEs with tasks spanning the entire organisation necessarily have to offer diverse knowledge.
+Obtaining such diversity can also be a challange, but once it has been established it quickly becomes an asset to the organisation.
+It might mean that a central RSE unit has a portfolio that is too broad for most individual research groups, but it also means that involving RSEs from these central groups automatically brings in new ideas and becomes a catalyst for interdisciplinary collaboration within the organisation.
 A central RSE team on long-term contracts will act as a knowledge hub due to their experience in and support of several disciplines as well as established contacts within the organisation.
 This is comparable to commercial/industry R\&D departments, where key software architects and developers establish a knowledge hub and consult with as many projects as necessary [REF].
 Subject matter experts like software architects, database administrators and other tooling specialists are organized centrally and share their knowledge by consulting with decentralized projects.
@@ -135,43 +109,82 @@ It makes economically sense to organise such personel as cost-effective as possi
 Most academic research organisations have established centralized tooling, e.g.\ storage or High-Performance-Computing\ (HPC), but only a few consider software development and consultancy a relevant service yet.
 RSE units act as knowledge hubs in a network of academic developers within an organisation~\autocite{Elsholz2006}.
 This enables the embedded experts to maintain in-depth knowledge and to assess current trends and developments, both in research as well as technology.
-
 RSEs in centralised groups are interdisciplinary specialists due to their experience working on diverse topics, as well as overlaps in methodology across disciplines and research software in general.
 They are assumed to be able to suggest the most appropriate tools/frameworks and design or architecture patterns for certain research challenges.
 Their diversity in skills (languages, frameworks, front/back-end, UX, management) is welcomed, especially for short-term needs in projects.
-This will save money often spent in a duplication of effort.
-Furthermore, given appropriate long-term funding, a central RSE hub will be able to keep essential software alive, even if it was developed in short-term projects.
-%Such code often requires long-term maintenance, support, new features or bug fixes.
-%The decision of curation is commonly based on measures that involve quality, academic or societal impact among many others.
+This will save money otherwise spent in duplication of efforts.
 
+The third kind of pooling is visible most of all of all from a users perspective: a \textbf{single, central contact point} for digital challences is invaluable to researchers, who's first problem often is to not know whom to contact, partially because while they know what they want, they might not know what they need.
+A central RSE team can, due to its proximity to research, much better listen to the wishes expressed by researchers and then help formulate needs and act as a channel to either reformulate and redirect the request or also fulfill it in-house.
+The results are increased research speed and quality and with that a higher reputation of the entire research organisation.
 
-Coming back to RDM again for comparison: The most recent funding guidelines suggest “data stewards” in data-driven research.
+%In this chapter, we motivate dedicated RSE groups in German research organisations.
+%Several stakeholder perspectives are discussed and supported by (inter)national examples, including that of RSEs within RSE groups, RSEs embedded in research groups, Researchers in need of RSE resources, organisational management and that of funders.
+\subsection{Pooling: an already tested idea}
+The idea to pool resources in specific areas across organisations is not new.
+In some respects, similar arguments can and have been made for research data support.
+
+\subsubsection{Research data management}
+Both data and software play a fundamental role in all of research.
+Over the past decades, Research Data Management (RDM) has evolved into a topic of national interest with NFDI consortia for all disciplines and a research data law.
+Federal state RDM initiatives\footnote{\url{https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/deutschland/}} accelerate the topic further and provide regional training, networking and other supporting services.
+Many research organisations have established central RDM groups that support research projects in all aspects from grant proposals to hands-on support and maintaining Data Management Plans (DMPs).
+Funding agencies acknowledge the importance of research data and started to make RDM mandatory in research projects.
+
+The most recent funding guidelines suggest “data stewards” in data-driven research.
 Such experts are to be employed in advanced research projects like “Collaborative Research Centers” (CRC)\footnote{Sonderforschungsbereich (SFB)} or “Clusters of Excellence”\footnote{Cluster der Exzellenzinitiative}.
 These data experts support research projects in several aspects including DMPlans, grant applications, data availability for journal publications, compliance, FAIRification and more.
 Similarly, RSEs will encourage scientists to publish software with rich metadata and will support journal publications with code submission requirements.
 With the increasing recognition of software as a research object/result, it is easy to see how projects will require and benefit from support in software needs in the near future.
 
+Due to the similar nature of both, data and software, and their importance in today's digital research, it is reasonable to expect a similar trajectory in the development of research software as a topic.
+%such output has become more important over the last two decades. Since research software can be considered valuable research output as well, we expect a similar trajectory for software.
+%gh training researchers, the reusability through data repositories and to avoid duplication of effort.
+%For over a decade, research funders and organisations made a significant effort to establish RDM and teams around it, for example the Utrecht University Research Data Management Support~\autocite{UtrechtRDM}, University of Stuttgart FoKUS team~\autocite{Boehlke2024} or TUBS.researchdata~\autocite{Grunwald2022} at TU Braunschweig.
+%We assume that research software will follow a similar trajectory.
+%\footnote{For arguments when research software is unlike data, see \autocite{Lamprecht2020}.}
+
+\subsubsection{Existing RSE efforts}
+The concept of central RSE teams is also not untested.
+Examples of organisational RSE teams are for instance
+ the Helmholtz HIFIS group\footnote{\url{https://events.hifis.net/category/4/}},
+ the Scientific Software Center in Heidelberg\footnote{\url{https://www.ssc.uni-heidelberg.de/en}},
+ the Competence Center Digital Research (zedif) in Jena\footnote{\url{https://www.zedif.uni-jena.de/en/}},
+ and the SURESOFT workshops series in Braunschweig\footnote{\url{https://suresoft.dev/}}~\autocite{Blech2022}.
+Another national pioneer is the Göttingen State and University Library.
+%which set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more.
+The latter reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels~\autocite{schimavoigt2023}.
+%The demand for such services appears to be ever-increasing.
+%Other tasks include code review (REF? Charite), consultation services regarding frameworks or algorithm selection, licensing, and more.
+%RSEs have always embraced and supported collaborative infrastructure and tools, e.g.\ GitLab, Containerisation, etc.\ and thus enabled fellow researchers utilising such infrastructure.
+In some national and international organisations, established RSE groups already develop solutions for (and guided by) research projects.
+%This approach assures high quality research software and allows domain scientists to focus on their research challenges.
+%This is likely to save time and accelerate publication of results.
+
+While we focus on Germany here, it is beneficial to review how other countries approach research software.
+
+%\subsection{Structure}
+%Furthermore, given appropriate long-term funding, a central RSE hub will be able to keep essential software alive, even if it was developed in short-term projects.
+%Such code often requires long-term maintenance, support, new features or bug fixes.
+%The decision of curation is commonly based on measures that involve quality, academic or societal impact among many others.
 
 The Carpentries~\autocite{Carpentries} exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/].
 Requests or suggestions for even more training show the need for such services.
-RSE services which benefit all disciplines/departments may represent a unique selling point for organisations competing for the brightest minds.
-See the examples from leading universities above.
+RSE services which benefit all disciplines/departments may represent a unique selling point for organisations competing for the brightest minds, see the examples from leading German universities above.
 
-Given that RDM training or coordination is a centralized effort in most organisations, the time has come to implement a similar structure for research software services.
-Such a group may extend or include RDM or collaborate with such service teams.
-See the Vision and Realization sections below for more details.
+%Given that RDM training or coordination is a centralized effort in most organisations, the time has come to implement a similar structure for research software services.
+%Such a group may extend or include RDM or collaborate with such service teams.
+%See the Vision and Realization sections below for more details.
 
-\subsection{International Comparison and Current Developments}
-
-
-Selected research institutions in the UK have pioneered the deployment of RSEs into research projects~\autocite{Crouch2013}.
+In the UK, for example, many universities started initiating dedicated RSE units about a decade ago~\autocite{Crouch2013}.
 The successful establishment of such staff is a role model for similar academic organisations worldwide.
-A range of already-existing RSE units can be seen in this map: https://society-rse.org/community/rse-groups/
-
+A range of already-existing RSE units can be seen in this map: \url{https://society-rse.org/community/rse-groups/}.
 In the UK, for example, almost all grant applications include software development in their budget.
 This allocated money can then be utilized to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
 
-We welcome that the latest DFG grant application templates require discussion of both, data \textbf{and} software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
+\subsection{External expectations}
+
+The latest DFG grant application templates require discussion of both, data \textbf{and} software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
 %We also see the first grant applications [REF wellcome trust (seems to require an OutputMP that includes software, but only how/when it will be published, not how it will be created/maintained)? or others] requiring Software Management Plans (SMP).
 In addition, dedicated Data Management Plans (DMP) have become mandatory in several funding calls (e.g., ...) and we expect to see a similar development for SMPs in the future. (There have been funding calls in the UK that required a SMP. [no ref?])
 % See https://www.forschungsdaten.org/index.php/Data_Management_Pl%C3%A4ne#Anforderungen_von_F%C3%B6rderorganisationen
@@ -197,20 +210,20 @@ The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} 
 %\subsection{Better Software, Better Research}
 %Such software is assumed to have a much longer life cycle and may be more evolvable or extensible due to better code quality and architectural decisions that ease reuse.
 
-\subsection{Towards a Thriving Future}
-
-In conclusion, we observed that RSE groups already do support research software development, publication, and development among many important tasks.
+%\subsection{Towards a Thriving Future}
+%
+%In conclusion, we observed that RSE groups already do support research software development, publication, and development among many important tasks.
 
 %Publication efforts for better software will increase discoverability which in turn will decrease duplication of effort.
 %Scarce resources like professional staff, time and money are not put to waste.
 %Instead, better software (publications) will lead to outstanding reputation.
 
-A professionalization in software development and management can be expected to improve the transition from prototypes to software products.% to the benefit of everyone.
-Less technical debt\footnote{\url{https://www.gartner.com/en/information-technology/glossary/technical-debt}} will be amassed, which is beneficial for reuse.
+%A professionalization in software development and management can be expected to improve the transition from prototypes to software products.% to the benefit of everyone.
+%Less technical debt\footnote{\url{https://www.gartner.com/en/information-technology/glossary/technical-debt}} will be amassed, which is beneficial for reuse.
 
-High-quality software is likely to be published, cited, and reused.
-Better software is assumed to have a much longer life cycle and may be more evolvable or extensible due to better code quality and architectural decisions that ease reuse.
-This will benefit researchers, organisations, funders, and society.
+%High-quality software is likely to be published, cited, and reused.
+%Better software is assumed to have a much longer life cycle and may be more evolvable or extensible due to better code quality and architectural decisions that ease reuse.
+%This will benefit researchers, organisations, funders, and society.
 
 %Necessary software management activities like (git-based) version control are assumed to improve collaboration among researchers.
 
