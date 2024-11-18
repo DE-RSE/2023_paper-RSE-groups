@@ -301,5 +301,6 @@ TSWLatexianTemp*
 #*Notes.bib
 
 paper.pdf
+contributors.tex
 
 *.tar.gz
