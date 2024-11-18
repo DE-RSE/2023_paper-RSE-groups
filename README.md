@@ -4,7 +4,7 @@ This repository hosts the draft for a community paper by the de-RSE e.V. communi
 
 ## Contents
 
-* The paper draft itself is located in `paper.tex`.
+* The paper draft itself is located in `paper.tex`. [Automated builds](https://github.com/DE-RSE/2023_paper-RSE-groups/actions) are used to create a [viewable/downloadable version](https://de-rse.org/2023_paper-RSE-groups/paper.pdf) from the latest sources.
 * The `group_composition_plot` directory contains everything related to the conducted RSE department survey
 
 ## Contributions
@@ -20,7 +20,7 @@ You can contribute in various ways:
 
 Before contributing, please read the below rules
 
-### Process
+### Writing process
 
 * Contributions should be submitted as **pull requests** to this repository on GitHub.
 * Pull requests that work on the content of the paper require at least **one review** to be merged.
