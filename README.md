@@ -45,9 +45,19 @@ While contributors keep the copyright to their work, they agree to publish the t
 
 ### Local builds
 
-The paper should build using `latexmk -pdflatex paper.tex` after creating the necessary images using
+Creating the necessary images:
 ```
 cd group_composition_plot
 ./create_paper_plots.sh
 cd -
+```
+
+Build the contributors from the yaml metadata:
+```
+python3 contributors.py
+```
+
+Finally, build the paper:
+```
+latexmk -pdflatex paper.tex
 ```
