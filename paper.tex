@@ -74,8 +74,7 @@ They are highly skilled team members who may also choose to conduct their own re
 However, we also recognise RSEs who have chosen to focus on a technical role as an alternative to a traditional research role.\\
 \textbf{Researchers:}\\
 RSEs might also be researchers.
-However, for the lack of a proper term and to avoid many “non-RSE researchers” within the text, we will refer by “researchers” to all non-RSEs involved in research or in research supporting organisations such as in \eg{} libraries, hence those that are at most sporadically performing RSE actions.
-
+However, for the lack of a proper term and to avoid many “non-RSE researchers” within the text, we will refer by “researchers” to all non-RSEs involved in research or in research supporting organisations such as in \eg{} libraries, hence those that are at most sporadically performing RSE actions.\\
 \textbf{RSE Hub}:\\
 This is our general term for the central RSE team throughout this paper.
 These RSE Hubs can take the form of, e.g., full RSE units, smaller RSE groups, Open Source Program Office (OSPOs), virtually across multiple units or combined under single leadership,
@@ -89,7 +88,7 @@ All of these implementations are considered, taking into account the large varie
 
 The quote above is the shortes possible summary of this chapter: most if not all motivation to provide RSE services stems from improving research.
 Tasks RSEs perform include training, e.g.\ to improve the often low-quality code developed by beginners~\autocite{Ostlund2023}, consultation services, e.g.\ regarding frameworks or algorithm selection, licensing.
-For an overview of typical tasks of RSEs and the competencies required, see~\autocite{competencies-paper}, especially section\ 4.4:\ “RSE tasks and responsibilities”.
+For an overview of typical tasks of RSEs and the competencies required, see~\autocite{goth_foundational_competencies_2024}, especially section\ 4.4:\ “RSE tasks and responsibilities”.
 
 \subsection{Pooling: a necessary ingredient}
 As undoubtedly beneficial RSEs are for research, the main focus of the present paper lies on central RSE teams.
@@ -98,6 +97,7 @@ There are at least three pooling dimensions for research instititions to benefit
 The first, pooling of \textbf{funding}, allows organisations to invest in human resources through long-term expert RSEs.
 A central RSE team on long-term contracts will act as a knowledge hub due to their experience in and support of several disciplines as well as established contacts within the organisation.
 This is comparable to commercial/industry R\&D departments, where key software architects and developers establish a knowledge hub and consult with as many projects as necessary [REF].
+% side-note: it's also similar to “inhouse consulting” in management\autocite{moscho_inhouse_consulting_2010}. They even formed a national network to raise awareness about the internal consultant role (https://inhouse-consulting.de/).
 Subject matter experts like software architects, database administrators and other tooling specialists are organized centrally and share their knowledge by consulting with decentralized projects.
 It makes economically sense to organise such personel as cost-effective as possible since not every project can afford or needs such RSE FTEs.
 Most academic research organisations have established centralized tooling, e.g.\ storage or High-Performance-Computing\ (HPC), but only a few consider software development and consultancy a relevant service yet.
@@ -112,7 +112,7 @@ Their diversity in skills (languages, frameworks, front/back-end, UX, management
 This will save money otherwise spent in duplication of efforts.
 It might mean that a central RSE unit has a portfolio that is too broad for most individual research groups, but it also means that involving RSEs from these central groups automatically brings in new ideas and becomes a catalyst for interdisciplinary collaboration within the organisation.
 
-The third kind of pooling is visible most of all of all from a users perspective: a \textbf{single, central contact point} for digital challences is invaluable to researchers, who's first problem often is to not know whom to contact, partially because while they know what they want, they might not know what they need.
+The third kind of pooling is visible most of all of all from a users perspective: a \textbf{single, central contact point} for digital challenges is invaluable to researchers, whose first problem often is to not know whom to contact, partially because while they know what they want, they might not know what they need.
 A central RSE team can, due to its proximity to research, much better listen to the wishes expressed by researchers and then help formulate needs and act as a channel to either reformulate and redirect the request or also fulfill it in-house.
 The results are increased research speed and quality and with that a higher reputation of the entire research organisation.
 
@@ -145,8 +145,8 @@ Due to the similar nature of both, data and software, and their importance in to
 \subsubsection{Existing RSE efforts}
 The concept of central RSE teams is also not untested.
 Examples of organisational RSE teams are for instance
- the Helmholtz HIFIS group\footnote{\url{https://events.hifis.net/category/4/}},
- the Scientific Software Center in Heidelberg\footnote{\url{https://www.ssc.uni-heidelberg.de/en}},
+ the Helmholtz HIFIS group\footnote{\url{https://events.hifis.net/category/4/}}\autocite{haupt_hifis_consulting_2021},
+ the Scientific Software Center in Heidelberg\footnote{\url{https://www.ssc.uni-heidelberg.de/en}}\autocite{ulusoy_heidelberg_ssc_2024},
  the Competence Center Digital Research (zedif) in Jena\footnote{\url{https://www.zedif.uni-jena.de/en/}},
  and the SURESOFT workshops series in Braunschweig\footnote{\url{https://suresoft.dev/}}~\autocite{Blech2022}.
 Another national pioneer is the Göttingen State and University Library.
@@ -166,8 +166,8 @@ While we focus on Germany here, it is beneficial to review how other countries a
 %Such code often requires long-term maintenance, support, new features or bug fixes.
 %The decision of curation is commonly based on measures that involve quality, academic or societal impact among many others.
 
-The Carpentries~\autocite{Carpentries} exemplify a similar success story [REF SuccessStory Carpentries https://carpentries.org/testimonials/].
-Requests or suggestions for even more training show the need for such services.
+The Carpentries\footnote{\url{https://carpentries.org}}\autocite{Wilson2006} exemplify a similar success story\footnote{Carpentries25 Testimonial Series: \url{https://carpentries.org/blog/tag/carpentries25/}}.
+Requests or suggestions for even more training show the need for such services\footnote{Carpentries Incubator and Carpentries Lab: \url{https://carpentries.org/lesson-development/community-lessons/}}.
 RSE services which benefit all disciplines/departments may represent a unique selling point for organisations competing for the brightest minds, see the examples from leading German universities above.
 
 %Given that RDM training or coordination is a centralized effort in most organisations, the time has come to implement a similar structure for research software services.
@@ -179,6 +179,8 @@ The successful establishment of such staff is a role model for similar academic 
 A range of already-existing RSE units can be seen in this map: \url{https://society-rse.org/community/rse-groups/}.
 In the UK, for example, almost all grant applications include software development in their budget.
 This allocated money can then be utilized to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
+
+National Competence Centres\footnote{EuroCC: \url{https://www.eurocc-access.eu/}} form a network of HPC-RSE consulting groups to share expertise with academic and industry actors\autocite{eurocc_success_stories_2023,eurocc_success_stories_2024}.
 
 \subsection{External expectations}
 
@@ -521,9 +523,10 @@ Nevertheless, convincing the institution to take the corresponding risk of faili
       This model has been successfully implemented at several UK universities.
       In order to scale, it needs to be supported by an institutional policy.
       Large scale collaborative projects can often apply for dedicated technical support positions that align well with the idea of RSE units.
+      For example, the German Research Foundation allows requesting funding for “central service units or external service providers” in grant proposals aimed at developing research software\autocite{katerbow_dfg_rse_2024}.
 \item Funding organisations are increasingly recognizing the need for sustainable research software
       development and are setting up correspondingly designated funding programmes.
-      The DFG has already organized three calls for proposals in 2016\footnote{\href{https://www.dfg.de/resource/blob/172674/1bcb181a6451fdac9d94421776b52798/161026-dfg-ausschreibung-forschungssoftware-de-data.pdf}{Nachhaltigkeit von Forschungssoftware}}, 2019\footnote{\href{https://www.dfg.de/de/aktuelles/neuigkeiten-themen/info-wissenschaft/2019/info-wissenschaft-19-44}{Qualitätssicherung von Forschungssoftware durch ihre nachhaltige Nutzbarmachung}}, and 2022\footnote{\href{https://www.dfg.de/en/news/news-topics/announcements-proposals/2022/info-wissenschaft-22-85}{Research Software – Quality Assured and Re-usable}}.
+      The DFG has already organized three calls for proposals in 2016\footnote{\href{https://www.dfg.de/resource/blob/172674/1bcb181a6451fdac9d94421776b52798/161026-dfg-ausschreibung-forschungssoftware-de-data.pdf}{Nachhaltigkeit von Forschungssoftware}}, 2019\footnote{\href{https://www.dfg.de/de/aktuelles/neuigkeiten-themen/info-wissenschaft/2019/info-wissenschaft-19-44}{Qualitätssicherung von Forschungssoftware durch ihre nachhaltige Nutzbarmachung}}, and 2022\footnote{\href{https://www.dfg.de/en/news/news-topics/announcements-proposals/2022/info-wissenschaft-22-85}{Research Software – Quality Assured and Re-usable}}\autocite{katerbow_dfg_rse_funding_2018}.
       It is to be expected that even more programs will be launched in the future.
       An already established RSE concept at an institution increases the chances of being successful in such calls.
 \end{enumerate}
@@ -564,8 +567,8 @@ Such network-building has been successfully initiated and implemented at several
 Depending on local RSE efforts, teaching materials and associated training formats are likely to already exist,
 distributed over individual institutional groups.
 With the established network, the materials can be pooled and joint training can be offered to a wider institutional audience.
-This step can be facilitated and formalized by offering introductory courses with a recognized curriculum as provided by the carpentries\footnote{Examples \url{https://software-carpentry.org/lessons/}}
-or coderefinery\footnote{Examples \url{https://coderefinery.org/lessons/}}.
+This step can be facilitated and formalized by offering introductory courses with a recognized curriculum as provided by The Carpentries\footnote{Examples \url{https://software-carpentry.org/lessons/}}
+or CodeRefinery\footnote{Examples \url{https://coderefinery.org/lessons/}}.
 
 \subsubsection{Conceptualization}
 Decision makers at an institution usually require a concept upon which they will decide about the installation of an RSE unit.
@@ -649,6 +652,8 @@ This should be complemented by adding a minor in application-domain study progra
 There are already some master's programs available, (\eg{} in Berlin, Munich and Stuttgart) that develop this specialization on top of a domain bachelor.
 And of course there are data science curricula in the process of being created.
 A curated and continuously updated list of these programs is available at~\cite{learnandteachlearn}.
+
+% on the topic of acquiring and retaining staff, there's \autocite{VanTuyl2023} from US-RSE discussing career pathways, and \autocite{wright_ambivalent_internal_consultant_2009} about internal consultants and their struggle coming to terms with their work identity (in the management field)
 
 %\begin{thebibliography}{9}
 %\end{thebibliography}
