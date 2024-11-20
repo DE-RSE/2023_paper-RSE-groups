@@ -1,13 +1,19 @@
 authors:
-  - author: "Markus Ankenbrand"
+  - author: "Markus J. Ankenbrand"
     firtname: Markus J.
     lastName: Ankenbrandt
     initials: MJA
-    affilications: Center for Computational and Theoretical Biology, University of Würzburg, Germany
-      -
+    affiliations:
+      - Center for Computational and Theoretical Biology, University of Würzburg, Germany
     orcid: 0000-0002-6620-807X
 
   - author: "Bernd Flemisch"
+    firstName: Bernd
+    lastName: Flemisch
+    initials: BF
+    affiliations:
+      - Institute for Modelling Hydraulic and Environmental Systems, University of Stuttgart, Germany
+    orcid: 0000-0001-8188-620X
 
   - author: "Florian Goth"
     firstName: Florian
@@ -20,7 +26,7 @@ authors:
     acknowledgements: |
       FG acknowledges funding from the Deutsche Forschungsgemeinschaft
       (DFG, German Research Foundation) through the SFB 1170 “Tocotronics”,
-      project Z03 - project number \geprislink{258499086}.
+      project Z03 - project number \href{https://gepris.dfg.de/gepris/projekt/258499086?language=en}{258499086}.
 
   - author: "Jean-Noël Grad"
     firstName: Jean-Noël
@@ -32,11 +38,14 @@ authors:
     email: jgrad@icp.uni-stuttgart.de
     acknowledgements: |
       JNG acknowledges funding from the Deutsche Forschungsgemeinschaft
-      (DFG, German Research Foundation) - project number \geprislink{391126171}
-      (PI: Holm) and from the European Union – this work has received funding
+      (DFG, German Research Foundation) - project number \href{https://gepris.dfg.de/gepris/projekt/391126171?language=en}{391126171}
+      (PI: Holm), from the German Federal Ministry of Education and Research
+      (Bundesministeriums für Bildung und Forschung, BMBF) under the funding
+      code \href{https://www.kooperation-international.de/foerderung/projekte/detail/info/verbundprojekt-multixscale-hpc-exzellenzzentrum-fuer-multi-skalen-simulationen-auf-hoechstleitungsrechnern-1}{16HPC095},
+      and from the European Union – this work has received funding
       from the European High Performance Computing Joint Undertaking (JU) and
       countries participating in the project under grant agreement
-      No [101093169](https://doi.org/10.3030/101093169).
+      No \href{https://doi.org/10.3030/101093169}{101093169}.
 
   - author: "Dominic Kempf"
     firstName: Dominic

@@ -37,6 +37,7 @@ jobs:
           name: PDF files
           path: ./github_artifacts
   deploy:
+    if: ${{ github.ref == 'refs/heads/main' && github.repository == 'DE-RSE/2023_paper-RSE-groups' }}
     needs: [build]
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     permissions:
