@@ -65,13 +65,13 @@ Depending on the national research environments and processes that readers are f
 The term “research software” has also no single definition within the community.
 Therefore, to avoid ambiguities, we list the definitions hat we use in this document:\\
 \textbf{Software:}\\
-Source code, documentation, tests, executables and all other artefacts that are created by humans during the development process and that are necessary to understand its purpose.\\
+Source code, documentation, tests, executables, and all other artefacts that are created during the development process and that are necessary to understand its purpose.\\
 \textbf{Research software:}\\
 Foundational algorithms, the software itself, as well as scripts and computational workflows that were created
 during the research process or for a research purpose, across all domains of research.
 This definition is broader than in~\autocite{FAIR4RS} and is the outcome of a recent discussion in~\autocite{Gruenpeter2021}.\\
 \textbf{Research software engineers:}\\
-People who create or improve research software and/or the structures that it interacts within the computational ecosystem of research domains.
+People who create or improve research software and/or the structures that the software interacts with the computational ecosystem of a research domain.
 They are highly skilled team members who may also conduct their own research as part of their role.
 However, we also recognise RSEs who have chosen to focus on a technical role as an alternative to a traditional research role.\\
 \textbf{Researchers:}\\
@@ -184,7 +184,10 @@ A range of already-existing RSE units can be seen on this map: \url{https://soci
 In the UK, for example, almost all grant applications include software development in their budget.
 This allocated money can then be utilised to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
 
-\todo{Lead with HPC is a more established special kind of RSE?} National Competence Centres\footnote{EuroCC: \url{https://www.eurocc-access.eu/}} form a network of HPC-RSE consulting groups to share expertise with academic and industry actors\autocite{eurocc_success_stories_2023,eurocc_success_stories_2024}.
+The HPC community,
+arguably a sub-community of the RSE-community,
+has a history of offering training and consulting to prospective and active users of the hardware they support.
+National Competence Centres\footnote{EuroCC: \url{https://www.eurocc-access.eu/}} form a network of HPC-RSE consulting groups to share expertise with academic and industry actors\autocite{eurocc_success_stories_2023,eurocc_success_stories_2024}.
 
 \subsection{External expectations}
 
@@ -244,7 +247,7 @@ The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} 
 \section{Vision}%
 \label{sec:vision}
 In this section, we describe our vision of central RSE units at research institutions in Germany.
-As these institutions include universities, other colleges, as well as large associations like Max-Planck, Helmholtz, Fraunhofer or Leibniz,
+As these institutions include universities, other colleges, as well as large associations like Max-Planck, Helmholtz, Fraunhofer, or Leibniz,
 they show a wide variety in organisational structure as well as internal scientific diversity.
 Thus, there can be no single optimal concept of such an RSE unit for all research institutions in Germany.
 We instead describe modular components that can be mixed and matched based on the respective local environment.
@@ -255,22 +258,23 @@ Different RSE units will focus on different sets of modules.
 Thus, it is likely that no two RSE units will be, or should be, alike.
 However, these nine modules together with assumed weights are part of a simple model of an RSE group which provides both a quick overview of an individual group as well as a way to compare groups.
 The nine modules are described below.
+\todo{FL:\@ Introduce the hub-spokes terminology.}
 
-\subsection{Module 1: Foster a Network of RSEs}%
+\subsection{Module 1: Foster a local Network of RSEs}%
 \label{sec:network}
 
 One of the core responsibilities of an RSE unit is to act as a coordinator of RSE activities within the institution.
 At virtually every academic institution there are employees that assume at least part-time the role of an RSE.
 These RSEs typically work isolated from similar RSEs in different groups, within the same institution.
-A central RSE unit provides a condensation core and connects RSEs in spokes with each other and with the ones at the hub.
+A central RSE unit provides a condensation core and connects RSEs in spokes with each other and with those at the hub.
 
-Connecting RSEs in spokes has multiple, positive effects.
+Connecting RSEs in spokes has multiple, positive effects, both for them as well as for the organisation.
 It will enable them to get to know others in similar situations and to learn from as well as support each other.
-Contact with the central RSE unit will also help RSEs to professionalise their software development, which will directly benefit not only themselves but also their research groups.
+Contact with the central RSE unit will also help RSEs to professionalise their software-related work, which will directly benefit not only themselves but also their research groups.
 In addition, the networking opportunities allow the distribution of knowledge about tools and resources within network partners, including the central RSE unit.
-There are many RSE skills mastering which can take many years; time that a part-time RSE usually can not spare.
+There are many RSE skills for which mastering can take many years; time that a part-time RSE usually can not spare.
 A central RSE unit can make sure to connect RSEs in spokes to others with the relevant expertise or offer it themselves.
-Fostering the network also enables the RSE unit to monitor institutional RSE activities, thereby giving it the insight necessary to prevent duplication of work and support synergies.
+Fostering the network also enables the RSE unit to monitor institutional RSE activities, thereby providing the insight necessary to prevent duplication of work and support synergies.
 
 How an RSE unit realises this task will depend heavily on its environment and resources.
 We only mention a few examples here to provide inspiration, with the explicit claim of incompleteness.
@@ -279,7 +283,7 @@ As a foundation, a central RSE unit employs experienced RSEs, mostly at the post
 At least a core of a central RSE unit's employees need to have permanent contracts to be able to offer that deep expertise that requires years of experience.
 Moreover, an onboarding process can serve as an entry point for new RSEs, whether in the hub or in spokes, into an institution's network.
 This gives an opportunity to gauge how the new colleague can benefit from the RSE unit's teaching services and whom they might want to network with based on their planned work.
-Similarly an off-boarding process can help to make sure that all acquired knowledge that is relevant to the institution is passed on to someone who stays, even when within a single research group alone that might pose a problem.
+Similarly an off-boarding process can help to make sure that all acquired knowledge that is relevant to the institution is passed on to someone who stays, even if possibly not within the specific research group.
 
 \subsection{Module 2: Consultation Services}%
 \label{sec:consultation}
@@ -291,22 +295,22 @@ In order to raise the quality standards for research that is based on research s
 The hub is a natural place to provide this central service.
 There exists a number of scenarios where RSE consultation services differ strongly in scale and format.
 We mention a few of these in the following.
-
 “One Off” consultations on any research software related aspect that are open to researchers of all career levels are
 a great introduction to the hub's RSE services and are offered by almost all RSE units already established [REF].
-Depending on the demand, these consultations can either be by appointment or in a more structured format where you book an appointment from available dates (\eg{} University of Sheffield's “Code Clinic”\footnote{At time of publication the appointment form could be access from the front page of the RSE unit’s website: \url{https://rse.shef.ac.uk/}} and Friedrich Schiller University’s Digital Research Clinic\footnote{At the time of publication upcoming clinic’s were advertised on the consulting page of the Competence Center For Digital Research’s website: \url{https://www.zedif.uni-jena.de/en/consulting.html}}).
+%Depending on the demand, these consultations can either be by appointment or in a more structured format where you book an appointment from available dates (\eg{} University of Sheffield's “Code Clinic”\footnote{At time of publication the appointment form could be access from the front page of the RSE unit’s website: \url{https://rse.shef.ac.uk/}} and Friedrich Schiller University’s Digital Research Clinic\footnote{At the time of publication upcoming clinic’s were advertised on the consulting page of the Competence Center For Digital Research’s website: \url{https://www.zedif.uni-jena.de/en/consulting.html}}).
 
-A larger scale format for RSE consultation services could be that a research project regularly (\eg{} quarterly or monthly) meets with an RSE in order to coordinate the research software efforts done in the research project.
+A larger scale format for RSE consultation services could be that a research project regularly meets with an RSE in order to coordinate the research software efforts done in the research project.
 This format enables valuable feedback cycles between researchers and RSEs and allows RSEs to guide the project
 towards successful software engineering best practices without overloading the researchers with information at a one-off consultation.
 When an RSE unit carries out many of these project consultations, they will gather valuable experiences in transferring RSE knowledge to practitioners.
-Having an RSE hub puts these experiences into institutional memory, allowing for better RSE practice in the future.
+An RSE hub puts these experiences into institutional memory, allowing for better RSE practice in the future.
 
 RSE consultation services are also of great importance in proposal writing.
 Many proposals critically depend on research software to be developed and the requirements of funding agencies with respect to research software are growing and will continue to do so.
 Similar to dedicated RDM units that provide institutional support for data management plans,
 the RSE hub can support researchers by providing expertise with software management plans and the software engineering best practices required by these plans.
-With consultation services already involved in the proposal phase, improved proposal acceptance rates can be expected [REF], thereby amortising the investment into RSE units.
+Consultation services that are already involved in the proposal phase are expected to lead to an improved research workflow and thereby to better research.
+This should lead to improved proposal acceptance rates, thereby amortising the initial investment into RSE units.
 
 
 \subsection{Module 3: Development Services}%
