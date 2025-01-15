@@ -53,12 +53,13 @@ During the past decade, it gained ever-growing attention and is becoming accepte
 %We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in~\autocite{Gruenpeter2021}.
 
 The number of people developing software in academia is constantly rising~\autocite{Hannay2009, Hettrick2015}.
-Research Software Engineering consists of actions necessary to create, adapt or maintain Research Software and to provide consulting in these actions, with the aim to train researchers to do so themselves.
+Research Software Engineering encompasses creating, adapting or maintaining Research Software.
+It also includes consultation and training with the aim to enable researchers to some of these tasks themselves.
 These actions are very diverse and so are the environments they are performed in.
 This position paper focuses on groups of research software engineers that provide their services for an entire research organisation or at least a substantial part of it.
 
 We advocate the establishment and support of dedicated, central RSE groups in German research organisations, with clearly defined tasks, contact points, and, in particular, sustained funding, for the benefit of all researchers in their organisation.
-We provide an overview of the various task these teams have and discuss potential realisation strategies, learning from already existing examples of such RSE units.
+We provide an overview of the various tasks these teams have and discuss potential realisation strategies, learning from already existing RSE units.
 
 Depending on the national research environments and processes that readers are familiar with, the notion of the terms \emph{software} and \emph{research} might differ.
 The term “research software” has also no single definition within the community.
@@ -88,34 +89,34 @@ All of these implementations are considered, taking into account the large varie
 \end{quotation}
 
 The quote above is the shortest possible summary of this chapter: most if not all motivation to provide RSE services stems from the goal of improving research.
-Tasks RSEs perform include training, \eg{} to improve the often low-quality code developed by beginners~\autocite{Ostlund2023}, consultation services, \eg{} regarding frameworks or algorithm selection, and the development on existing or of new software.
+Tasks RSEs perform include training, \eg{} to improve the often low-quality code developed by beginners~\autocite{Ostlund2023}, consultation services, \eg{} regarding frameworks or algorithm selection, and the development of existing or new software.
 For an overview of typical tasks of RSEs and the competencies required, see~\autocite{goth_foundational_competencies_2024}, especially section\ 4.4:\ “RSE tasks and responsibilities”.
 
 \subsection{Pooling: a necessary ingredient}
-As undoubtedly beneficial RSEs are for research, the main focus of the present paper lies on central RSE teams.
-Their main advantages all stem from the pooling of resources.
-There are at least three pooling dimensions for research institutions to benefit from: funding, diverse knowledge, and support contacts.
-The first, pooling of \textbf{funding}, allows organisations to invest in human resources through long-term expert RSEs.
-A central RSE team on long-term contracts will act as a knowledge hub due to their experience in and support of several disciplines as well as established contacts within the organisation.
+The main focus of this paper lies on central RSE teams since the benefits of RSEs to research are described elsewhere **TODO: [REF]**.
+The main advantages of central RSE units all stem from the pooling of resources.
+There are at least three aspects to RSE pooling that research institutions can benefit from: funding, diverse knowledge, and support contacts.
+The first, pooling of \textbf{funding}, allows organisations to invest in building up institutional knowledge by supporting RSEs to become experts.
+A central RSE team on long-term contracts will act as a knowledge hub due to their accumulated experience in and support of several disciplines as well as established contacts within the organisation.
 This is comparable to commercial/industry R\&D departments, where key software architects and developers establish a knowledge hub and consult with as many projects as necessary \todo{Does that exist in reality? Isn’t it just that people, on average, stay longer?} [REF].
 % side-note: it's also similar to “inhouse consulting” in management\autocite{moscho_inhouse_consulting_2010}. They even formed a national network to raise awareness about the internal consultant role (https://inhouse-consulting.de/).
-Subject matter experts like software architects, database administrators and other tooling specialists are organised centrally and share their knowledge by consulting with decentralised projects.
-It makes economic sense to organise such staff centrally since not every project can afford or needs such RSE FTEs.
+Subject matter experts like software architects, database administrators and other tooling specialists are organised centrally and share their knowledge with members of decentralised projects.
+It makes economic sense to organise such staff centrally since not every project has a need for a full-time specialist or can afford one over an extended period of time.
 Most academic research organisations have established centralised tooling, \eg{} storage or High-Performance-Computing\ (HPC), but only a few consider software development and consultancy a relevant service yet.
 
-A second and equally important pooling is that of \textbf{diverse knowledge}.
+A second and equally important aspect to pooling RSEs is that of \textbf{diverse knowledge}.
 RSE units act as knowledge hubs in a network of academic developers within an organisation~\autocite{Elsholz2006}.
 Groups of RSEs with tasks spanning the entire organisation necessarily have to offer diverse knowledge.
-Obtaining such diversity can also be a challenge, but once it has been established it quickly becomes an asset to the organisation.
+Obtaining this diversity of knowledge and experience can also be a challenge, but once it has been established it quickly becomes an asset to the organisation.
 RSEs in centralised groups are interdisciplinary specialists due to their experience working on diverse topics, \todo{FLO+PMS: should be reformulated, guess: RSEs know diverse research methodologies + general RSE knowledge} as well as overlaps in methodology across disciplines and research software in general.
 They are assumed to be able to suggest the most appropriate tools/frameworks and design or architecture patterns for certain research challenges.
 Their diversity in skills (languages, frameworks, front/back-end, UX, management) is welcomed, especially for short-term needs in projects.
-This will save money otherwise spent in duplication of efforts.
+This will improve the chances of a project being successfully completed in a timely manner.
 That means a central RSE unit has more RSE competencies than any individual research group in the institution.
 This allows members of that unit to bring in new ideas or transfer them from other collaborations to these groups.
 
-The third kind of pooling is visible most of all from a users perspective: a \textbf{single, central contact point} for digital challenges is valuable to researchers, whose first problem often is not knowing whom to contact, partially because while they know what they want, they might not know what they need.
-A central RSE team can, due to its proximity to research, much better listen to the wishes expressed by researchers and then help formulate needs and act as a channel to either fulfil it themselves or reformulate and redirect the request.
+The third aspect to pooling RSEs is visible most of all from a users perspective: a \textbf{single, central contact point} for digital challenges is valuable to researchers, whose first problem often is not knowing whom to contact, partially because while they know what they want, they might not know what they need.
+A central RSE team can, due to its proximity to research, much better listen to the wishes expressed by researchers and then help formulate needs and act as a channel to either fulfil them themselves or reformulate and redirect the request.
 The results are increased research speed and quality and with that a higher reputation of the entire research organisation.
 
 %In this chapter, we motivate dedicated RSE groups in German research organisations.
@@ -131,7 +132,7 @@ Federal state RDM initiatives\footnote{\url{https://forschungsdaten.info/fdm-im-
 Many research organisations have set up established central RDM groups that support research projects in all aspects from grant proposals to hands-on support and maintaining Data Management Plans (DMPs).
 Funding agencies acknowledge the importance of research data and have started to make RDM mandatory in research projects.
 
-The most recent funding guidelines suggest “data stewards” in data-driven research.
+The most recent funding guidelines suggest to have “data stewards” in data-driven research.
 Such experts are to be employed in advanced research projects like “Collaborative Research Centres” (CRC)\footnote{Sonderforschungsbereich (SFB)} or “Clusters of Excellence”\footnote{Cluster der Exzellenzinitiative}.
 These data experts support research projects in several aspects including DMPs, grant applications, data availability for journal publications, compliance, FAIRification and more.
 Similarly, central RSEs will encourage other RSEs to publish software with rich metadata and will support journal publications with code submission requirements.
@@ -145,7 +146,7 @@ Due to the similar nature of both, data and software, and their importance in to
 %\footnote{For arguments when research software is unlike data, see \autocite{Lamprecht2020}.}
 
 \subsubsection{Existing RSE efforts}
-The concept of central RSE teams is also not untested.
+The concept of central RSE teams is already put to practice.
 Examples \todo{FLO+PMS: Do we want to mention all? DLR has something similar. So far it’s only the authors’ group.} of organisational RSE teams in Germany are
  the Helmholtz HIFIS group\footnote{\url{https://events.hifis.net/category/4/}}\autocite{haupt_hifis_consulting_2021},
  the Scientific Software Center in Heidelberg\footnote{\url{https://www.ssc.uni-heidelberg.de/en}}\autocite{ulusoy_heidelberg_ssc_2024},
@@ -153,7 +154,7 @@ Examples \todo{FLO+PMS: Do we want to mention all? DLR has something similar. So
  and the SURESOFT workshops series in Braunschweig\footnote{\url{https://suresoft.dev/}}~\autocite{Blech2022}.
 Another national pioneer is the Göttingen State and University Library.
 %which set up a group of RSEs offering – besides training – services like data modeling and visualization, digital editions, portal development and more.
-The latter reported a remarkable increase in software quality, better grant applications, less brain drain and overall employee satisfaction levels~\autocite{schimavoigt2023}.
+The latter reported a remarkable increase in software quality, better grant applications, less brain drain and overall better employee satisfaction levels~\autocite{schimavoigt2023}.
 %The demand for such services appears to be ever-increasing.
 %Other tasks include code review (REF? Charite), consultation services regarding frameworks or algorithm selection, licensing, and more.
 %RSEs have always embraced and supported collaborative infrastructure and tools, \eg{} GitLab, Containerisation, etc.\ and thus enabled fellow researchers utilising such infrastructure.
@@ -177,8 +178,8 @@ RSE services which benefit all disciplines/departments may represent a unique se
 %See the Vision and Realization sections below for more details.
 
 In the UK, for example, many universities started initiating dedicated RSE units about a decade ago~\autocite{Crouch2013}.
-The successful establishment of such staff is a role model for similar academic organisations worldwide.
-A range of already-existing RSE units can be seen in this map: \url{https://society-rse.org/community/rse-groups/} \todo{FLO+PMS: mention that this map is not current and add further data.}.
+The successful establishment of these units is a role model for similar academic organisations worldwide.
+A range of already-existing RSE units can be seen on this map: \url{https://society-rse.org/community/rse-groups/} \todo{FLO+PMS: mention that this map is not current and add further data.}.
 In the UK, for example, almost all grant applications include software development in their budget.
 This allocated money can then be utilised to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
 
@@ -244,24 +245,25 @@ The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} 
 
 \section{Vision}%
 \label{sec:vision}
-In the following, we describe our vision of central RSE units at research institutions in Germany.
+In this section, we describe our vision of central RSE units at research institutions in Germany.
 As these institutions include universities, other colleges, as well as large associations like Max-Planck, Helmholtz, Fraunhofer, or Leibniz,
 they show a wide variety in organisational structure as well as internal scientific diversity.
 Thus, there can be no single optimal concept of such an RSE unit for all research institutions in Germany.
 We instead describe modular components that can be mixed and matched based on the respective local environment.
 
-These suggested nine modules comprise the core services of an RSE unit.
-Not all, and probably not even most of the RSE units will deliver all nine, and different RSE units will focus on different modules.
+We have identified nine modules that can make up an RSE unit.
+In practice most RSE units will only support some of these modules.
+Different RSE units will focus on different sets of modules.
 Thus, it is likely that no two RSE units will be, or should be, alike.
 However, these nine modules together with assumed weights are part of a simple model of an RSE group which provides both a quick overview of an individual group as well as a way to compare groups.
-The nine modules are described in the following.
+The nine modules are described below.
 \todo{FL:\@ Introduce the hub-spokes terminology.}
 
 \subsection{Module 1: Foster a local Network of RSEs}%
 \label{sec:network}
 
 One of the core responsibilities of an RSE unit is to act as a coordinator of RSE activities within the institution.
-At virtually every academic institution there are employees that assume at least part-time the role of an RSE, with responsibilities only within a part of that organisation.
+At virtually every academic institution there are employees that assume at least part-time the role of an RSE.
 These RSEs typically work isolated from similar RSEs in different groups, within the same institution.
 A central RSE unit provides a condensation core and connects RSEs in spokes with each other and with those at the hub.
 
@@ -288,7 +290,7 @@ Similarly an off-boarding process can help to make sure that all acquired knowle
 With the majority of researchers being self-taught programmers~\autocite{Carver2013}, there is a huge demand for expertise on how to develop better research software.
 Here, “better” can refer to a number of quality metrics such as correctness, reproducibility, maintainability, extendability, usability, portability, interoperability, performance or scalability~\autocite[Chapter 16]{Schulmeyer2008}.
 
-In order to raise the quality standards for research that is based on research software, it is of great importance for research institutions to provide access to such expertise with a low entry barrier.
+In order to raise the quality standards for research that is based on research software, it is of great importance for research institutions to provide access to such expertise with a low barrier to entry.
 The hub is a natural place to provide this central service.
 There exists a number of scenarios where RSE consultation services differ strongly in scale and format.
 We mention a few of these in the following.
@@ -302,8 +304,8 @@ towards successful software engineering best practices without overloading the r
 When an RSE unit carries out many of these project consultations, they will gather valuable experiences in transferring RSE knowledge to practitioners.
 An RSE hub puts these experiences into institutional memory, allowing for better RSE practice in the future.
 
-RSE consultation services are also of great importance in the application process of grant proposals.
-Many proposals critically depend on research software to be developed and the requirements of funding agencies w.r.t.\ research software are growing and will continue to do so.
+RSE consultation services are also of great importance in proposal writing.
+Many proposals critically depend on research software to be developed and the requirements of funding agencies with respect to research software are growing and will continue to do so.
 Similar to dedicated RDM units that provide institutional support for data management plans,
 the RSE hub can support researchers by providing expertise with software management plans and the software engineering best practices required by these plans.
 Consultation services that are already involved in the proposal phase are expected to lead to an improved research workflow and thereby to better research.
@@ -314,8 +316,8 @@ This should lead to improved proposal acceptance rates, thereby amortising the i
 \label{sec:development}
 
 There is a huge demand for the development and customisation of research software tailored to the needs of specific research projects.
-Often, the correct solution to this is to educate researchers to write their own software according to RSE best practices.
-However, there are also many instances where the knowledge gap between the researchers and the intended research software development is too large to bridge efficiently.
+In many cases this can be achieved by educating researchers to write their own software according to RSE best practices.
+Bringing in expert RSEs to deal with the development of complex research software frees up the researchers to focus on research.
 In these cases, RSE development services are a great opportunity that can have a huge impact on the digitisation of science at a research institution.
 Similar to consultation services, this service can be offered at multiple scales.
 
@@ -327,10 +329,10 @@ For research projects requiring more substantial software development resources,
 This is especially relevant if the researchers hired for the research projects do not have the required software development skills and the volume of the development is too small to hire a dedicated developer.
 Depending on the scale of the involvement, the RSE unit can either be included into the grant proposal via a co-PI or as an internal service provider.
 
-If the research within the institution heavily relies on specific pieces of software,
-sustaining these pieces is of vital importance for the long term success of the institution.
+If the research within an institution heavily relies on specific pieces of software,
+it is of vital importance for the long term success of the institution to sustain these pieces of software.
 Relying on a workforce that is subject to academic labour turnover poses a risk of knowledge loss.
-If the development is done in an RSE unit, institutional memory about critical research software infrastructures can be created and the long term availability of these infrastructures can be improved.
+If the development is done in an RSE unit with long-term contracts, institutional memory about critical research software infrastructures can be created and the long term availability of these infrastructures can be improved.
 This applies both to domain-specific research software (\eg{} simulation frameworks widely used throughout the institution)
 and to domain-agnostic software and data infrastructure (\eg{} Jupyter, workflow management systems, data repository software).
 
@@ -348,7 +350,7 @@ This growth is based on a continuous influx of new funded projects once successf
 [Success Story]
 The University of Manchester Software and Data Science group has successfully established specialised development services within their institution:
 The “Mobile Development Service” \autocite{manchester_mobile} team consists of RSEs that focus solely on developing and deploying mobile apps.
-Without a central RSE unit to anchor such specialised expertise, it would probably be infeasible to establish such a service.
+Without a central RSE unit to anchor such specialised expertise, it would be difficult to establish such a service.
 Also, having this expertise centralised allows for synergies in the deployment procedure for mobile apps:
 The RSE unit can create institutional accounts with the app stores and manage the time consuming deployment process including hard-to-setup procedures like code signing.
 Besides the technical benefits of this central deployment procedure, the institution will also benefit from the increased visibility and potentially be able to build a brand with its technological output.
@@ -357,19 +359,18 @@ Besides the technical benefits of this central deployment procedure, the institu
 The Scientific IT Services of ETH Zurich (SIS) started in 2013 with a handful of members and has (as of March 2024) around 50 members.
 In addition to HPC services, the group also offers RSE services in various areas.
 These include the development of software applications for RDM, support in the development and improvement of scientific software or the long-term maintenance of software developed in research groups.
-In addition, SIS offers services in the areas of data science, machine learning, bioinformatics, trusted compute environments, training and consulting, and training and consulting.
+In addition, SIS offers services in the areas of data science, machine learning, bioinformatics, trusted compute environments, and training and consulting.
 
 \subsection{Module 4: Teaching Services}%
 \label{sec:teaching}
 
 A central RSE unit can provide or organise training for researchers and RSEs in spokes.
 This can replace self-education for foundational software development skills and provide a basis from which researchers can continue to learn more specialised skills guided by experts of the central RSE unit.
-It also improves the quality of much of the fairly simple software being written by researchers; scripts to process and maybe visualise their data.
-As teaching material for foundational software development skills is freely available,
+Since teaching material for foundational software development skills is freely available,
 the tasks remaining for a central RSE unit are to adapt the material to local requirements as well as to organise and hold courses and workshops.
 
-For more complex software development projects, a central RSE unit can offer individual teaching, either through consultation or by lending out RSEs into projects of research departments.
-In both cases the expert RSEs from the central RSE unit can pass on their knowledge precisely adapted to the concrete needs of those that they support.
+For more complex software development projects, a central RSE unit can offer individual training.
+In both cases the expert RSEs from the central RSE unit can pass on their knowledge precisely adapted to the concrete needs of those that they support.\todo{magi: what about teaching on regular courses?}
 
 \subsection{Module 5: Create a Network of Institutional Partners}%
 \label{sec:partners}
@@ -379,17 +380,17 @@ However, their coverage of RSE-related needs of researchers is often limited and
 While this is one of the main arguments for the creation of dedicated RSE units, it also shows the necessity for an RSE unit to closely interact with its respective partners.
 
 In the following, we describe groups or units that can typically be found within academic organisations,
-what usually their focus is and how we envision collaborations with an RSE unit.
+what they usually focus on and how we envision collaborations with an RSE unit.
 However, note that as research organisations can differ widely from one another, so can the tasks and even existence of the entities below.
 Arguments and conclusions below have to be adapted to specific circumstances when applying them to specific environments.
 
 All research institutions in Germany do have a \textbf{computing centre} of one form or another.
-At the very least, these are the persons that deal with the every-day IT-need of the institution:
-Internet access, Email, Web, central administration of computers (at least that of administrative staff), etc.
-Typically, the assigned tasks of the computing centre are not research-driven, or also the staff does not have a research background.
+At the very least, these are the people who deal with the every-day IT-needs of the institution:
+Internet access, Email, Web\todo{magi: web presence?}, central administration of computers (at least that of administrative staff), etc.
+Typically, the assigned tasks of the computing centre are not research-driven, or also the staff does not have a research background\todo{magi: I would drop the second part of this sentence as you can't categorically say where computing staff are coming from.}.
 However, research software often has to work within the environment provided by the computing centre.
 A central RSE unit can help to either adapt the research software or even the environment such that the needs of researchers can be met.
-It is not unusual that this requires a level of engagement and understanding of the underlying research concepts that the staff of the computing centre cannot provide alone.
+Usually this requires a level of engagement and understanding of the underlying research concepts that the staff of the computing centre cannot provide alone.
 
 A second important partner is the local \textbf{library}, which has already gained tasks much beyond the preservation and organisation of publications on physical paper for quite some time.
 Besides digital forms of rather traditional publications, these more and more include digital data and recently also software publications, their discovery and citation.
@@ -398,7 +399,7 @@ At the same time, through collaboration with the library, the RSE group can addr
 
 Topics of RSE and RDM do have noticeable similarities.
 While software often does require different solutions than data, collaboration between an RSE unit and an \textbf{RDM unit} will in practice be really close.
-The main reasons for that are that both provide services that are inherently research-oriented and that both deal with the digital side of research.
+The main reasons for that are that both provide services that are inherently research-oriented and that both deal with the digital side of research\todo{magi: isn't that due to the fact that research software produces (and to a lesser extend relevant here) consumes data}.
 Requests by researchers in that direction often touch both aspects, RSE and RDM\@.
 Thus, often a close collaboration between RSE and RDM groups helps everyone: both RSE and RDM groups by being able to offer a more comprehensive service than when working alone, as well as the researcher, who benefits from receiving this single coordinated service, instead of dealing with two independent entities.
 The question whether RSE and RDM should be located in two separate groups or should be combined in one common group is intentionally left open, as the answer depends on local, pre-existing circumstances.
@@ -412,10 +413,10 @@ There are obvious reasons to closely collaborate on both consulting and training
 \subsection{Module 6: RSE Infrastructure Provisioning}%
 \label{sec:infrastructure}
 
-IT and (potentially high-performance) computing infrastructure provisioning is usually the purview of an institution's IT department and/or a computing centre.
+IT and (potentially high-performance) computing infrastructure provisioning is usually the purview of an institution's IT department and/or a computing centre\todo{magi: what's the difference between IT department and computing centre, I would contract}.
 However, a central RSE unit can provide extra services by acting as an intermediary for RSE infrastructure and by hosting pilot instances of new tools and services.
-IT departments typically only provide the service for hosting and accessing IT infrastructures, such as RSE infrastructures.
-Central RSE units are a link between the central services offered either by IT departments, computing centres or over-archlingly available services on one side,
+IT departments typically provide the service for hosting and accessing IT infrastructures, including services that facilitate the work of RSEs.
+Central RSE units are a link between the central services offered either by IT departments, computing centres or over-archingly available services on one side,
 and RSEs in spokes on the other, offering documentation, training and best-practices to efficiently and effectively use available services and comply with established processes.
 
 Furthermore, the central RSE unit can offer consulting for RSEs in spokes to guide selection processes of the tools and services best suited for each project.
@@ -447,7 +448,7 @@ For research software, dedicated archiving solutions such as Software Heritage~\
 
 In contrast to research data, the long-term availability and usability of research software requires more than an adequate archiving method:
 Software maintenance is the ongoing change process of software after its release.
-It includes the fixing of bugs in the software that are discovered and also adapts the software to changes in the execution environment such as hardware, operating system, toolchain and software dependencies.
+It includes  both fixing bugs that are discovered in the software and adapting the software to changes in the execution environment such as hardware, operating system, toolchain and software dependencies.
 In the scientific community there is a demand for long term maintenance of research software,
 but academic labour turnover and missing funding schemes make research software maintenance often rely on the (potentially unpaid) efforts of individuals.
 
@@ -466,7 +467,7 @@ This can be achieved by contributing to events, position papers and the initiati
 either directly from the RSE unit or by advertising at the institution and matchmaking with local RSEs interested in becoming active beyond their current tasks.
 The RSE unit thus contributes to the RSE communities on a regional, national or international level on the one hand and opens these up to the local RSEs and enables networking on the other hand.
 It organises the bidirectional exchange between the local and the global community and is the central hub for information coming both ways.
-Furthermore, the RSE unit should advocate the use of RSE techniques and best-practices within their institutions actively to strengthen the local community and to reach out to new groups whenever possible.
+Furthermore, the RSE unit should advocate the use of RSE techniques and best-practices within their institutions actively to strengthen the local community and to reach out to new groups whenever possible\todo{magi: this could be strengthened by invoking the hub and spoke model again}.
 
 \section{Existing Implementations}
 
@@ -477,14 +478,14 @@ Furthermore, the RSE unit should advocate the use of RSE techniques and best-pra
 \label{fig:survey}
 \end{figure}
 
-A number of successful installations of RSE units already exist in Germany and many more exist in other countries, especially the UK and the US\@.
+A number of successful RSE units have already been established in Germany and many more exist in other countries, especially the UK and the US\@.
 In order to understand the service portfolio of these existing RSE units, we conducted a survey that received a total of twelve responses from Germany, the UK and the US\@.
-We asked RSE units for the composition of their service portfolio --- the results are shown in figure~\ref{fig:survey}.
+We asked RSE units for the composition of their service portfolio --- the results are shown in Figure~\ref{fig:survey}.
 
 From the gathered data and the additional free text information of the participants we conclude that the service components that we have identified in Section~\ref{sec:vision} are indeed relevant for existing RSE units.
 Additionally, we see a large diversity in the weighting of these components, which is to be expected given the different environments of the RSE units.
-Within this diverse data, we identified two rather different archetypes of RSE units: Those that offer development services and those that do not.
-The RSE units offering such services would typically invest a lot of their resources into this component, where as others put a much larger emphasis on teaching and consultation services.
+Within this diverse data set, we identified two rather different archetypes of RSE units: those that offer development services and those that do not.
+The RSE units offering development services would typically invest a lot of their resources into this component, whereas others put a much larger emphasis on teaching and consultation services.
 We should note however, that our survey did not collect information about the size of the RSE unit.
 It is likely that the RSE units offering development services are also larger in size,
 and that their total resource commitment to teaching and consultation services is similar to that of those RSE units that do not offer development services.
@@ -577,28 +578,28 @@ This step can be facilitated and formalised by offering introductory courses wit
 or CodeRefinery\footnote{Examples \url{https://coderefinery.org/lessons/}}.
 
 \subsubsection{Conceptualisation}
-Decision processes at institutions usually require a concept on which to base the decision on whether to install an RSE unit.
+Decision processes at institutions usually require a concept on which to base the decision on whether to establish an RSE unit.
 Such a concept should specify the idea of the RSE unit, its responsibilities and offerings as a subset of the nine modules presented in \autoref{sec:vision}, the funding, and the resulting benefits for the institution and its researchers.
 
-A rather difficult and crucial question can be the localisation of the RSE unit within the organisational structure of the institution.
+A rather difficult and crucial question can be the positioning of the RSE unit within the organisational structure of the institution.
 A canonical place would be a new subunit of an institutional body close to software,
 training services and computing such as the institution's IT department, the computing centre or the library.
 Since most institutions already have an RDM unit, it seems natural to add the RSE unit as a parallel structure.
 Another choice for the superordinate body, particularly at universities, is the faculty for computer science.
 Determining the best place may involve discussions with several stakeholders at the institution and can already be beneficial for creating a
-network of institutional partners, the module described in \autoref{sec:partners}.
+network of institutional partners, see the module described in \autoref{sec:partners}.
 
 The concept should also address funding for the RSE unit's initial staff.
 We consider it necessary that there is a certain amount of base funding provided by the institution that covers a basic RSE unit because much RSE work is not project based.
 While options can be drawn from the discussion above, specific ideas should be discussed beforehand with the decision makers.
-For facilitating the expansion of the RSE unit in the long term, the installment of an institutional policy for requesting person-months in externally funded projects dedicated to RSE should be proposed.
+For facilitating the expansion of the RSE unit in the long term, an institutional policy for requesting person-months in externally funded projects dedicated to RSE should be established.
 
 Another part of the concept should be the governance structure of the RSE unit.
-One of the decisions to be made is if the unit head is supposed to be part of the unit itself or if the unit will be headed by a person outside of it.
+One of the decisions to be made is if the unit head is supposed to be part of the unit itself or if the unit will be headed by somebody outside of it.
 Additionally, installing an advisory board can be proposed in the concept, recruiting from the prospective institutional partners.
 
-\subsubsection{Installation of the Department}
-Once the concept has been approved by the institution, the RSE unit can be installed accordingly.
+\subsubsection{Establishing the Department}
+Once the concept has been approved by the institution, the RSE unit can be established accordingly.
 The initial staffing depends crucially on the local institutional conditions.
 One promising possibility is to start with two positions.
 The first one would be an RSE coordinator.
@@ -607,9 +608,9 @@ The second position would be a central RSE, responsible for providing selected s
 These central positions will be complemented by the existing RSEs organised in the network to form a pool of institutional RSEs associated with the central unit.
 
 Drawing from the concept and considering the actual initial staff situation, a first task of the centrally funded structure is to define a basic service portfolio according to the modules described in \autoref{sec:vision}.
-In addition to the already mentioned networking and teaching, cf.~\autoref{sec:network} and \autoref{sec:teaching}, it seems natural to start with consultation, cf.~\autoref{sec:consultation},
+In addition to the already mentioned networking and teaching, see~\autoref{sec:network} and \autoref{sec:teaching}, it seems natural to start with consultation, see~\autoref{sec:consultation},
 as this allows to evaluate the potential necessities for other services such as development, infrastructure provisioning and maintenance.
-An extension of the initial service portfolio for a larger target audience requires the acquisition of further funding and installation of further positions, see below.
+An extension of the initial service portfolio for a larger target audience requires the acquisition of funding for further positions, see below.
 
 \subsubsection{Growth of the Department}
 
@@ -632,7 +633,7 @@ This also widens the customer base of the RSE unit since the newly founded compa
 If this company is backed/branded by the institution, this enables another possibility for an institution to interact with the local society.
 But there are drawbacks.
 Since the company is now an entity external to the institution, the Vergabe-Richtlinien have to be fulfilled, which could \eg{} mean to publicly invite tenders in order to have a competitive procedure.
-This also points to the fact that an external company has to be a mostly profitable entity (partly this can be softened by founding a non-for-profit entity).
+This also points to the fact that an external company has to be a mostly profitable entity (partly this can be softened by founding a not-for-profit entity).
 Moreover, during the outsourcing contract, there has to be a coordinator at both sides and the flow of information from the academic institution to the contracted company has to be established.
 These are some examples of additional administrative overhead due to the interaction with external partners.
 Certain domains will have issues with ensuring data privacy when working with this external company.
@@ -651,12 +652,12 @@ This is a topic covered by a separate paper \autocite{goth_foundational_competen
 These RSEs will bring a diverse set of skills centred around the topics of research,
 digital tools, and team-based work and hence can easily offer the consulting services mentioned in the previous section and guide people to their implementation in their workgroups.
 To fill gaps, the RSE unit can also maintain a roster of freelance workers.
-In order to retain RSEs it should be possible for them to become experts in a field and hence this should make this job more attractive to young RSEs,
+In order to retain RSEs it should be possible for them to become experts in a field and hence this should make this job more attractive to budding RSEs,
 in order to mitigate the problem that some will only see this job as a one-year stint after their PhD and then move on to something else.
 To facilitate the retention of skilled people, industry has long identified education as an effective tool.
-For RSEs, this should be helped by to be formed academic facilities that enable them to keep on learning skills after their first professional qualification, supported by the respective certification programs.
+For RSEs, this should be helped by yet to be formed academic facilities that enable them to keep on learning skills after their first professional qualification, supported by the respective certification programs.
 In the longer run, Research Software Engineering should be integrated into the existing study programmes.
-One option here is the creation of an RSE master as a specialisation for computer science and also application-domain bachelor programmes.
+One option here is the creation of an RSE master as a specialisation for computer science or application-domain bachelor programmes.
 This should be complemented by adding a minor in these application-domain study programs such as biology, music, engineering etc.\ to facilitate the communication between the corresponding two groups of RSEs.
 There are already some master's programs available, (\eg{} in Berlin, Munich and Stuttgart) that develop this specialisation on top of a domain bachelor.
 Moreover, there are data science curricula in the process of being created.
