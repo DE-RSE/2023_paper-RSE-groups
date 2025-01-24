@@ -47,6 +47,15 @@ authors:
       countries participating in the project under grant agreement
       No \href{https://doi.org/10.3030/101093169}{101093169}.
 
+  - author: "Magnus Hagdorn"
+    firstName: Magnus
+    lastName: Hagdorn
+    initials: MH
+    affiliations:
+      - Geschäftsbereich IT, Charité Universitätsmedizin Berlin, Germany
+    orcid: 0000-0002-5076-4864
+    email: magnus.hagdorn@charite.de
+
   - author: "Dominic Kempf"
     firstName: Dominic
     lastName: Kempf
