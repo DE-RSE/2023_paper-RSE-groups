@@ -3,9 +3,22 @@ import jinja2
 import os
 import yaml
 
+CORRESPONDING_AUTHOR = "Kempf"
 
 with open("contributors.yml") as f:
     data = yaml.safe_load(f)
+
+# sort list of authors by last name
+sorted_authors = sorted(data["authors"], key=lambda a: a["lastName"])
+# and move corresponding author to front of the list
+idx = None
+for i, a in enumerate(sorted_authors):
+    if a["lastName"] == CORRESPONDING_AUTHOR:
+        idx = i
+        break
+if idx is not None:
+    sorted_authors.insert(0, sorted_authors.pop(idx))
+data["authors"] = sorted_authors
 
 # Ensure that we have unique indices for the affiliations
 affiliations = list()
