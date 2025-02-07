@@ -1,11 +1,16 @@
 authors:
   - author: "Markus J. Ankenbrand"
-    firtname: Markus J.
+    firstName: Markus J.
     lastName: Ankenbrandt
     initials: MJA
     affiliations:
       - Center for Computational and Theoretical Biology, University of Würzburg, Germany
     orcid: 0000-0002-6620-807X
+
+  - author: "Leyla Jael Castro"
+    firstName: Leyla Jael
+    lastName: Castro
+    initials: LC
 
   - author: "Bernd Flemisch"
     firstName: Bernd
@@ -47,6 +52,15 @@ authors:
       countries participating in the project under grant agreement
       No \href{https://doi.org/10.3030/101093169}{101093169}.
 
+  - author: "Magnus Hagdorn"
+    firstName: Magnus
+    lastName: Hagdorn
+    initials: MH
+    affiliations:
+      - Geschäftsbereich IT, Charité Universitätsmedizin Berlin, Germany
+    orcid: 0000-0002-5076-4864
+    email: magnus.hagdorn@charite.de
+
   - author: "Dominic Kempf"
     firstName: Dominic
     lastName: Kempf
@@ -87,6 +101,11 @@ authors:
       - Competence Center Digital Research, Friedrich Schiller University Jena, Germany
     orcid: 0000-0003-3931-6670
     email: philipp.matthias.schaefer@uni-jena.de
+ 
+  - author: "Philipp S. Sommer"
+    firstName: Philipp S.
+    lastName: Sommer
+    initials: PS
 
   - author: "Alexander Struck"
     firstName: Alexander
