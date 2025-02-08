@@ -107,6 +107,15 @@ authors:
     lastName: Sommer
     initials: PS
 
+  - author: "Robert Speck"
+    firstName: Robert
+    lastName: Speck
+    initials: RS
+    affiliations:
+      - Jülich Supercomputing Centre, Forschungszentrum Jülich GmbH, Germany
+    orcid: 0000-0002-3879-1210
+    email: r.speck@fz-juelich.de
+
   - author: "Alexander Struck"
     firstName: Alexander
     lastName: Struck
