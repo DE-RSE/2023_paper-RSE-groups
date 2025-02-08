@@ -83,6 +83,13 @@ authors:
     email: j.linxweiler@tu-braunschweig.de
 
   - author: "Axel Loewe"
+    firstName: Axel
+    lastName: Loewe
+    initials: AL
+    affiliations:
+      - Karlsruhre Institute of Technology (KIT)
+    orcid: 0000-0002-2487-4744
+    email: axel.loewe@kit.edu
 
   - author: "Frank Löffler"
     firstName: Frank
