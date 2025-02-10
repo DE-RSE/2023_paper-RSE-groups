@@ -11,6 +11,9 @@ authors:
     firstName: Leyla Jael
     lastName: Castro
     initials: LC
+    affiliations:
+      - Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
+    orcid: 0000-0003-3986-0510
 
   - author: "Bernd Flemisch"
     firstName: Bernd
