@@ -1,5 +1,9 @@
 all:	plots paper.pdf
 
+clean:
+		latexmk -c
+		rm paper.pdf
+
 paper.pdf:	paper.tex positionpaper.bib contributors.tex
 		latexmk -pdflatex paper.tex
 
