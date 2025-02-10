@@ -15,6 +15,15 @@ authors:
       - Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
     orcid: 0000-0003-3986-0510
 
+  - author: "René Caspart"
+    firstName: René
+    lastName: Caspart
+    initials: RC
+    affiliations:
+      - Scientific Computing Center, Karlsruher Institut für Technologie, Germany
+    orcid: 0000-0002-5502-9412
+    tier: 1
+
   - author: "Bernd Flemisch"
     firstName: Bernd
     lastName: Flemisch
