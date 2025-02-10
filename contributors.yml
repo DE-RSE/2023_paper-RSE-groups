@@ -11,6 +11,9 @@ authors:
     firstName: Leyla Jael
     lastName: Castro
     initials: LC
+    affiliations:
+      - Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
+    orcid: 0000-0003-3986-0510
 
   - author: "Bernd Flemisch"
     firstName: Bernd
@@ -83,6 +86,13 @@ authors:
     email: j.linxweiler@tu-braunschweig.de
 
   - author: "Axel Loewe"
+    firstName: Axel
+    lastName: Loewe
+    initials: AL
+    affiliations:
+      - Karlsruhre Institute of Technology (KIT)
+    orcid: 0000-0002-2487-4744
+    email: axel.loewe@kit.edu
 
   - author: "Frank Löffler"
     firstName: Frank
@@ -106,6 +116,15 @@ authors:
     firstName: Philipp S.
     lastName: Sommer
     initials: PS
+
+  - author: "Robert Speck"
+    firstName: Robert
+    lastName: Speck
+    initials: RS
+    affiliations:
+      - Jülich Supercomputing Centre, Forschungszentrum Jülich GmbH, Germany
+    orcid: 0000-0002-3879-1210
+    email: r.speck@fz-juelich.de
 
   - author: "Alexander Struck"
     firstName: Alexander
