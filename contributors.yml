@@ -11,6 +11,9 @@ authors:
     firstName: Leyla Jael
     lastName: Castro
     initials: LC
+    affiliations:
+      - Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
+    orcid: 0000-0003-3986-0510
 
   - author: "Bernd Flemisch"
     firstName: Bernd
@@ -19,6 +22,7 @@ authors:
     affiliations:
       - Institute for Modelling Hydraulic and Environmental Systems, University of Stuttgart, Germany
     orcid: 0000-0001-8188-620X
+    tier: 1
 
   - author: "Florian Goth"
     firstName: Florian
@@ -32,6 +36,7 @@ authors:
       FG acknowledges funding from the Deutsche Forschungsgemeinschaft
       (DFG, German Research Foundation) through the SFB 1170 “Tocotronics”,
       project Z03 - project number \href{https://gepris.dfg.de/gepris/projekt/258499086?language=en}{258499086}.
+    tier: 1
 
   - author: "Jean-Noël Grad"
     firstName: Jean-Noël
@@ -72,6 +77,7 @@ authors:
     acknowledgements: |
       DK acknowledges support from the Scientific Software Center which is funded as part
       of the Excellence Strategy of the German Federal and State Governments.
+    tier: 0
 
   - author: "Jan Linxweiler"
     firstName: Jan
@@ -81,8 +87,16 @@ authors:
       - Technische Universität Braunschweig, Germany
     orcid: 0000-0002-2755-5087
     email: j.linxweiler@tu-braunschweig.de
+    tier: 1
 
   - author: "Axel Loewe"
+    firstName: Axel
+    lastName: Loewe
+    initials: AL
+    affiliations:
+      - Karlsruhre Institute of Technology (KIT)
+    orcid: 0000-0002-2487-4744
+    email: axel.loewe@kit.edu
 
   - author: "Frank Löffler"
     firstName: Frank
@@ -92,6 +106,7 @@ authors:
       - Competence Center Digital Research, Friedrich Schiller University Jena, Germany
     orcid: 0000-0001-6643-6323
     email: frank.loeffler@uni-jena.de
+    tier: 1
 
   - author: "Philipp Matthias Schäfer"
     firstName: Philipp Matthias
@@ -101,11 +116,22 @@ authors:
       - Competence Center Digital Research, Friedrich Schiller University Jena, Germany
     orcid: 0000-0003-3931-6670
     email: philipp.matthias.schaefer@uni-jena.de
+    tier: 1
  
   - author: "Philipp S. Sommer"
     firstName: Philipp S.
     lastName: Sommer
     initials: PS
+
+  - author: "Robert Speck"
+    firstName: Robert
+    lastName: Speck
+    initials: RS
+    affiliations:
+      - Jülich Supercomputing Centre, Forschungszentrum Jülich GmbH, Germany
+    orcid: 0000-0002-3879-1210
+    email: r.speck@fz-juelich.de
+    tier: 1
 
   - author: "Alexander Struck"
     firstName: Alexander
@@ -117,4 +143,4 @@ authors:
     email: alexander.struck@hu-berlin.de
     acknowledgements: |
       AS acknowledges the support of the Cluster of Excellence »Matters of Activity. Image Space Material« funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2025 – 390648296.
-
+    tier: 1
