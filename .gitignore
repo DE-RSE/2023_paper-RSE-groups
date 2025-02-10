@@ -304,3 +304,6 @@ paper.pdf
 contributors.tex
 
 *.tar.gz
+
+# ignore backup files
+*~
