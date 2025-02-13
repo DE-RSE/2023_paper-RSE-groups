@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install LaTeX requirements for matplotlib
-        run: sudo apt install -y texlive-latex-base texlive-latex-extra
+        run: sudo apt install -y texlive-latex-base texlive-latex-extra cm-super-minimal
 
       - name: Create contributor snippet
         run: python contributors.py
