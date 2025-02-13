@@ -46,15 +46,15 @@
 \maketitle
 
 \section{Introduction}
-Research software has been written and used for decades in a increasing range of disciplines.
+Research software has been written and used for decades in an increasing range of disciplines.
 It has been established that most research requires research software for its results~\autocite{Hannay2009, Hettrick2015}.
 To solve pressing research challenges, better software is crucial~\autocite{Goble2014}.
-During the past decade, it gained ever-growing attention and is becoming accepted as a research result on its own.
+During the past decade, research software gained ever-growing attention and is becoming accepted as a research result on its own.
 %We follow here the definition: “Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose”, with full definition and discussion provided in~\autocite{Gruenpeter2021}.
 
 The number of people developing software in academia is constantly rising~\autocite{Hannay2009, Hettrick2015}.
 Research Software Engineering encompasses creating, adapting or maintaining Research Software.
-It also includes consultation and training with the aim to enable researchers to some of these tasks themselves.
+It also includes consultation and training with the aim to enable researchers to some of these tasks themselves~\autocite{goth_foundational_competencies_2024}.
 These actions are very diverse and so are the environments they are performed in.
 This position paper focuses on groups of research software engineers that provide their services for an entire research organisation or at least a substantial part of it.
 
@@ -64,22 +64,24 @@ We provide an overview of the various tasks these teams have and discuss potenti
 
 Depending on the national research environments and processes that readers are familiar with, the notion of the terms \emph{software} and \emph{research} might differ.
 The term “research software” has also no single definition within the community.
-Therefore, to avoid ambiguities, we list the definitions hat we use in this document:\\
-\textbf{Software:}\\
-Source code, documentation, tests, executables, and all other artefacts that are created during the development process and that are necessary to understand its purpose.\\
-\textbf{Research software:}\\
+Therefore, to avoid ambiguities, we list the definitions that we use in this document:
+\paragraph{Software}
+Source code, documentation, tests, executables, and all other artefacts that are created during the development process and that are necessary to understand its purpose.
+\paragraph{Research software}
 Foundational algorithms, the software itself, as well as scripts and computational workflows that were created
 during the research process or for a research purpose, across all domains of research.
-This definition is broader than in~\autocite{FAIR4RS} and is the outcome of a recent discussion in~\autocite{Gruenpeter2021}.\\
-\textbf{Research software engineers:}\\
+This definition is broader than in~\autocite{FAIR4RS} and is the outcome of a recent discussion in~\autocite{Gruenpeter2021}.
+\paragraph{Research software engineers}
 People who create or improve research software and/or the structures that the software interacts with the computational ecosystem of a research domain.
 They are highly skilled team members who may also conduct their own research as part of their role.
 However, we also recognise RSEs who have chosen to focus on a technical role as an alternative to a traditional research role.
-We call RSEs who are members of the RSE hub (see below) dedicated RSEs. RSEs who are members of a research group are called embedded RSEs.\\
-\textbf{Researchers:}\\
+\paragraph{Researchers}
+We call RSEs who are members of the RSE hub (see below) dedicated RSEs.
+RSEs who are members of a research group are called embedded RSEs.
 RSEs might also be researchers.
-However, for the lack of a proper term and to avoid many “non-RSE researchers” within the text, we will refer by “researchers” to all non-RSEs involved in research or in research supporting organisations such as in \eg{} libraries, hence those that are at most sporadically performing RSE actions.\\
-\textbf{RSE Hub}:\\
+However, for the lack of a proper term and to avoid many “non-RSE researchers” within the text, we will use the term “researchers” to refer to all non-RSEs involved in research or in research supporting organisations such as in \eg{} libraries.
+Another way to define the group of researchers are all people who at most very ocassionaly perform RSE actions.
+\paragraph{RSE Hub}
 This is our general term for the central RSE team throughout this paper.
 These RSE Hubs can take the form of, \eg{} full RSE units, smaller RSE groups, Open Source Program Offices (OSPOs), virtually across multiple units or combined under single leadership,
  depending on the environment of the hosting research organisation.
@@ -92,14 +94,14 @@ We use the term central \emph{RSE unit} interchangeably with the term \emph{RSE 
 \end{quotation}
 
 The quote above is the shortest possible summary of this chapter: most if not all motivation to provide RSE services stems from the goal of improving research.
-Tasks RSEs perform include training, \eg{} to improve the often low-quality code developed by beginners~\autocite{Ostlund2023}, consultation services, \eg{} regarding frameworks or algorithm selection, and the development of existing or new software.
+Tasks RSEs perform include training, \eg{} to improve the quality of code produced by researchers~\autocite{Ostlund2023}, consultation services, \eg{} regarding frameworks or algorithm selection, and the development of existing or new software.
 For an overview of typical tasks of RSEs and the competencies required, see~\autocite{goth_foundational_competencies_2024}, especially section\ 4.4:\ “RSE tasks and responsibilities”.
 
 \subsection{Pooling: a necessary ingredient}
 The main focus of this paper lies on central RSE teams since the benefits of RSEs to research are described elsewhere **TODO: [REF]**.
 The main advantages of central RSE units all stem from the pooling of resources.
 There are at least three aspects to RSE pooling that research institutions can benefit from: funding, diverse knowledge, and support contacts.
-The first, pooling of \textbf{funding}, allows organisations to invest in building up institutional knowledge by supporting RSEs to become experts.
+First, pooling of \textbf{funding} allows organisations to invest in building up institutional knowledge by supporting RSEs to become experts.
 A central RSE team on long-term contracts will act as a knowledge hub due to their accumulated experience in and support of several disciplines as well as established contacts within the organisation.
 This is comparable to commercial/industry R\&D departments or so-called inhouse consulting~\autocite{Grima_2011}, where key software architects and developers establish a knowledge hub that can be consulted by project teams as necessary.
 Subject matter experts like software architects, database administrators and other tooling specialists are organised centrally and share their knowledge with members of decentralised projects.
@@ -263,9 +265,10 @@ The nine modules are described below.
 \subsection{Module 1: Foster a local Network of RSEs}%
 \label{sec:network}
 
-One of the core responsibilities of an RSE unit is to act as a coordinator of RSE activities across the institution.
+One of the core responsibilities of an RSE unit is to act as a coordinator of RSE activities within the institution.
 Research software is an integral part of modern research. 
-There are, therefore, researchers in every institution that at least sometimes perform the tasks of an RSE. We call these RSEs embedded RSEs.
+There are, therefore, researchers in every institution that at least sometimes perform the tasks of an RSE.
+We call these RSEs embedded RSEs.
 These RSEs typically work isolated from similar RSEs in different groups, within the same institution.
 The central RSE unit together with the embedded RSEs form a hub and spokes network.
 
@@ -294,7 +297,7 @@ Here, “better” can refer to a number of quality metrics such as correctness,
 
 In order to raise the quality standards for research that is based on research software, it is of great importance for research institutions to provide access to such expertise with a low barrier to entry.
 The hub is a natural place to provide this central service.
-There exists a number of scenarios where RSE consultation services differ strongly in scale and format.
+There are a number of scenarios where RSE consultation services differ strongly in scale and format.
 We mention a few of these in the following.
 “Walk-in” consultations on any research software related aspect that are open to researchers of all career levels are
 a great introduction to the hub's RSE services and are offered by almost all RSE units already established (see e.g. data in section~\ref{sec:existing} or \cite{Katz2019}).
@@ -408,7 +411,7 @@ The question whether RSE and RDM should be located in two separate groups or sho
 Some research institutions might host a dedicated \textbf{HPC group} which may or may not be part of the central IT unit.
 HPC is an RSE-related field, so HPC groups might already provide training, consulting and funding opportunities in this area.
 At the same time, HPC by nature focuses on highly efficient, many-core, if possible parallel computations.
-The challenges of an average researchers often start a long way before reaching that level, and they never might need to.
+The challenges of an average researchers often start a long way before reaching that level, and they might not ever need to consider HPC.
 There are obvious reasons to closely collaborate on both consulting and training, yet at the same time a central RSE unit has to provide a much broader portfolio.
 
 \subsection{Module 6: RSE Infrastructure Provisioning}%
