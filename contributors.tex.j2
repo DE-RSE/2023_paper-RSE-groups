@@ -8,6 +8,6 @@
 {%- for author in data.authors %}
 \author[​{% if author.affiliations %}{{ author.affiliations|join(", ") }}{% endif %}]{{ "{" }}{{ author.author }}{% if author.orcid is defined %}\texorpdfstring{\thinspace\orcidlink{ {{-author.orcid-}} }}{}{% endif %}{{ "}" }}
 {%- endfor %}
-{%- for affiliation, index in data.affiliations.items() %}
-\affil[{{ index }}]{{ "{" }}{{ affiliation }}{{ "}" }}
+{%- for index, affiliation in data.affiliations.items() %}
+\affil[{{ index }}]{{ "{" }}{{ affiliation.name }}{% if affiliation.ror is defined %}\texorpdfstring{\thinspace\rorlink{ {{-affiliation.ror-}} }} {}{% endif %}{{ "}" }}
 {%- endfor %}

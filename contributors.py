@@ -15,10 +15,17 @@ affiliations = list()
 for author in data["authors"]:
     if 'affiliations' in author:
         affiliations.extend(author["affiliations"])
-data["affiliations"] = {aff: i + 1 for i, aff in enumerate(list(dict.fromkeys(affiliations)))}
+# make sure affiliations are not duplicated - here by checking for exact name string
+affiliations = list({aff['name']: aff for aff in affiliations}.values())
+
+# create and add unique index and also a reverse lookup table
+data["affiliations"] = {i + 1: aff for i, aff in enumerate(affiliations)}
+aff_index_by_name    = {aff['name']: i for i, aff in data["affiliations"].items()}
+
+# attach index to authors
 for author in data["authors"]:
     if 'affiliations' in author:
-        author["affiliations"] = [data["affiliations"][aff] for aff in author["affiliations"]]
+        author["affiliations"] = [aff_index_by_name[aff['name']] for aff in author["affiliations"]]
 
 env = jinja2.Environment(
    loader=jinja2.FileSystemLoader(os.getcwd()),
