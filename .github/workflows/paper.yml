@@ -20,11 +20,13 @@ jobs:
       - name: Install Python requirements
         run: pip install -r requirements.txt
 
+      - name: Install LaTeX requirements for matplotlib
+        run: apt-get install texlive-latex-base
+
       - name: Create contributor snippet
         run: python contributors.py
 
       - name: Create group composition plot
-        uses: xu-cheng/latex-action@v3
         run: cd group_composition_plot && ./create_paper_plots.sh && cd -
       
       - uses: xu-cheng/latex-action@v3
