@@ -23,13 +23,14 @@ jobs:
       - name: Create contributor snippet
         run: python contributors.py
 
+      - name: Create group composition plot
+        uses: xu-cheng/latex-action@v3
+        run: cd group_composition_plot && ./create_paper_plots.sh && cd -
+      
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: paper.tex
 
-      - name: Create group composition plot
-        run: cd group_composition_plot && ./create_paper_plots.sh && cd -
-      
       - name: move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/*.pdf ./github_artifacts/ 
 
