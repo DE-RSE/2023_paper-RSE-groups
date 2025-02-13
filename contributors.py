@@ -7,6 +7,9 @@ import yaml
 with open("contributors.yml") as f:
     data = yaml.safe_load(f)
 
+# Sort by last name and contribution tier
+data["authors"] = list(sorted(sorted(data["authors"], key=lambda x: x["lastName"]), key=lambda x: x.get("tier", 2)))
+
 # Ensure that we have unique indices for the affiliations
 affiliations = list()
 for author in data["authors"]:
@@ -16,9 +19,6 @@ data["affiliations"] = {aff: i + 1 for i, aff in enumerate(list(dict.fromkeys(af
 for author in data["authors"]:
     if 'affiliations' in author:
         author["affiliations"] = [data["affiliations"][aff] for aff in author["affiliations"]]
-
-# Sort by last name and contribution tier
-data["authors"] = list(sorted(sorted(data["authors"], key=lambda x: x["lastName"]), key=lambda x: x.get("tier", 2)))
 
 env = jinja2.Environment(
    loader=jinja2.FileSystemLoader(os.getcwd()),
