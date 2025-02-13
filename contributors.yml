@@ -14,6 +14,7 @@ authors:
     affiliations:
       - Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
     orcid: 0000-0003-3986-0510
+    email: ljgarcia@zbmed.de
 
   - author: "Bernd Flemisch"
     firstName: Bernd
@@ -22,6 +23,7 @@ authors:
     affiliations:
       - Institute for Modelling Hydraulic and Environmental Systems, University of Stuttgart, Germany
     orcid: 0000-0001-8188-620X
+    email: bernd@iws.uni-stuttgart.de
     tier: 1
 
   - author: "Florian Goth"
@@ -122,6 +124,10 @@ authors:
     firstName: Philipp S.
     lastName: Sommer
     initials: PS
+    affiliations:
+      - Institute of Carbon Cycles, Helmholtz Coastal Data Center, Helmholtz-Zentrum Hereon, Germany
+    orcid: 0000-0001-6171-7716
+    email: philipp.sommer@hereon.de
 
   - author: "Robert Speck"
     firstName: Robert
