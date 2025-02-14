@@ -23,7 +23,7 @@ authors:
     lastName: Caspart
     initials: RC
     affiliations:
-      - name: Scientific Computing Center, Karlsruher Institut für Technologie, Germany
+      - name: Scientific Computing Center, Karlsruhe Institute of Technology, Germany
         ror: https://ror.org/04t3en479
     orcid: 0000-0002-5502-9412
     tier: 1
@@ -89,7 +89,7 @@ authors:
     lastName: Kempf
     initials: DK
     affiliations:
-      - name: Heidelberg University, Scientific Software Center, Germany
+      - name: Scientific Software Center, Heidelberg University, Germany
         ror: https://ror.org/038t36y30
     orcid: 0000-0002-6140-2332
     email: dominic.kempf@iwr.uni-heidelberg.de
@@ -114,7 +114,7 @@ authors:
     lastName: Loewe
     initials: AL
     affiliations:
-      - name: Karlsruhre Institute of Technology (KIT)
+      - name: Institute of Biomedical Engineering, Karlsruhe Institute of Technology, Germany
         ror: https://ror.org/04t3en479
     orcid: 0000-0002-2487-4744
     email: axel.loewe@kit.edu
@@ -167,7 +167,7 @@ authors:
     lastName: Struck
     initials: AS
     affiliations:
-      - name: Cluster of Excellence Matters of Activity. Image Space Material at Humboldt-Universitaet zu Berlin
+      - name: Cluster of Excellence Matters of Activity. Image Space Material at Humboldt-Universität zu Berlin, Germany
         ror: https://ror.org/01hcx6992
     orcid: 0000-0002-1173-9228
     email: alexander.struck@hu-berlin.de
