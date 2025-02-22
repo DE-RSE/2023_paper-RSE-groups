@@ -30,7 +30,7 @@ jobs:
         run: cd group_composition_plot && ./create_paper_plots.sh && cd -
       
       - name: Compile paper
-        run: latexmk -pdf paper.tex
+        run: latexmk -pdf --file-line-error --halt-on-error --interaction=nonstopmode --recorder paper.tex
 
       - name: move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/*.pdf ./github_artifacts/ 
