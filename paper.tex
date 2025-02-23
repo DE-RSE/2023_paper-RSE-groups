@@ -1,6 +1,9 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 \documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman,british]{babel}
 \usepackage{authblk}
+\usepackage{csquotes}
 \usepackage[alldates=iso,seconds=true,sorting=none]{biblatex}
 \usepackage{graphicx}
 \usepackage[margin=2.5cm]{geometry}
@@ -30,10 +33,10 @@
   urlcolor={Blue},
 }
 
-\usepackage{todonotes}
-
 \addbibresource{bibliography.bib}
 \addbibresource{positionpaper.bib}
+\setcounter{biburllcpenalty}{100}
+
 \title{Establishing central RSE units in German research institutions}
 
 \input{contributors.tex}
