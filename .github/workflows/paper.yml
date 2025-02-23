@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install LaTeX requirements for matplotlib
-        run: sudo apt install -y texlive-latex-base texlive-latex-extra cm-super-minimal texlive-fonts-extra
+        run: sudo apt install -y texlive-latex-base texlive-latex-extra cm-super-minimal texlive-fonts-extra latexmk texlive-bibtex-extra biber
 
       - name: Create contributor snippet
         run: python contributors.py
@@ -29,9 +29,8 @@ jobs:
       - name: Create group composition plot
         run: cd group_composition_plot && ./create_paper_plots.sh && cd -
       
-      - uses: xu-cheng/latex-action@v3
-        with:
-          root_file: paper.tex
+      - name: Compile paper
+        run: latexmk -pdf --file-line-error --halt-on-error --interaction=nonstopmode --recorder paper.tex
 
       - name: move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/*.pdf ./github_artifacts/ 
