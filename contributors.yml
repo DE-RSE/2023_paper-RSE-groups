@@ -146,7 +146,8 @@ authors:
     lastName: Schmitt
     initials: US
     affiliations:
-     - Scientific IT Services, ETH Zurich, Switzerland
+     - name: Scientific IT Services, ETH Zurich, Switzerland
+       ror: https://ror.org/05a28rw58
     orcid: 0000-0002-4658-0616
     email: uwe.schmitt@id.ethz.ch
     tier: 2
