@@ -4,7 +4,8 @@ authors:
     lastName: Ankenbrandt
     initials: MJA
     affiliations:
-      - Center for Computational and Theoretical Biology, University of Würzburg, Germany
+      - name: Center for Computational and Theoretical Biology, University of Würzburg, Germany
+        ror: https://ror.org/00fbnyb24
     orcid: 0000-0002-6620-807X
 
   - author: "Leyla Jael Castro"
@@ -12,7 +13,8 @@ authors:
     lastName: Castro
     initials: LC
     affiliations:
-      - Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
+      - name: Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
+        ror: https://ror.org/0259fwx54
     orcid: 0000-0003-3986-0510
     email: ljgarcia@zbmed.de
 
@@ -21,7 +23,8 @@ authors:
     lastName: Caspart
     initials: RC
     affiliations:
-      - Scientific Computing Center, Karlsruher Institut für Technologie, Germany
+      - name: Scientific Computing Center, Karlsruhe Institute of Technology, Germany
+        ror: https://ror.org/04t3en479
     orcid: 0000-0002-5502-9412
     tier: 1
 
@@ -30,7 +33,8 @@ authors:
     lastName: Flemisch
     initials: BF
     affiliations:
-      - Institute for Modelling Hydraulic and Environmental Systems, University of Stuttgart, Germany
+      - name: Institute for Modelling Hydraulic and Environmental Systems, University of Stuttgart, Germany
+        ror: https://ror.org/04vnq7t77
     orcid: 0000-0001-8188-620X
     email: bernd@iws.uni-stuttgart.de
     tier: 1
@@ -40,7 +44,8 @@ authors:
     lastName: Goth
     initials: FG
     affiliations:
-      - Institute for Theoretical Physics and Astrophysics, University of Würzburg, Germany
+      - name: Institute for Theoretical Physics and Astrophysics, University of Würzburg, Germany
+        ror: https://ror.org/00fbnyb24
     orcid: 0000-0003-2707-4790
     email: florian.goth@uni-wuerzburg.de
     acknowledgements: |
@@ -54,7 +59,8 @@ authors:
     lastName: Grad
     initials: JNG
     affiliations:
-      - Institute for Computational Physics, University of Stuttgart, Germany
+      - name: Institute for Computational Physics, University of Stuttgart, Germany
+        ror: https://ror.org/04vnq7t77
     orcid: 0000-0002-5821-4912
     email: jgrad@icp.uni-stuttgart.de
     acknowledgements: |
@@ -73,7 +79,8 @@ authors:
     lastName: Hagdorn
     initials: MH
     affiliations:
-      - Geschäftsbereich IT, Charité Universitätsmedizin Berlin, Germany
+      - name: Geschäftsbereich IT, Charité Universitätsmedizin Berlin, Germany
+        ror: https://ror.org/001w7jn25
     orcid: 0000-0002-5076-4864
     email: magnus.hagdorn@charite.de
 
@@ -82,7 +89,8 @@ authors:
     lastName: Kempf
     initials: DK
     affiliations:
-      - Heidelberg University, Scientific Software Center, Germany
+      - name: Scientific Software Center, Heidelberg University, Germany
+        ror: https://ror.org/038t36y30
     orcid: 0000-0002-6140-2332
     email: dominic.kempf@iwr.uni-heidelberg.de
     acknowledgements: |
@@ -95,7 +103,8 @@ authors:
     lastName: Linxweiler
     initials: JL
     affiliations:
-      - Technische Universität Braunschweig, Germany
+      - name: University Library, Technische Universität Braunschweig, Germany
+        ror: https://ror.org/010nsgg66
     orcid: 0000-0002-2755-5087
     email: j.linxweiler@tu-braunschweig.de
     tier: 1
@@ -105,7 +114,8 @@ authors:
     lastName: Loewe
     initials: AL
     affiliations:
-      - Karlsruhre Institute of Technology (KIT)
+      - name: Institute of Biomedical Engineering, Karlsruhe Institute of Technology, Germany
+        ror: https://ror.org/04t3en479
     orcid: 0000-0002-2487-4744
     email: axel.loewe@kit.edu
 
@@ -114,7 +124,8 @@ authors:
     lastName: Löffler
     initials: FL
     affiliations:
-      - Competence Center Digital Research, Friedrich Schiller University Jena, Germany
+      - name: Competence Center Digital Research, Friedrich Schiller University Jena, Germany
+        ror: https://ror.org/05qpz1x62
     orcid: 0000-0001-6643-6323
     email: frank.loeffler@uni-jena.de
     tier: 1
@@ -124,7 +135,8 @@ authors:
     lastName: Schäfer
     initials: PMS
     affiliations:
-      - Competence Center Digital Research, Friedrich Schiller University Jena, Germany
+      - name: Competence Center Digital Research, Friedrich Schiller University Jena, Germany
+        ror: https://ror.org/05qpz1x62
     orcid: 0000-0003-3931-6670
     email: philipp.matthias.schaefer@uni-jena.de
     tier: 1
@@ -144,7 +156,8 @@ authors:
     lastName: Sommer
     initials: PS
     affiliations:
-      - Institute of Carbon Cycles, Helmholtz Coastal Data Center, Helmholtz-Zentrum Hereon, Germany
+      - name: Institute of Carbon Cycles, Helmholtz Coastal Data Center, Helmholtz-Zentrum Hereon, Germany
+        ror: https://ror.org/03qjp1d79
     orcid: 0000-0001-6171-7716
     email: philipp.sommer@hereon.de
 
@@ -153,7 +166,8 @@ authors:
     lastName: Speck
     initials: RS
     affiliations:
-      - Jülich Supercomputing Centre, Forschungszentrum Jülich GmbH, Germany
+      - name: Jülich Supercomputing Centre, Forschungszentrum Jülich GmbH, Germany
+        ror: https://ror.org/02nv7yv05
     orcid: 0000-0002-3879-1210
     email: r.speck@fz-juelich.de
     tier: 1
@@ -163,7 +177,8 @@ authors:
     lastName: Struck
     initials: AS
     affiliations:
-      - Cluster of Excellence Matters of Activity. Image Space Material at Humboldt-Universitaet zu Berlin
+      - name: Cluster of Excellence Matters of Activity. Image Space Material at Humboldt-Universität zu Berlin, Germany
+        ror: https://ror.org/01hcx6992
     orcid: 0000-0002-1173-9228
     email: alexander.struck@hu-berlin.de
     acknowledgements: |
