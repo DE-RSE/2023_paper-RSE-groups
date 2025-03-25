@@ -74,7 +74,7 @@ for inst, idata in data.items():
 
 # Shared legend
 if args['legend']:
-  legend = fig.legend(activity_names, title="Activities",
+  legend = fig.legend(activity_names, title="Activities (= modules)",
       loc="upper right", bbox_to_anchor=(1.4, .7), frameon=False)
   #nothing = matplotlib.patches.Rectangle((0,0), 1, 1, fill=False, edgecolor='none', visible=False)
   #legend_inst = plt.legend([nothing]*len(inst_names),
