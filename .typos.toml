@@ -1,0 +1,3 @@
+[default.extend-words]
+# Add words `WOLOLO` to be ignored like this:
+# WOLOLO = "WOLOLO"
