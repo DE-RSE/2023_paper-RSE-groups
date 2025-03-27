@@ -162,6 +162,16 @@ authors:
     orcid: 0000-0001-6171-7716
     email: philipp.sommer@hereon.de
 
+  - author: "Iris Ehlert"
+    firstName: Iris
+    lastName: Ehlert
+    initials: IE
+    affiliations:
+      - name: German Climate Computing Center (DKRZ), Germany
+        ror: https://ror.org/03ztgj037
+    orcid: 0009-0006-0418-5198
+    email: ehlert@dkrz.de
+
   - author: "Robert Speck"
     firstName: Robert
     lastName: Speck

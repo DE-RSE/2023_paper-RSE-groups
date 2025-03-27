@@ -39,7 +39,7 @@
 \addbibresource{positionpaper.bib}
 \setcounter{biburllcpenalty}{100}
 
-\title{Establishing central RSE units in German research institutions}
+\title{Developing central Research Software Engineering units in German research institutions}
 
 \input{contributors.tex}
 
@@ -50,14 +50,14 @@
 \maketitle
 
 \abstract{%
-This position paper urges decision makers in Germany to establish central RSE units within their institutions.
+This position paper urges decision makers in Germany to establish central Research Software Engineering (RSE) units within their institutions.
 Focus is not put primarily on the establishment of RSE services in general, as this has been done already elsewhere.
 Instead, we highlight central RSE units.
 Motivation for their existence is discussed, underpinned by working examples both in neighbouring fields as well as outside of Germany.
 The heart of this paper is a vision of a central RSE unit, its structure, and the definition of nine core support modules such a unit may provide.
 An initial survey finds that there is considerable diversity within the module distribution, even within the few considered groups.
-Initial observations on possible clusters are discussed, but need further studies.
-Finally, realisation strategies are discussed.
+We discuss initial observations on possible clusters, but further studies are needed.
+Finally, we discuss realisation strategies.
 While this paper focuses mostly on the German academic environment, some general strategies should also apply elsewhere.
 }
 
@@ -105,11 +105,11 @@ We use the term central \emph{RSE unit} interchangeably with the term \emph{RSE 
 
 \section{Motivation for central RSE units}
 \begin{quotation}
-      \textit{Better Software, Better Research}\\(Mission statement of the UK Software Sustainability Institute)
+      \noindent \textit{Better Software, Better Research}\\(Mission statement of the UK Software Sustainability Institute)
 \end{quotation}
 
-The quote above is the shortest possible summary of this chapter: Most if not all motivation to provide RSE services stems from the goal of improving research.
-Tasks RSEs perform include training, \eg{} to improve the quality of code produced by researchers~\autocite{Ostlund2023}, consultation services, \eg{} regarding frameworks or algorithm selection, and the development of existing or new software.
+The quote above is the shortest possible summary of this chapter: most if not all motivation to provide RSE services stems from the goal of improving research.
+Tasks that Research Software Engineers (RSEs) perform include training, \eg{} to improve the quality of code produced by researchers~\autocite{Ostlund2023}, consultation services, \eg{} regarding frameworks or algorithm selection, and the development of existing or new software.
 For an overview of typical tasks of RSEs and the competencies required, see~\autocite{goth_foundational_competencies_2024}, especially section\ 4.4:\ “RSE tasks and responsibilities”.
 
 \subsection{Pooling: a necessary ingredient}
@@ -148,7 +148,7 @@ For example, similar arguments can and have been made for research data support.
 
 \subsubsection{Research data management}
 Both data and software play a fundamental role in almost all of research.
-Over the past decades, Research Data Management (RDM) has evolved into a topic of national interest with NFDI consortia for all disciplines and a research data law.
+Over the past decades, Research Data Management (RDM) has evolved into a topic of national interest with NFDI\footnote{Nationale Forschungsdateninfrastruktur: the national research data infrastructure in Germany} consortia for all disciplines and a research data law.
 Federal state RDM initiatives\footnote{\url{https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/deutschland/}} have established the topic further and provide regional training, networking and other supporting services.
 Many research organisations have set up established central RDM groups that support research projects in all aspects from grant proposals to hands-on support and maintaining Data Management Plans (DMPs).
 Funding agencies acknowledge the importance of research data and have started to make RDM mandatory in research projects.
@@ -168,10 +168,10 @@ It includes groups with responsibilities across institutions like
  the Helmholtz HIFIS group~\autocite{haupt_hifis_consulting_2021, HIFIS},
  but mostly groups with responsibilities local to their institution.
 Their anchoring within institutions also differs:
-Some like the Scientific Software Center in Heidelberg~\autocite{keegan_ssc_whitepaper,HeidelbergSSC} are part of an existing interdisciplinary research institution.
-Others like the Competence Center Digital Research (zedif) in Jena~\autocite{zedifUniJena} are part of the central university research support infrastructure and are goverened by the institutional leadership.
+Some are part of an existing interdisciplinary research institution (like the Scientific Software Center in Heidelberg~\autocite{keegan_ssc_whitepaper,HeidelbergSSC}).
+Others are part of the central university research support infrastructure and are goverened by the institutional leadership (like the Competence Center Digital Research (zedif) in Jena~\autocite{zedifUniJena}).
 Yet others have a project character, like Suresoft in Braunschweig~\autocite{Blech2022,SURESOFTLink}.
-Another national pioneer is the Göttingen State and University Library where RSE services are part of the library service portfolio.
+Another national pioneer is the Göttingen State and University Library where RSE services are part of the library-service portfolio.
 
 Most of these groups, or at least their RSE services, are still relatively young.
 However, some groups can already report a remarkable increase in software quality, better grant applications, less brain drain and overall better employee satisfaction levels~\autocite{schimavoigt2023}.
@@ -431,6 +431,14 @@ One possible additional measure in this regard is sharing the work done by the R
 Activities in category (iii), \ie{} outreach to RSE initiatives outside the institution include contributing to events, position papers and the initiatives themselves, either directly from the RSE unit or by advertising at the institution and matchmaking with local RSEs interested in becoming active beyond their local tasks.
 The RSE unit thus contributes to the RSE communities on a regional, national or international level on the one hand and opens these up to the local RSEs and enables networking on the other hand.
 It organises the bidirectional exchange between the local and the global community and is the central hub for information coming both ways.
+
+\begin{mdframed}
+\textbf{Success Story:} As a national initiative integrating Research Software Engineering (RSE) principles, natESM (the national Earth System Modelling strategy~\autocite{Ehlert2025}) is developing a sustainable and high-performance Earth system modelling capability for Germany while addressing several of the key aspects outlined above.
+By coordinating RSE activities across multiple institutions through a well-structured sprint process, natESM fosters collaboration between scientists and RSEs, ensuring that future Earth system models remain efficient, maintainable, and HPC-compatible.
+Within this process, natESM also provides structured consultation services, supporting researchers in adopting modern software development practices and strengthening the technical foundations of their models.
+Beyond development and maintenance, regular training events and workshops equip scientists with the expertise needed to work effectively within the natESM system. A GitLab service, community newsletters, a Mattermost channel for direct exchange, and a dedicated website ensure transparency and engagement across the national Earth system modelling community.
+Through this integrated approach, natESM reinforces the technical backbone of Earth system and climate modelling, ensuring that it remains adaptable, scalable, and future-proof.
+\end{mdframed}
 
 \section{Existing Implementations}%
 \label{sec:existing}
