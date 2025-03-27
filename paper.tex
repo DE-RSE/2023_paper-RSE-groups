@@ -135,6 +135,8 @@ Their diversity in skills (languages, frameworks, front/back-end, UX, management
 This will improve the chances of a project being successfully completed in a timely manner.
 That means a central RSE unit has more RSE competencies than any individual research group in the institution.
 This allows members of that unit to bring in new ideas or transfer them from other collaborations to these groups.
+Furthermore, by centralising RSE expertise, the unit benefits from economies of scale, making it feasible to handle also less frequently needed tasks across multiple groups.
+This synergy broadens the scope of possible software-based solutions while distributing costs and resources more efficiently.
 
 The third aspect to pooling RSEs is visible most of all from a users perspective: a \textbf{single, central contact point} for digital challenges is valuable to researchers, whose first problem often is not knowing whom to contact, partially because while they know what they want, they might not know what they need.
 A central RSE team can, due to its proximity to research, much better listen to the wishes expressed by researchers and then help formulate needs and act as a channel to either fulfil them themselves or reformulate and redirect the request.
@@ -203,6 +205,7 @@ and the German Research Council~\autocite{dfg_gsp}.
 Another development taking place worldwide is the encouragement of authors to submit both, data and software, for peer review.
 As an example, the journal “Nature” initiated such a policy\footnote{\url{https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards}} in 2018~\autocite{Nature2018}.
 RSE groups are able to offer researchers consulting tailored to their specific needs on how to implement and document those policies.
+This is especially relevant in the context of reproducibility of software-based research.
 
 The global FAIR movement originated from RDM and widened their focus to include research software.
 However, it also has become clear in that process that software is not “just another type of data” and that the FAIR principles are not sufficient for software.
@@ -246,7 +249,7 @@ Information also flows from the embedded RSEs to the central RSE unit allowing i
 How an RSE unit realises this task will depend heavily on its environment and resources.
 We only mention a few examples here to provide inspiration, with the explicit claim of incompleteness:
 talks, seminars, workshops, hackathons, as well as informal meet-ups all facilitate establishing a local network of RSEs.
-As a foundation, a central RSE unit employs experienced RSEs, mostly at the post-doctoral level, who are not only expert software engineers, but also good communicators with the ability to work in interdisciplinary teams.
+As a foundation, a central RSE unit employs experienced RSEs, mostly at the post-doctoral level, who are not only expert software engineers and scientists, but also good communicators with the ability to work in interdisciplinary teams.
 At least a core of a central RSE unit's employees need to have permanent contracts to be able to offer that deep expertise that requires years of experience.
 Moreover, an onboarding process can serve as an entry point for new RSEs, whether in the central RSE unit or as an embedded RSE, into an institution's network.
 This gives an opportunity to gauge how the new colleague can benefit from the RSE unit's teaching services and whom they might want to network with based on their planned work.
@@ -296,9 +299,9 @@ This is especially relevant if the researchers hired for the research projects d
 Depending on the scale of the involvement, the RSE unit can either be included into the grant proposal via a co-PI or as an internal service provider.
 
 If the research within an institution heavily relies on specific pieces of software,
-it is of vital importance for the long-term success of the institution to sustain these pieces of software.
-Relying on a workforce that is subject to academic labour turnover poses a risk of knowledge loss.
-If the development is done in an RSE unit with long-term contracts, institutional memory about critical research software infrastructures can be created and the long-term availability of these infrastructures can be improved.
+it is of vital importance for the long term success of the institution to sustain these pieces of software.
+Relying on a workforce that is subject to academic labour turnover poses the risk of knowledge loss and incurs a significant overhead due to the need to constantly search for and then retrain new staff.
+If the development is done in an RSE unit with long-term contracts, institutional memory about critical research software infrastructures can be created and the long term availability of these infrastructures can be improved.
 This applies both to domain-specific research software (\eg{} simulation frameworks widely used throughout the institution)
 and to domain-agnostic software and data infrastructure (\eg{} Jupyter, workflow management systems, data repository software).
 
@@ -348,7 +351,7 @@ They also provide software services such as Email, web services, and databases, 
 Research software often has to work within the environment provided by the IT unit.
 A central RSE unit can help researchers adapt their software to run on central services where necessary.
 RSEs can also work with central IT staff to provide IT infrastructure well suited for research projects.
-Usually, this requires a level of engagement and understanding of both the underlying research concepts and IT infrastructure that the staff of the IT unit or the researchers each cannot provide.
+Usually, this requires a level of engagement and understanding of both the underlying research concepts and IT infrastructure that the staff of the IT unit or the researchers each cannot provide alone.
 
 If available, a second important partner is a scientific \textbf{library}, which has already gained tasks much beyond the preservation and organisation of publications on physical paper for quite some time.
 Besides digital forms of rather traditional publications, these more and more include digital data and recently also software publications, their discovery and citation.
@@ -435,7 +438,7 @@ It organises the bidirectional exchange between the local and the global communi
 \begin{figure}
 \centering
 \includegraphics[width=.8\textwidth]{./group_composition_plot/group_composition_plot_the_fantastic_four.pdf}
-\caption{National and international examples of RSE units and their service portfolio: \protect\input{./group_composition_plot/group_composition_plot_the_fantastic_four.labels}\unskip. Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}%
+\caption{National and international examples of RSE units and their service portfolio, structured by activities corresponding to the modules described in Section~\ref{sec:vision}. \protect\input{./group_composition_plot/group_composition_plot_the_fantastic_four.labels}\unskip. Heidelberg and Princeton offer development services, whereas Jena and Reading focus mostly on teaching and consultation services.}%
 \label{fig:survey}
 \end{figure}
 
@@ -475,7 +478,7 @@ We see four basic options for financing RSE positions, which we will briefly exp
 While each option stands for itself, in reality, an institutional RSE unit will most certainly finance its staff by an appropriate mixture of possibly all four options.
 The mixture at a particular institution depends heavily on the local conditions.
 
-At research institutions, it is important to resolve the conflict between time-limited research funding and the need for permanent positions in order to be competitive with industry.
+At research institutions, it is important to resolve the conflict between time-limited research funding and the need for permanent positions, the latter being required to remain competitive with industry when hiring highly-qualified RSEs.
 Experience is also an essential component of software engineering, which makes long-term employment indispensable.
 In principle, pooling of positions and funds makes it possible to finance permanent positions from changing and mixed sources.
 An institution’s leadership has to justify taking the corresponding risk of failing to raise external funds.
@@ -536,7 +539,9 @@ A canonical place would be a new subunit of an existing unit close to software,
 training services and computing such as the local or central IT unit or the library.
 Since most institutions already have an RDM unit, it seems natural to add the RSE unit as a parallel structure.
 Another choice for the parent unit, particularly at universities, is the faculty for computer science.
-Determining the best place may involve discussions with several stakeholders at the institution and can already be beneficial for creating a
+A key aspect for this decision is that the RSE unit must be able to work with all research groups at the institution, for which it needs to act independently and thus should not be absorbed by a larger unit.
+Since it offers a unique view on challenges related to research software, a smartly placed RSE unit is able to serve as link between the individual research groups and other central institutional units.
+Therefore, determining the best place may involve discussions with several stakeholders at the institution and can already be beneficial for creating a
 network of institutional partners, see the module described in \autoref{sec:partners}.
 
 The business plan also needs to address funding for the RSE unit's initial staff.
@@ -631,6 +636,22 @@ This should be complemented by adding a minor in these application-domain study 
 There are already some master's programs available (\eg{} in Berlin, Munich, and Stuttgart), that develop this specialisation on top of a domain bachelor.
 Moreover, data science curricula already exist and more are in the process of being created.
 A curated and continuously updated list of these programs is available at~\cite{learnandteachlearn}.
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+In this paper, we have outlined a vision for central RSE units in research institutions, focusing particularly on the German research landscape.
+We have proposed a modular framework for structuring the services of such units, identifying nine fundamental modules and providing concrete pathways for their implementation.
+Our survey of existing RSE units illustrates that such structures can take various forms, ranging from consultation-focused groups to those offering extensive software development services.
+Yet, all serve to consolidate expertise within a research institution, strengthen cooperation across scientific disciplines, and increase the overall quality of research.
+
+Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+They further enable closer collaboration among related domains like HPC, data management, and digital infrastructure.
+This ultimately leads to more sustainable, reproducible, and impactful research on and with software-based methods.
+
+We encourage decision makers to strategically invest in and formalise central RSE units, recognising their role as indispensable partners in modern research environments.
+By unifying previously scattered RSE efforts into a coordinated approach with clear mandates, stable funding, and long-term career prospects, institutions have the opportunity to significantly enhance their research capabilities and competitiveness in an increasingly digital scientific world.
+
 
 \printbibliography[heading=bibintoc]
 
