@@ -2,6 +2,6 @@
 locale = "en-gb"
 
 [default.extend-words]
-# Add words `WOLOLO` to be ignored like this:
+# Add words to be ignored like this:
 Center = "Center"
 itemize = "itemize"
