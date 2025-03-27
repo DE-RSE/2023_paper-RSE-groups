@@ -1,0 +1,10 @@
+[default]
+locale = "en-gb"
+
+extend-ignore-re = [
+  'Scientific Software Center in Heidelberg',
+  'Competence Center Digital Research',
+  'German Aerospace Center',
+  '\\end\{itemize\}',
+  '\\begin\{itemize\}',
+]
