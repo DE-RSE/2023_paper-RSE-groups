@@ -195,3 +195,19 @@ authors:
     acknowledgements: |
       AS acknowledges the support of the Cluster of Excellence »Matters of Activity. Image Space Material« funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2025 – 390648296.
     tier: 1
+
+  - author: "Michael Schlottke-Lakemper"
+    firstName: Michael
+    lastName: Schlottke-Lakemper
+    initials: MSL
+    affiliations:
+      - name: Centre for Advanced Analytics and Predictive Sciences, University of Augsburg, Germany
+        ror: https://ror.org/03p14d497
+    orcid: 0000-0002-3195-2536
+    email: michael.schlottke-lakemper@uni-a.de
+    acknowledgements: |
+      MSL acknowledges funding from the Deutsche Forschungsgemeinschaft
+      (DFG, German Research Foundation) through the research unit FOR-5409 "SNuBIC",
+      project C2 (project number \href{https://gepris.dfg.de/gepris/projekt/501202213?language=en}{501202213}),
+      and through individual grant "ACTRIX" (project number
+      \href{https://gepris.dfg.de/gepris/projekt/528753982?language=en}{528753982}).
