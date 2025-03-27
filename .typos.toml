@@ -1,7 +1,10 @@
 [default]
 locale = "en-gb"
 
-[default.extend-words]
-# Add words to be ignored like this:
-Center = "Center"
-itemize = "itemize"
+extend-ignore-re = [
+  'Scientific Software Center in Heidelberg',
+  'Competence Center Digital Research',
+  'German Aerospace Center',
+  '\\end\{itemize\}',
+  '\\begin\{itemize\}',
+]
