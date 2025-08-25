@@ -2,11 +2,20 @@
 import jinja2
 import os
 import yaml
+import argparse
+from pathlib import Path
 
 
 def main():
 
-    with open("contributors.yml") as f:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("contributors", type=Path,
+                        help="yml file containing the contributors")
+    parser.add_argument("-o", "--output", type=Path,
+                        help="the name of the output file")
+    args = parser.parse_args()
+
+    with args.contributors.open('r') as f:
         data = yaml.safe_load(f)
 
     # Sort by last name and contribution tier
@@ -41,8 +50,12 @@ def main():
        keep_trailing_newline=True,
     )
 
-    with open("./contributors.tex", "w") as out:
-        out.write(env.get_template("contributors.tex.j2").render(data=data))
+    contribs = env.get_template("contributors.tex.j2").render(data=data)
+
+    if args.output is not None:
+        args.output.write_text(contribs)
+    else:
+        print(contribs)
 
 
 if __name__ == '__main__':
