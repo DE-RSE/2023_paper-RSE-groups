@@ -1,55 +1,205 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
-\documentclass[a4paper]{article}
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
 \usepackage[T1]{fontenc}
 \usepackage[ngerman,british]{babel}
 \usepackage{authblk}
 \usepackage{csquotes}
 \usepackage[alldates=iso,seconds=true,sorting=none]{biblatex}
 \usepackage{graphicx}
-\usepackage[margin=2.5cm]{geometry}
 
-\DeclareUnicodeCharacter{200B}{{\hskip 0pt}}
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
 
-\usepackage{libertine}
-\usepackage{orcidlink}
-\usepackage{rorlink}
-\renewcommand\Affilfont{\small}
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
 
-\usepackage{hyperref}
-\urlstyle{same}
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage[nopatch=eqnum]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Please use the included `plos2025.bst` as your BibTeX style
+%\bibliographystyle{plos2025}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
 \usepackage{xspace}
 \usepackage{caption,tikzpagenodes,ifthen}
 
-\usepackage{mdframed}
+%% Include all user-defined macros below
 
 \newcommand*{\eg}{e.\,g.,\xspace}
 \newcommand*{\ie}{i.\,e.,\xspace}
 
-\hypersetup{%
-  %pdftitle={},
-  %pdfkeywords={},
-  colorlinks=true,
-  linkcolor={darkgray},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
-}
+%% END MACROS SECTION
 
 \addbibresource{bibliography.bib}
 \addbibresource{positionpaper.bib}
 \setcounter{biburllcpenalty}{100}
 
-\title{Developing central Research Software Engineering units in German research institutions}
 
-\input{contributors.tex}
+%\usepackage[alldates=iso,seconds=true,sorting=none]{biblatex}
+%\usepackage[margin=2.5cm]{geometry}
 
-\date{\today}
+\DeclareUnicodeCharacter{200B}{{\hskip 0pt}}
+
+%\usepackage{libertine}
+%\usepackage{orcidlink}
+%\usepackage{rorlink}
+%\renewcommand\Affilfont{\small}
+
+
+%\urlstyle{same}
+
+\usepackage{mdframed}
 
 \begin{document}
+\vspace*{0.2in}
 
-\maketitle
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf{Developing central Research Software Engineering units in German research institutions} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Dominic Kempf​\textsuperscript{ 1* }
+Frank Löffler​\textsuperscript{ 2, 3 }
+René Caspart​\textsuperscript{ 4 }
+Bernd Flemisch​\textsuperscript{ 5 }
+Florian Goth​\textsuperscript{ 6 }
+Jan Linxweiler​\textsuperscript{ 7, 3 }
+Philipp Matthias Schäfer​\textsuperscript{ 2 }
+Robert Speck​\textsuperscript{ 8 }
+Alexander Struck​\textsuperscript{ 9 }
+Markus J. Ankenbrand​\textsuperscript{ 10 }
+Leyla Jael Castro​\textsuperscript{ 11 }
+Iris Ehlert​\textsuperscript{ 12 }
+Jean-Noël Grad​\textsuperscript{ 13 }
+Magnus Hagdorn​\textsuperscript{ 14 }
+Axel Loewe​\textsuperscript{ 15 }
+Michael Schlottke-Lakemper​\textsuperscript{ 16 }
+Uwe Schmitt​\textsuperscript{ 17 }
+Philipp S. Sommer​\textsuperscript{ 18 }
+\\
+\bigskip
+\textbf{ 1 } Scientific Software Center, Heidelberg University, Germany
+\\
+\textbf{ 2 } Competence Center Digital Research, Friedrich Schiller University Jena, Germany
+\\
+\textbf{ 3 } de-RSE e.V.---Society for Research Software in Germany
+\\
+\textbf{ 4 } Scientific Computing Center, Karlsruhe Institute of Technology, Germany
+\\
+\textbf{ 5 } Institute for Modelling Hydraulic and Environmental Systems, University of Stuttgart, Germany
+\\
+\textbf{ 6 } Institute for Theoretical Physics and Astrophysics, University of Würzburg, Germany
+\\
+\textbf{ 7 } University Library, Technische Universität Braunschweig, Germany
+\\
+\textbf{ 8 } Jülich Supercomputing Centre, Forschungszentrum Jülich GmbH, Germany
+\\
+\textbf{ 9 } Cluster of Excellence Matters of Activity. Image Space Material at Humboldt-Universität zu Berlin, Germany
+\\
+\textbf{ 10 } Center for Computational and Theoretical Biology, University of Würzburg, Germany
+\\
+\textbf{ 11 } Semantic Technologies team, ZB MED Information Centre for Life Sciences, Germany
+\\
+\textbf{ 12 } German Climate Computing Center (DKRZ), Germany
+\\
+\textbf{ 13 } Institute for Computational Physics, University of Stuttgart, Germany
+\\
+\textbf{ 14 } Geschäftsbereich IT, Charité Universitätsmedizin Berlin, Germany
+\\
+\textbf{ 15 } Institute of Biomedical Engineering, Karlsruhe Institute of Technology, Germany
+\\
+\textbf{ 16 } Centre for Advanced Analytics and Predictive Sciences, University of Augsburg, Germany
+\\
+\textbf{ 17 } Scientific IT Services, ETH Zurich, Switzerland
+\\
+\textbf{ 18 } Institute of Carbon Cycles, Helmholtz Coastal Data Center, Helmholtz-Zentrum Hereon, Germany
+\\
+\bigskip
 
-\abstract{%
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* dominic.kempf@iwr.uni-heidelberg.de
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+
+\section*{Abstract}
 This position paper urges decision makers in Germany to establish central Research Software Engineering (RSE) units within their institutions.
 The focus is not put primarily on the establishment of RSE services in general, as this has been done already elsewhere.
 Instead, we highlight central RSE units.
@@ -59,9 +209,8 @@ An initial survey finds that there is considerable diversity within the module d
 We discuss initial observations on possible clusters, but further studies are needed.
 Finally, we discuss realisation strategies.
 While this paper focuses mostly on the German academic environment, some general strategies should also apply elsewhere.
-}
 
-\section{Introduction}
+\section*{Introduction}
 Research software has been written and used for decades in an increasing range of disciplines.
 It has been established that most research requires research software for its results~\autocite{Hannay2009, Hettrick2015}.
 To solve pressing research challenges, better software is crucial~\autocite{Goble2014}.
@@ -101,7 +250,7 @@ These RSE Hubs can take the form of, \eg{} full RSE units, smaller RSE groups, O
 All of these implementations are considered, taking into account the large variety of research environments in Germany, which include not only universities, but also research consortia and other research performing organisations.
 We use the term central \emph{RSE unit} interchangeably with the term \emph{RSE hub} even though for large federated research organisations there might be a more complex arrangement such as a network of RSE hubs.
 
-\section{Motivation for central RSE units}
+\section*{Motivation for central RSE units}
 \label{sec:motivation}
 \begin{quotation}
       \noindent \textit{Better Software, Better Research}\\(Mission statement of the UK Software Sustainability Institute)
@@ -116,7 +265,7 @@ This is partly because the scientific problems being tackled using software are 
 However, the software is also expected to rate high on a multitude of quality metrics such as correctness, reproducibility, maintainability, extensibility, usability, portability, interoperability, security, performance, and scalability~\autocite[Chapter 16]{Schulmeyer2008}.
 Handling this increased complexity whilst ensuring timely delivery requires dedicated RSEs in central RSE units.
 
-\subsection{Pooling: a necessary ingredient}
+\subsection*{Pooling: a necessary ingredient}
 The main focus of this paper lies on central RSE teams since the benefits of RSEs to research in general are described elsewhere, \eg{} in~\autocite{Anzt2021}.
 The main advantages of central RSE units all stem from the pooling of resources.
 There are at least three aspects to RSE pooling that research institutions can benefit from: funding, diverse knowledge, and a central point of contact.
@@ -150,12 +299,12 @@ Working in a research institution is very stimulating.
 However, an embedded RSE can feel very lonely when they do not have anybody to discuss technical problems.
 A central RSE unit also provides a social space for RSEs where this exchange can easily happen.
 
-\subsection{Pooling: an already tested idea}
+\subsection*{Pooling: an already tested idea}
 The idea to pool resources in specific areas within an organisation is not new.
 In industry, software engineering underwent a similar transition about 20 years ago, with the creation of specialised, central software development units.
 In an example from academia, similar arguments can and have been made for research data support.
 
-\subsubsection{Research data management}
+\subsubsection*{Research data management}
 Both data and software play a fundamental role in almost all of research.
 Over the past decades, Research Data Management (RDM) has evolved into a topic of national interest with NFDI\footnote{Nationale Forschungsdateninfrastruktur: the national research data infrastructure in Germany} consortia for all disciplines and a research data law.
 Federal state RDM initiatives\footnote{\url{https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/deutschland/}} have established the topic further and provide regional training, networking and other supporting services.
@@ -170,7 +319,7 @@ With the increasing recognition of software as a research product, it is easy to
 
 Due to the similar nature of both, data and software, and their importance in today's digital research, it is reasonable to expect a similar trajectory in the development of research software as a topic, as we have witnessed for research data.
 
-\subsubsection{Existing RSE efforts}
+\subsubsection*{Existing RSE efforts}
 Some organisations already have central RSE teams.
 The field of RSE teams in Germany is currently poorly mapped and very diverse.
 It includes groups with responsibilities across institutions like the Helmholtz HIFIS group~\autocite{haupt_hifis_consulting_2021, HIFIS}, but mostly groups with responsibilities local to their institution.
@@ -195,7 +344,7 @@ A range of already existing RSE units in the UK can be seen on this (incomplete)
 In the UK, it is common for grant applications to include software development in their budget.
 This allocated money can then be utilised to delegate/dispatch a central RSE person or group into a research project for a few weeks or months as necessary.
 
-\subsection{External expectations}
+\subsection*{External expectations}
 
 Some of the latest DFG grant application templates (\eg{} the strategy of excellence~\autocite{DFG_ExStra130}) require discussion of both, data \emph{and} software management (in line with their GWP guidelines~\autocite{dfg_gsp}).
 In addition, as dedicated DMPs have become mandatory in several funding calls~\autocite{FDM_Info_FDM}, we expect to see a similar development for Software Management Plans (SMPs) in the future.
@@ -219,7 +368,7 @@ However, it also has become clear in that process that software is not “just a
 The FAIR principles for Research Software (FAIR4RS)~\autocite{ChueHong2022} have been adopted worldwide~\autocite{Barker2024}, including the German Ministry of Education and Research (BMBF) and the German Research Foundation (DFG).
 The rather complex assessment of FAIRness~\autocite{Wilkinson2023,FAIRmaturity} has also widened from data to software~\autocite{Lamprecht2020}.
 
-\section{Vision}%
+\section*{Vision}%
 \label{sec:vision}
 
 In this section, we describe our vision for central RSE units at research institutions in Germany.
@@ -235,7 +384,7 @@ However, these nine modules, along with their assigned weights (indicating relat
 This provides both a quick overview of an individual group as well as a way to compare groups.
 The nine modules are described below.
 
-\subsection{Module 1: Foster a local Network of RSEs}%
+\subsection*{Module 1: Foster a local Network of RSEs}%
 \label{sec:network}
 
 One of the core responsibilities of an RSE unit is to act as a coordinator of RSE activities within the institution.
@@ -262,7 +411,7 @@ Moreover, an onboarding process can serve as an entry point for new RSEs, whethe
 This gives an opportunity to gauge how the new colleague can benefit from the RSE unit's teaching services and whom they might want to network with based on their planned work.
 Similarly an off-boarding process can help to make sure that all acquired knowledge that is relevant to the institution is passed on to someone else, even if possibly not within the specific research group.
 
-\subsection{Module 2: Consultation Services}%
+\subsection*{Module 2: Consultation Services}%
 \label{sec:consultation}
 
 With the majority of researchers being self-taught programmers~\autocite{Carver2013}, there is a huge demand for expertise on how to develop better research software.
@@ -286,7 +435,7 @@ Consultation services that are already involved in the proposal phase are expect
 This in turn leads to improved proposal acceptance rates, thereby amortising the initial investment into RSE units.
 
 
-\subsection{Module 3: Development Services}%
+\subsection*{Module 3: Development Services}%
 \label{sec:development}
 
 There is a huge demand for the development and customisation of research software tailored to the needs of specific research projects.
@@ -325,7 +474,7 @@ The RSE unit can create institutional accounts with the app stores and manage th
 Besides the technical benefits of this central deployment procedure, the institution benefits from the increased visibility and the ability to build a brand with its technological output.
 \end{mdframed}
 
-\subsection{Module 4: Teaching Services}%
+\subsection*{Module 4: Teaching Services}%
 \label{sec:teaching}
 
 A central RSE unit can provide or organise training for researchers and embedded RSEs.
@@ -337,7 +486,7 @@ For more complex software development projects, a central RSE unit can offer ind
 In both cases, the expert RSEs from the central RSE unit can pass on their knowledge precisely adapted to the concrete needs of those that they support.
 Finally, in organisations that educate RSEs, members of a central RSE unit may contribute to the curriculum of the institutional study programmes and teach corresponding courses.
 
-\subsection{Module 5: Create a Network of Institutional Partners}%
+\subsection*{Module 5: Create a Network of Institutional Partners}%
 \label{sec:partners}
 
 Within a research institution, a lot of groups or departments touch the topic of research software one way or another.
@@ -374,7 +523,7 @@ At the same time, HPC by nature focuses on highly efficient, many-core, if possi
 The challenges of an average researchers often start a long way before reaching that level, and they might not ever need to consider HPC\@.
 There are obvious reasons to closely collaborate on both consulting and training, yet at the same time a central RSE unit has to provide a much broader portfolio.
 
-\subsection{Module 6: RSE Infrastructure Provisioning}%
+\subsection*{Module 6: RSE Infrastructure Provisioning}%
 \label{sec:infrastructure}
 
 IT and (potentially high-performance) computing infrastructure provisioning is usually the purview of an institution's IT unit.
@@ -395,7 +544,7 @@ Similarly, the RSE unit can promote the use of the available computing infrastru
 Once the mutual collaboration between an RSE unit and an IT unit has been established, a stricter policy-based involvement of the RSE unit for infrastructure requests is envisioned.
 Overall, by acting as an intermediary for RSE infrastructure related requests, the central RSE unit can augment the central IT unit, providing embedded RSEs with the specific support they require.
 
-\subsection{Module 7: Research Software Engineering Research}%
+\subsection*{Module 7: Research Software Engineering Research}%
 \label{sec:rseresearch}
 
 If software engineering research about research software is conducted at the research institution, an RSE unit can serve as a valuable resource and experimentation field to these researchers.
@@ -403,7 +552,7 @@ It might therefore be of mutual benefit to co-locate SE researchers and RSEs.
 Additionally, RSEs employed at the hub can be given the opportunity to conduct research on meta aspects of RSE work and publish about them.
 This allows the staff working at the hub to contribute to and shape the emerging field of RSE research~\autocite{Felderer_2025}.
 
-\subsection{Module 8: Software Maintenance Service}%
+\subsection*{Module 8: Software Maintenance Service}%
 \label{sec:maintenance}
 
 Funder policies such as the DFG “Guidelines for Safeguarding Good Research Practice”~\autocite{dfg_gsp} require long-term preservation of used research data and software in an adequate way.
@@ -423,7 +572,7 @@ In order for this to be feasible, three criteria need to be met:
 \item A mechanism for selecting and prioritising software projects to be maintained needs to be in place.
 \end{itemize}
 
-\subsection{Module 9: Communication and Outreach}%
+\subsection*{Module 9: Communication and Outreach}%
 \label{sec:outreach}
 
 We identify three categories of communication and outreach activities according to the participating individuals and groups, connecting the RSE unit to (i) the RSEs at the institution, (ii) other entities within the institution, and (iii) regional, national and international initiatives.
@@ -447,7 +596,7 @@ A GitLab service, community newsletters, a Mattermost channel for direct exchang
 Through this integrated approach, natESM reinforces the technical backbone of Earth system and climate modelling, ensuring that it remains adaptable, scalable, and future-proof.
 \end{mdframed}
 
-\section{Existing Implementations}%
+\section*{Existing Implementations}%
 \label{sec:existing}
 
 \begin{figure}
@@ -474,7 +623,7 @@ It is likely that the RSE units offering development services are also larger in
 When setting up a new RSE unit, it is important to find the best service portfolio composition for the local environment.
 This depends on the demand by scientists at the institution, existing structures and the available funding.
 
-\section{Realisation Strategy}%
+\section*{Realisation Strategy}%
 \label{sec:realisation}
 
 We propose building blocks for individual realisation strategies for central institutional RSE units.
@@ -482,7 +631,7 @@ We start by listing different possibilities for funding RSE positions at a resea
 Following that, we describe a potential transition pathway, starting from existing structures that have grown in research alliances such as, \eg{} DFG-funded Collaborative Research Centres or also in research departments of an institution.
 This is complemented by discussions of the possibility of outsourcing RSE services and of the challenging task of identifying and hiring suitable RSE candidates.
 
-\subsection{Funding Sources}%
+\subsection*{Funding Sources}%
 \label{sec:funding}
 
 We see four basic options for financing RSE positions, which we will briefly explain below:
@@ -521,13 +670,13 @@ An institution’s leadership has to justify taking the corresponding risk of fa
 In addition to these funding options, we encourage funding agencies to provide seed funding for the establishment of RSE structures.
 Such seed grants ease the decision making process in organisations and give RSEs the leeway to establish collaborations with researchers without the direct need to ask for remuneration.
 
-\subsection{Transition Pathway}
+\subsection*{Transition Pathway}
 
 We propose a potential transition path, beginning with purely embedded RSEs---distributed across the institution and linked to individual research groups and their projects---and leading toward a centralised institutional RSE unit.
 After starting with initial measures not necessarily requiring dedicated funding, we discuss developing a business plan and how the RSE unit can be established.
 We conclude with measures for promoting its growth.
 
-\subsubsection{Initial Measures}
+\subsubsection*{Initial Measures}
 The following measures initialise the two modules presented in \autoref{sec:network} and \autoref{sec:teaching}.
 While dedicated funding certainly is beneficial already for this step, it is not strictly necessary.
 Once the two measures are in place, they can be used to illustrate the need for institutional RSE activities and therefore support funding proposals.
@@ -545,7 +694,7 @@ With the established network, the materials can be pooled and joint training can
 This step can be facilitated and formalised by offering introductory courses with a recognised curriculum as provided by The Carpentries\footnote{Carpentry examples: \url{https://software-carpentry.org/lessons/}}
 or CodeRefinery\footnote{CodeRefinery examples: \url{https://coderefinery.org/lessons/}}.
 
-\subsubsection{Developing a Business Plan}
+\subsubsection*{Developing a Business Plan}
 Decision processes at institutions usually require a business plan on which to base the decision on whether to establish an RSE unit.
 The business plan should include an outline of the RSE unit, its responsibilities and offerings as a subset of the nine modules presented in \autoref{sec:vision}, the funding, and the resulting benefits for the institution and its researchers.
 
@@ -566,7 +715,7 @@ Another part of the business plan should be the governance structure of the RSE 
 One of the decisions to be made is if the unit head is supposed to be part of the unit itself or if the unit will be headed by somebody outside of it.
 Additionally, installing an advisory board can be proposed in the plan, recruiting from the prospective institutional partners.
 
-\subsubsection{Establishing the Unit}
+\subsubsection*{Establishing the Unit}
 Once the business plan has been approved by the institution, the RSE unit can be established accordingly.
 The initial staffing depends crucially on the local institutional conditions.
 One promising possibility is to start with two positions.
@@ -587,7 +736,7 @@ Although the inception of the RSE unit will be announced once the business plan 
 Such a communication should facilitate collaboration among RSEs while also keeping non-RSEs in the loop.
 
 
-\subsubsection{Growth of the Unit}
+\subsubsection*{Growth of the Unit}
 
 \paragraph{Acquisition of further funding}
 The most promising possibilities to acquire further funding seem to be explicitly requesting person-months in externally funded projects and dedicated RSE calls, as discussed in \autoref{sec:funding}.
@@ -611,7 +760,7 @@ These include the development of software applications for RDM, support in the d
 In addition, SIS offers services in the areas of data science, machine learning, bioinformatics, trusted compute environments, and training and consulting.
 \end{mdframed}
 
-\subsection{Outsourcing}
+\subsection*{Outsourcing}
 
 Another possibility for the realisation of local RSE Service providers is by forming a spin-off and pooling the RSE Skills into an external company, which has benefits but also drawbacks.
 This is an idea that so far lacks examples but for completeness we list some of the advantages and disadvantages.
@@ -628,7 +777,7 @@ Some of these issues might be legally alleviated by forming framework agreements
 It is of particular importance to agree on requirements and handover criteria, including quality assurance and license specifications.
 On top of these drawbacks, there are soft factors, like whether an external company is accepted by scientists.
 
-\subsection{Staff Acquisition/People}
+\subsection*{Staff Acquisition/People}
 
 RSE units need to be staffed, but where do potential employees come from?
 So far, researchers accidentally find themselves in the role of an RSE because they pursued software development as part of their research.
@@ -650,7 +799,7 @@ There are already some master's programs available (\eg{} in Berlin, Munich, and
 Moreover, data science curricula already exist and more are in the process of being created.
 A curated and continuously updated list of these programs is available at~\cite{learnandteachlearn}.
 
-\section{Conclusions}
+\section*{Conclusions}
 \label{sec:conclusions}
 
 In this paper, we have outlined a vision for central RSE units in research institutions, focusing particularly on the German research landscape.
@@ -665,7 +814,6 @@ This ultimately leads to more sustainable, reproducible, and impactful research 
 We encourage decision makers to strategically invest in and formalise central RSE units, recognising their role as indispensable partners in modern research environments.
 By unifying previously scattered RSE efforts into a coordinated approach with clear mandates, stable funding, and long-term career prospects, institutions have the opportunity to significantly enhance their research capabilities and competitiveness in an increasingly digital scientific world.
 
-
-\printbibliography[heading=bibintoc]
+\printbibliography
 
 \end{document}
