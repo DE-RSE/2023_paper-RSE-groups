@@ -11,6 +11,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("contributors", type=Path,
                         help="yml file containing the contributors")
+    parser.add_argument("-t", "--template", type=Path, required=True,
+                        help="name of template to use")
     parser.add_argument("-o", "--output", type=Path,
                         help="the name of the output file")
     args = parser.parse_args()
@@ -50,7 +52,7 @@ def main():
        keep_trailing_newline=True,
     )
 
-    contribs = env.get_template("contributors.tex.j2").render(data=data)
+    contribs = env.get_template(args.template.name).render(data=data)
 
     if args.output is not None:
         args.output.write_text(contribs)
