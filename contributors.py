@@ -4,33 +4,46 @@ import os
 import yaml
 
 
-with open("contributors.yml") as f:
-    data = yaml.safe_load(f)
+def main():
 
-# Sort by last name and contribution tier
-data["authors"] = list(sorted(sorted(data["authors"], key=lambda x: x["lastName"]), key=lambda x: x.get("tier", 2)))
+    with open("contributors.yml") as f:
+        data = yaml.safe_load(f)
 
-# Ensure that we have unique indices for the affiliations
-affiliations = list()
-for author in data["authors"]:
-    if 'affiliations' in author:
-        affiliations.extend(author["affiliations"])
-# make sure affiliations are not duplicated - here by checking for exact name string
-affiliations = list({aff['name']: aff for aff in affiliations}.values())
+    # Sort by last name and contribution tier
+    data["authors"] = list(
+        sorted(
+            sorted(data["authors"], key=lambda x: x["lastName"]),
+            key=lambda x: x.get("tier", 2)))
 
-# create and add unique index and also a reverse lookup table
-data["affiliations"] = {i + 1: aff for i, aff in enumerate(affiliations)}
-aff_index_by_name    = {aff['name']: i for i, aff in data["affiliations"].items()}
+    # Ensure that we have unique indices for the affiliations
+    affiliations = []
+    for author in data["authors"]:
+        if 'affiliations' in author:
+            affiliations.extend(author["affiliations"])
+    # make sure affiliations are not duplicated - here by checking
+    # for exact name string
+    affiliations = list({aff['name']: aff for aff in affiliations}.values())
 
-# attach index to authors
-for author in data["authors"]:
-    if 'affiliations' in author:
-        author["affiliations"] = [aff_index_by_name[aff['name']] for aff in author["affiliations"]]
+    # create and add unique index and also a reverse lookup table
+    data["affiliations"] = {i + 1: aff for i, aff in enumerate(affiliations)}
+    aff_index_by_name = {
+        aff['name']: i for i, aff in data["affiliations"].items()}
 
-env = jinja2.Environment(
-   loader=jinja2.FileSystemLoader(os.getcwd()),
-   keep_trailing_newline=True,
-)
+    # attach index to authors
+    for author in data["authors"]:
+        if 'affiliations' in author:
+            author["affiliations"] = [
+                aff_index_by_name[
+                    aff['name']] for aff in author["affiliations"]]
 
-with open("./contributors.tex", "w") as out:
-    out.write(env.get_template("contributors.tex.j2").render(data=data))
+    env = jinja2.Environment(
+       loader=jinja2.FileSystemLoader(os.getcwd()),
+       keep_trailing_newline=True,
+    )
+
+    with open("./contributors.tex", "w") as out:
+        out.write(env.get_template("contributors.tex.j2").render(data=data))
+
+
+if __name__ == '__main__':
+    main()
