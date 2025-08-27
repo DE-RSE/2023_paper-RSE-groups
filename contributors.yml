@@ -88,6 +88,7 @@ authors:
     firstName: Dominic
     lastName: Kempf
     initials: DK
+    corresponding_author: true
     affiliations:
       - name: Scientific Software Center, Heidelberg University, Germany
         ror: https://ror.org/038t36y30

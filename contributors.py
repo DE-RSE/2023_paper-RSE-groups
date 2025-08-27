@@ -31,6 +31,8 @@ def main():
     for author in data["authors"]:
         if 'affiliations' in author:
             affiliations.extend(author["affiliations"])
+        if 'corresponding_author' in author and author['corresponding_author']:
+            data['corresponding_author'] = author['email']
     # make sure affiliations are not duplicated - here by checking
     # for exact name string
     affiliations = list({aff['name']: aff for aff in affiliations}.values())
