@@ -6,12 +6,12 @@
 % Note: the zero-width character <200b> is in here on purpose (to not mess up authors without
 % affiliation)
 {%- for author in data.authors %}
-{{ author.author }}​{% if author.affiliations %}\textsuperscript{{ "{" }}{{ author.affiliations|join(",") }}{% if author.corresponding_author is defined and author.corresponding_author %}*{% endif %}{{ "}" }}{% endif %}
+{{ author.author }}​{% if author.affiliations %}\textsuperscript{{ "{" }}{{ author.affiliations|join(",") }}{% if author.corresponding_author is defined and author.corresponding_author %}*{% endif %}{% if author.orcid is defined %}\texorpdfstring{\thinspace\orcidlink{ {{-author.orcid-}} }}{}{% endif %}{{ "}" }}{% endif %}
 {%- endfor %}
 \\
 \bigskip
 {%- for index, affiliation in data.affiliations.items() %}
-\textbf{{ "{" }}{{ index }}{{ "}" }} {{ affiliation.name }}
+\textbf{{ "{" }}{{ index }}{{ "}" }} {{ affiliation.name }}{% if affiliation.ror is defined %}\texorpdfstring{\thinspace\rorlink{ {{-affiliation.ror-}} }} {}{% endif %}
 \\
 {%- endfor %}
 \bigskip
