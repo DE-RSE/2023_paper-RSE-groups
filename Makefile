@@ -2,7 +2,7 @@ all:	plots paper.pdf
 
 clean:
 		latexmk -c
-		rm -f paper.pdf plos.bib norm.bib
+		rm -f paper.pdf paper.bbl plos.bib norm.bib
 
 paper.pdf:	paper.tex positionpaper.bib contributors.tex plos.bib
 		latexmk -pdflatex paper.tex
