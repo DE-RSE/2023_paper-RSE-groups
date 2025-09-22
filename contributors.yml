@@ -120,6 +120,10 @@ authors:
         ror: https://ror.org/04t3en479
     orcid: 0000-0002-2487-4744
     email: axel.loewe@kit.edu
+    acknowledgements: |
+      AL acknowledges funding by the Deutsche Forschungsgemeinschaft 
+      (DFG, German Research Foundation) – project number 
+      \href{https://gepris.dfg.de/gepris/projekt/507828355?language=en}{507828355}.   
 
   - author: "Frank Löffler"
     firstName: Frank
