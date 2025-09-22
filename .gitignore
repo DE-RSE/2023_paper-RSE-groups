@@ -16,6 +16,8 @@
 *.dvi
 *.xdv
 *-converted-to.*
+norm.bib
+plos.bib
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps

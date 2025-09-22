@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Got the date from https://gist.githubusercontent.com/mkouhia/f00fea7fc8d4effd9dfd/raw/500e9dbc6aa43a47e39c45ba230738ff4544709f/biblatex-to-bibtex.conf -->
+<config>
+  <output_fieldcase>lower</output_fieldcase>
+  <output_resolve>1</output_resolve>
+  <output_safechars>1</output_safechars>
+  <output_format>bibtex</output_format>
+  <sourcemap>
+    <maps datatype="bibtex">
+      <!-- Easy type conversions -->
+      <map>
+        <map_step map_type_source="report" map_type_target="techreport"/>
+        <map_step map_type_source="online" map_type_target="misc"/>
+        <map_step map_type_source="dataset" map_type_target="misc"/>
+      </map>
+      <!-- Date to year, month -->
+      <map>
+        <map_step map_field_source="date"
+        map_field_target="year" />
+      </map>
+      <map>
+        <map_step map_field_source="year"
+        map_match="(\d{4}|\d{2})-(\d{1,2})-(\d{1,2})"
+        map_final="1" />
+        <map_step map_field_source="year"
+        map_match="(\d{4}|\d{2})-(\d{1,2})-(\d{1,2})"
+        map_replace="$1" />
+        <map_step map_field_set="month" map_origfieldval="1" />
+        <map_step map_field_source="month"
+        map_match="(\d{4}|\d{2})-(\d{1,2})-(\d{1,2})"
+        map_replace="$2" />
+      </map>
+      <map>
+        <map_step map_field_source="year"
+        map_match="(\d{4}|\d{2})-(\d{1,2})" map_final="1" />
+        <map_step map_field_source="year"
+        map_match="(\d{4}|\d{2})-(\d{1,2})" map_replace="$1" />
+        <map_step map_field_set="month" map_origfieldval="1" />
+        <map_step map_field_source="month"
+        map_match="(\d{4}|\d{2})-(\d{1,2})" map_replace="$2" />
+      </map>
+    </maps>
+  </sourcemap>
+</config>
