@@ -37,6 +37,11 @@ authors:
         ror: https://ror.org/04vnq7t77
     orcid: 0000-0001-8188-620X
     email: bernd@iws.uni-stuttgart.de
+    acknowledgements: |
+      BF would like to thank the Federal Government and the Heads of Government of the Länder,
+      as well as the Joint Science Conference (GWK), for their initiative within the framework
+      of the NFDI4ING consortium (German Research Foundation (DFG) - project number
+      \href{https://gepris.dfg.de/gepris/projekt/442146713?language=en}{442146713}).
     tier: 1
 
   - author: "Florian Goth"
