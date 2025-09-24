@@ -1,4 +1,4 @@
-# de-RSE Community paper on "Establishing RSE departments in German research institutions"
+# de-RSE Community paper on "Establishing Research Software Engineering departments in German research institutions"
 
 This repository hosts the draft for a community paper by the de-RSE e.V. community.
 
