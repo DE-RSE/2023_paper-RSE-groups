@@ -65,8 +65,10 @@ authors:
     email: jgrad@icp.uni-stuttgart.de
     acknowledgements: |
       JNG acknowledges funding from the Deutsche Forschungsgemeinschaft
-      (DFG, German Research Foundation) - project number \href{https://gepris.dfg.de/gepris/projekt/391126171?language=en}{391126171}
-      (PI: Holm), from the German Federal Ministry of Education and Research
+      (DFG, German Research Foundation) - project numbers
+      \href{https://gepris.dfg.de/gepris/projekt/391126171?language=en}{391126171} (PI: Holm) and
+      \href{https://gepris.dfg.de/gepris/projekt/528726435?language=en}{528726435} (PI: Weeber),
+      from the German Federal Ministry of Education and Research
       (Bundesministeriums für Bildung und Forschung, BMBF) under the funding
       code \href{https://www.kooperation-international.de/foerderung/projekte/detail/info/verbundprojekt-multixscale-hpc-exzellenzzentrum-fuer-multi-skalen-simulationen-auf-hoechstleitungsrechnern-1}{16HPC095},
       and from the European Union – this work has received funding
@@ -201,7 +203,7 @@ authors:
     orcid: 0000-0002-1173-9228
     email: alexander.struck@hu-berlin.de
     acknowledgements: |
-      AS acknowledges the support of the Cluster of Excellence »Matters of Activity. Image Space Material« funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2025 – 390648296.
+      AS acknowledges the support of the Cluster of Excellence »Matters of Activity. Image Space Material« funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy – EXC 2025 – \href{https://gepris.dfg.de/gepris/projekt/390648296?language=en}{390648296}.
     tier: 1
 
   - author: "Michael Schlottke-Lakemper"
