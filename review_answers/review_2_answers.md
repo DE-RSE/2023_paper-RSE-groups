@@ -178,6 +178,7 @@
 > The conclusions repeat claims about "improved funding acquisition" and "enhanced reputational standing" that were not strongly supported earlier. Remove these claims or add direct evidence.
 
 **Answer:**
+Please see our general answer on this manuscript being an _opinion article._
 
 ---
 
