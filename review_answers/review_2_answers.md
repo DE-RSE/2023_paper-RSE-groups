@@ -155,6 +155,7 @@
 > Section 5.2.1 on "Initial measures" suggests forming a network without dedicated funding. But networking takes staff time. How should institutions pay for this time if no funding exists? Be realistic.
 
 **Answer:**
+While we would like to flag the condescending tone of this comment, we are realistic here. As a collective of authors, we have been forming networks at and across our institutions without dedicated funding for decades.
 
 ---
 
