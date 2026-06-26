@@ -169,6 +169,7 @@
 > Section 5.4 on "Staff acquisition" mentions "RSE master" programs in Berlin, Munich, and Stuttgart. You cite a curated list (reference 60) but do not say whether any graduates from these programs have been hired into central RSE units. Add this if known.
 
 **Answer:**
+We do not have any specific numbers at this point in time.
 
 ---
 
