@@ -49,6 +49,7 @@
 > You say "This position paper focuses on groups of research software engineers." But the paper is not clear whether you are reporting on existing groups or proposing a new model. Clarify this early.
 
 **Answer:**
+In the introduction we make clear that we are only considering groups of RSEs, organised in RSE units. In the next sentence we advocate for the establishment of these groups as there is a need (see first para of introduction) and there are only few units in Germany. We are not proposing a new model since we are looking to established groups in other countries. However, we adapt them to the German academic environment.
 
 ---
 
