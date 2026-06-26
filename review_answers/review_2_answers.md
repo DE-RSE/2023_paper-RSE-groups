@@ -125,7 +125,7 @@
 > You surveyed only 12 RSE units. This is very small. State clearly in the text that this is a pilot survey and not representative. You mention this in the data availability section but not in the main text. Add a limitation sentence here.
 
 **Answer:**
-
+We did not intend to conduct a statistically significant survey of RSE units. Our aim was to collect some feedback that we can use to demmonstrate the breadth of services offered by existing units and to support the selection of service modules we defined. We have replaced the term survey with less formal formulations.
 ---
 
 ### Comment 17
