@@ -27,6 +27,7 @@ We have clarified that we are expressing a vision for RSE units in Germany that 
 > You mention "nine core support modules" but do not list them. Add a short list or at least the most important two or three.
 
 **Answer:**
+The actual number of core modules is not important since we expect RSE units to focus on a subset. We have added a selection of modules to illustrate the range.
 
 ---
 
