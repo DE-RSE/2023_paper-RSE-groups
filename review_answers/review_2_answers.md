@@ -148,6 +148,7 @@
 > Section 5.1 lists four funding sources. Source 2 (overhead percentage) proposes using 1% of overhead. Where does this 1% figure come from? Provide a justification or remove the specific number.
 
 **Answer:**
+It is evident that this is an exemplary statement and that the 1% is the outcome of the requirement to get funding for one person-year assuming 50 MEUR third-party revenue. So the question should rather be where the 50 MEUR come from. We added a corresponding footnote.
 
 ---
 
