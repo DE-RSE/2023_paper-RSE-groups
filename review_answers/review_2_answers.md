@@ -19,6 +19,7 @@
 > The phrase "vision of a central RSE unit" is vague. Specify briefly what is new in your vision compared to existing units in the UK or US.
 
 **Answer:**
+We have clarified that we are expressing a vision for RSE units in Germany that takes inspiration from existing RSE units in the UK and US. 
 
 ---
 
@@ -149,6 +150,7 @@ The actual number of core modules is not important since we expect RSE units to 
 > Section 5.1 lists four funding sources. Source 2 (overhead percentage) proposes using 1% of overhead. Where does this 1% figure come from? Provide a justification or remove the specific number.
 
 **Answer:**
+It is evident that this is an exemplary statement and that the 1% is the outcome of the requirement to get funding for one person-year assuming 50 MEUR third-party revenue. So the question should rather be where the 50 MEUR come from. We added a corresponding footnote.
 
 ---
 
@@ -170,6 +172,7 @@ The actual number of core modules is not important since we expect RSE units to 
 > Section 5.4 on "Staff acquisition" mentions "RSE master" programs in Berlin, Munich, and Stuttgart. You cite a curated list (reference 60) but do not say whether any graduates from these programs have been hired into central RSE units. Add this if known.
 
 **Answer:**
+We do not have any specific numbers at this point in time.
 
 ---
 
