@@ -82,6 +82,12 @@ The actual number of core modules is not important since we expect RSE units to 
 
 **Answer:**
 
+As stated in the section, DFG grant applications require discussion on software management (i.e. it is mandatory), and Software Management Plans are currently only recommended. A look into the policy of the Nature journal (https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards#availability-of-computer-code) reveals that, in the end, it is subject to the editor whether code needs to be made available to reviewers, etc. or not.
+
+Initiatives are by nature not mandatory or recommended, they just provide resources.
+
+We apologize that we cannot see room for clarification here and kindly ask the reviewer to be more explicit on the exact policy he requests to be clarified.
+
 ---
 
 ## Vision
