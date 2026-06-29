@@ -90,6 +90,15 @@ The actual number of core modules is not important since we expect RSE units to 
 > The nine modules are presented as equally important but you later assign "weights" without explaining how weights are determined. Explain the weighting method or remove the weight claim.
 
 **Answer:**
+The weight claim has been removed and the sentence in section three has been rephrased such that different RSE units may differ in how they weight the nine modules.
+
+The sentence
+
+> Thus, it is likely that no two RSE units will be, or need to be, alike. However, these nine modules, along with their assigned weights (indicating relative importance), form a simple model of an RSE group.
+
+has been rephrased with
+
+> Thus, it is likely that no two RSE units will be, or need to be, alike, and weight the modules equally. However, these nine modules, form a simple model of an RSE group.
 
 ---
 
