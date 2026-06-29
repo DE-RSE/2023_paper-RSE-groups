@@ -60,6 +60,32 @@ The actual number of core modules is not important since we expect RSE units to 
 > The claim that central RSE units improve "grant success, institutional reputation, and research quality" appears multiple times without strong evidence. You cite only one small survey of 12 units. This is not sufficient. Soften these claims or add more empirical references.
 
 **Answer:**
+See our general comment on the Opinion paper. Unfortunately not all claims can be supported by empirical references, given that central RSE units are still a minority in Germany. Under this aspect, 12 is a large sample size. Nevertheless, we softened several claims in the paper
+
+- In section 3.2, the sentence
+  
+  > RSE consultation services also have a positive impact on grant proposal quality.
+  
+  has been replaced with
+  
+  > RSE consultation services **can** also have a positive impact on grant proposal quality.
+  
+- In section 2.1, the sentence
+  
+  > The results are increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+  has been replaced with
+  
+  > The results **can be** increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+- In the conclusions (section 6), the sentence
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+  
+  has been replaced with
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units **can** also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+
 
 ---
 
