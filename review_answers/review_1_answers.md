@@ -6,6 +6,10 @@
 
 ---
 
+Dear reviewer,
+
+We thank you very much for your review and the opportunity to improve our manuscript. While working on your comments, there has been a recurring theme that we would like to bring to your attention: The manuscript is written and published as an opinionated piece. Accordingly, we have selected the F1000 Journal category "Opinion Article", where we felt explicitly encouraged to present our own perspective which is not necessarily grounded in hard empiric facts, but may also be grounded in the decade long experience that the author group has gathered in the field of RSE and building RSE support infrastructures. Additionally, we would like to bring to your attention this manuscript was adopted as an official position paper of the German RSE association de-RSE e.V. (see https://de-rse.org/de/positions.html). The manuscript went through a public review phase with all members of the association and the German RSE community, and the board of the association voted on adopting it as a position of the association. We are mentioning this to highlight that we are not only presenting the opinions of the group of 18 co-authors, but we also have a mandate to speak for the larger community backing this.
+
 ## General remarks
 
 ### Comment 1
