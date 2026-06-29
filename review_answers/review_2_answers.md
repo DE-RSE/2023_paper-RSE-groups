@@ -19,6 +19,7 @@
 > The phrase "vision of a central RSE unit" is vague. Specify briefly what is new in your vision compared to existing units in the UK or US.
 
 **Answer:**
+We have clarified that we are expressing a vision for RSE units in Germany that takes inspiration from existing RSE units in the UK and US. 
 
 ---
 
