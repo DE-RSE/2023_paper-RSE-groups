@@ -96,7 +96,7 @@ The actual number of core modules is not important since we expect RSE units to 
 ### Comment 12
 > Module 1 ("Foster a local Network") says central RSE units need "permanent contracts" for deep expertise. But German academic labor laws (WissZeitVG) limit fixed-term contracts. Acknowledge this legal constraint and suggest solutions.
 
-**Answer:**
+**Answer:** The fact that there are legal barriers to hiring on fixed term contracts in Germany has no impact on our statement that this activity highly benefits from permanent positions. Permanent positions for this type of activity exist in Germany, they are just a very scarce resource.
 
 ---
 
