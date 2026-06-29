@@ -43,7 +43,7 @@ The actual number of core modules is not important since we expect RSE units to 
 ### Comment 5
 > The distinction between "dedicated RSEs" and "embedded RSEs" is useful but the term "researchers" for non-RSEs is confusing. Consider using "non-RSE researchers" or "domain researchers" instead.
 
-**Answer:**
+**Answer:** We do not share your concerns here. The term "researchers" is common language and understood by everyone. Changing this to the term "non-RSE researchers" which does not exist in literature would make the manuscript more confusing to read. The reason we have this distinction in this paragraph to avoid implying that RSEs cannot also be researchers.
 
 ---
 
