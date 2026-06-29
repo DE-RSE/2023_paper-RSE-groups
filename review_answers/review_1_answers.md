@@ -48,6 +48,31 @@
 > Moderate claims about grant success, reputation, and research quality unless directly supported.
 
 **Answer:**
+We softened several claims in the paper
+
+- In section 3.2, the sentence
+  
+  > RSE consultation services also have a positive impact on grant proposal quality.
+  
+  has been replaced with
+  
+  > RSE consultation services **can** also have a positive impact on grant proposal quality.
+  
+- In section 2.1, the sentence
+  
+  > The results are increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+  has been replaced with
+  
+  > The results **can be** increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+- In the conclusions (section 6), the sentence
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+  
+  has been replaced with
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units **can** also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
 
 ---
 
