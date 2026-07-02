@@ -185,7 +185,8 @@
 > You do not discuss risks or failure modes. For example, what happens if a central RSE unit cannot get enough project funding? What if it competes with existing IT or RDM units? Add a short paragraph on risks.
 
 **Answer:**
-
+We thank the reviewer for pointing out this omission. We have added a subsubsection on risk assessmant in the realisation chapter where we elaborate 
+on the risks mentioned by the reviewer.
 ---
 
 ### Comment 25

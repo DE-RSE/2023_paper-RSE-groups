@@ -55,5 +55,7 @@
 > Expand the discussion on implementation risks, such as funding instability, unclear governance, overlap with IT/RDM units, and difficulty in recruiting qualified RSE staff.
 
 **Answer:**
+We thank the reviewer for pointing out this omission and have now added a risk assessmant and opportunities subsubsection in the realisation chapter.
+In this paragraph we elaborate on the risks mentioned by the reviewer.
 
 ---
