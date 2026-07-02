@@ -110,7 +110,7 @@ The actual number of core modules is not important since we expect RSE units to 
 ### Comment 14
 > Module 5 ("Create a network of institutional partners") discusses IT units, libraries, and HPC groups. Missing is any mention of legal or ethics departments. Software may have licensing or data protection issues. Add this.
 
-**Answer:**
+**Answer:** We added a paragraph on other partners and mentioned a few.
 
 ---
 
