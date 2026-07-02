@@ -165,6 +165,7 @@ It is evident that this is an exemplary statement and that the 1% is the outcome
 > Section 5.3 on "Outsourcing" lists disadvantages but admits "this idea so far lacks examples." If there are no examples, why include this section? Either remove it or present it as a speculative thought experiment with a clear disclaimer.
 
 **Answer:**
+Please see our general answer on this manuscript being an _opinion article._
 
 ---
 
