@@ -191,6 +191,7 @@ It is evident that this is an exemplary statement and that the 1% is the outcome
 > Section 5.2.1 on "Initial measures" suggests forming a network without dedicated funding. But networking takes staff time. How should institutions pay for this time if no funding exists? Be realistic.
 
 **Answer:**
+While we certainly appreciate that networking takes staff time, we are realistic here. As a collective of authors, we have been forming networks at and across our institutions without dedicated funding for decades via, for example, in-kind contributions, cross-subsidization from other projects, or taking place outside working hours.
 
 ---
 
