@@ -37,6 +37,7 @@ The actual number of core modules is not important since we expect RSE units to 
 > You define "research software" broadly but then say this definition is "the outcome of a recent discussion." Cite that discussion properly so readers can check it.
 
 **Answer:**
+We refer to Gruenpeter M, et al.: Defining research software: A controversial discussion. FORCE11, Research Data Alliance, Research Software Alliance; Zenodo, Summary Report of FAIR4RS Subgroup 3 activity and discussion Version 1. Sep. 2021 to direct readers to this discussion. 
 
 ---
 
