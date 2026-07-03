@@ -133,7 +133,7 @@ The actual number of core modules is not important since we expect RSE units to 
 ### Comment 17
 > Figure 1 compares four units (Jena, Heidelberg, Reading, Princeton). But your text says you received twelve responses. Why show only four? Explain the selection criteria.
 
-**Answer:**
+**Answer:** We clarified that we hand-picked illustrative examples for the figure. At the same time, we mention that the interested reader finds the full data in the accompanying data publication on Zenodo.
 
 ---
 
