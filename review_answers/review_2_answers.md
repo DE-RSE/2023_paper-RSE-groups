@@ -210,6 +210,7 @@ Please see our general answer on this manuscript being an _opinion article._
 > The final sentence encourages "stable funding and long-term career prospects" but you did not show that such careers exist yet in Germany. Acknowledge that this is aspirational.
 
 **Answer:**
+The sentense "By unifying previously scattered RSE efforts into a coordinated approach with clear mandates, stable funding, and long-term career prospects, institutions have the opportunity to significantly enhance their research capabilities and competitiveness in an increasingly digital scientific world." does not imply that those necessarily already exist. They might, at some institutions, or they might not - the notion, as written, is more that by creating such career opportutities (or highlighting them more if they already exist) institutions would gain a number of benefits.
 
 ---
 
