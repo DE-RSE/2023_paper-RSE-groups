@@ -6,12 +6,16 @@
 
 ---
 
+Dear reviewer,
+
+We thank you very much for your review and the opportunity to improve our manuscript. While working on your comments, there has been a recurring theme that we would like to bring to your attention: The manuscript is written and published as an opinionated piece. Accordingly, we have selected the F1000 Journal category "Opinion Article", where we felt explicitly encouraged to present our own perspective which is not necessarily grounded in hard empiric facts, but may also be grounded in the decade long experience that the author group has gathered in the field of RSE and building RSE support infrastructures. Additionally, we would like to bring to your attention this manuscript was adopted as an official position paper of the German RSE association de-RSE e.V. (see https://de-rse.org/de/positions.html). The manuscript went through a public review phase with all members of the association and the German RSE community, and the board of the association voted on adopting it as a position of the association. We are mentioning this to highlight that we are not only presenting the opinions of the group of 18 co-authors, but we also have a mandate to speak for the larger community backing this.
+
 ## Abstract
 
 ### Comment 1
 > The abstract claims the paper "urges decision makers" but does not state what evidence supports this urging. You should add a one-sentence summary of your survey results or key argument.
 
-**Answer:**
+**Answer:** We refer to our general statement about this being a position paper here. The group of authors and the wider community behind them urge decision makers based on their experiences. If there was a single "key argument", it would indeed be good to mention it here, but we are not able to distill one without oversimplifying our message.
 
 ---
 
@@ -19,6 +23,7 @@
 > The phrase "vision of a central RSE unit" is vague. Specify briefly what is new in your vision compared to existing units in the UK or US.
 
 **Answer:**
+We have clarified that we are expressing a vision for RSE units in Germany that takes inspiration from existing RSE units in the UK and US. 
 
 ---
 
@@ -26,6 +31,7 @@
 > You mention "nine core support modules" but do not list them. Add a short list or at least the most important two or three.
 
 **Answer:**
+The actual number of core modules is not important since we expect RSE units to focus on a subset. We have added a selection of modules to illustrate the range.
 
 ---
 
@@ -35,13 +41,14 @@
 > You define "research software" broadly but then say this definition is "the outcome of a recent discussion." Cite that discussion properly so readers can check it.
 
 **Answer:**
+We refer to Gruenpeter M, et al.: Defining research software: A controversial discussion. FORCE11, Research Data Alliance, Research Software Alliance; Zenodo, Summary Report of FAIR4RS Subgroup 3 activity and discussion Version 1. Sep. 2021 to direct readers to this discussion. 
 
 ---
 
 ### Comment 5
 > The distinction between "dedicated RSEs" and "embedded RSEs" is useful but the term "researchers" for non-RSEs is confusing. Consider using "non-RSE researchers" or "domain researchers" instead.
 
-**Answer:**
+**Answer:** We do not share your concerns here. The term "researchers" is common language and understood by everyone. Changing this to the term "non-RSE researchers" which does not exist in literature would make the manuscript more confusing to read. The reason we have this distinction in this paragraph to avoid implying that RSEs cannot also be researchers.
 
 ---
 
@@ -49,6 +56,7 @@
 > You say "This position paper focuses on groups of research software engineers." But the paper is not clear whether you are reporting on existing groups or proposing a new model. Clarify this early.
 
 **Answer:**
+In the introduction we make clear that we are only considering groups of RSEs, organised in RSE units. In the next sentence we advocate for the establishment of these groups as there is a need (see first para of introduction) and there are only few units in Germany. We are not proposing a new model since we are looking at established groups in other countries. However, we adapt them to the German academic environment.
 
 ---
 
@@ -58,13 +66,39 @@
 > The claim that central RSE units improve "grant success, institutional reputation, and research quality" appears multiple times without strong evidence. You cite only one small survey of 12 units. This is not sufficient. Soften these claims or add more empirical references.
 
 **Answer:**
+See our general comment on the Opinion paper. Unfortunately not all claims can be supported by empirical references, given that central RSE units are still a minority in Germany. Under this aspect, 12 is a large sample size. Nevertheless, we softened several claims in the paper
+
+- In section 3.2, the sentence
+  
+  > RSE consultation services also have a positive impact on grant proposal quality.
+  
+  has been replaced with
+  
+  > RSE consultation services **can** also have a positive impact on grant proposal quality.
+  
+- In section 2.1, the sentence
+  
+  > The results are increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+  has been replaced with
+  
+  > The results **can be** increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+- In the conclusions (section 6), the sentence
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+  
+  has been replaced with
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units **can** also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+
 
 ---
 
 ### Comment 8
 > Section 2.1 on "Pooling" uses analogies to industry R&D and inhouse consulting. These analogies are helpful but you do not discuss how academic contexts differ from industry (e.g., funding cycles, teaching loads, intellectual property). Add this discussion.
 
-**Answer:**
+**Answer:** We added a paragraph why we think that the pooling idea is even more relevant in the academic context due to the typical, diverse workload of an academic researcher. A general discussion of differences between the industrial and the academic environment seems out of scope for this manuscript without diluting its content. For us, it was important to mention the industrial analogy to not suggest that pooling is an academia-only concept.
 
 ---
 
@@ -72,6 +106,10 @@
 > Section 2.2.1 compares RSE to Research Data Management. The comparison is reasonable but you assume RDM is already successful. Provide at least one citation showing measurable success of central RDM units in Germany.
 
 **Answer:**
+We think that RDM and RDM units are successful if and only if they benefit researchers and research as a whole.
+Research is influenced by too many factors simultaneously to clearly identify the effect of just one.
+Given these conditions it is perhaps not surprising that there are not many rigorous scientific studies to causation or even just correlation.
+However, we added one of the few, in which a correlation between quality and presence of data availability sections (indicating existing RDM) and citations counts is shown.
 
 ---
 
@@ -79,6 +117,12 @@
 > Section 2.3 on "External expectations" lists many policies and initiatives but does not explain which of these are mandatory versus recommended. This distinction matters for decision makers. Clarify.
 
 **Answer:**
+
+As stated in the section, DFG grant applications require discussion on software management (i.e. it is mandatory), and Software Management Plans are currently only recommended. A look into the policy of the Nature journal (https://www.nature.com/nature-portfolio/editorial-policies/reporting-standards#availability-of-computer-code) reveals that, in the end, it is subject to the editor whether code needs to be made available to reviewers, etc. or not.
+
+Initiatives are by nature not mandatory or recommended, they just provide resources.
+
+We apologize that we cannot see room for clarification here and kindly ask the reviewer to be more explicit on the exact policy he requests to be clarified.
 
 ---
 
@@ -88,13 +132,22 @@
 > The nine modules are presented as equally important but you later assign "weights" without explaining how weights are determined. Explain the weighting method or remove the weight claim.
 
 **Answer:**
+The weight claim has been removed and the sentence in section three has been rephrased such that different RSE units may differ in how they weight the nine modules.
+
+The sentence
+
+> Thus, it is likely that no two RSE units will be, or need to be, alike. However, these nine modules, along with their assigned weights (indicating relative importance), form a simple model of an RSE group.
+
+has been rephrased with
+
+> Thus, it is likely that no two RSE units will be, or need to be, alike, and weight the modules equally. However, these nine modules, form a simple model of an RSE group.
 
 ---
 
 ### Comment 12
 > Module 1 ("Foster a local Network") says central RSE units need "permanent contracts" for deep expertise. But German academic labor laws (WissZeitVG) limit fixed-term contracts. Acknowledge this legal constraint and suggest solutions.
 
-**Answer:**
+**Answer:** The fact that there are legal barriers to hiring on fixed term contracts in Germany has no impact on our statement that this activity highly benefits from permanent positions. Permanent positions for this type of activity exist in Germany, they are just a very scarce resource.
 
 ---
 
@@ -102,13 +155,13 @@
 > Module 3 ("Development services") includes a success story about mobile app development at Manchester. This is only one example. Add a second example from a different discipline (e.g., life sciences or engineering) to show generalizability.
 
 **Answer:**
-
+A mobile app development was selected as a domain-agnostic example. We have added a sentence at the end of the success story clarifying this.
 ---
 
 ### Comment 14
 > Module 5 ("Create a network of institutional partners") discusses IT units, libraries, and HPC groups. Missing is any mention of legal or ethics departments. Software may have licensing or data protection issues. Add this.
 
-**Answer:**
+**Answer:** We added a paragraph on other partners and mentioned a few.
 
 ---
 
@@ -125,20 +178,21 @@
 > You surveyed only 12 RSE units. This is very small. State clearly in the text that this is a pilot survey and not representative. You mention this in the data availability section but not in the main text. Add a limitation sentence here.
 
 **Answer:**
-
+We did not intend to conduct a statistically significant, representative survey of RSE units. Our aim was to collect some feedback that we can use to demmonstrate the breadth of services offered by existing units and to support the selection of service modules we defined. We have replaced the term survey with less formal formulations.
 ---
 
 ### Comment 17
 > Figure 1 compares four units (Jena, Heidelberg, Reading, Princeton). But your text says you received twelve responses. Why show only four? Explain the selection criteria.
 
-**Answer:**
+**Answer:** We clarified that we hand-picked illustrative examples for the figure. At the same time, we mention that the interested reader finds the full data in the accompanying data publication on Zenodo.
 
 ---
 
 ### Comment 18
 > You identify two archetypes: those with development services and those without. But you did not collect data on unit size. Larger units may offer more services simply because they have more staff. Acknowledge this confounding factor.
 
-**Answer:**
+**Answer:** The manuscript already contains this paragraph which in our view highlights the issue: "We should note however, that our survey did not collect information about the size of the RSE unit. It is likely that the RSE units offering development services are also larger in size, and that their total resource commitment to teaching and consultation services is similar to that of those RSE units that do not offer development services."
+
 
 ---
 
@@ -148,6 +202,7 @@
 > Section 5.1 lists four funding sources. Source 2 (overhead percentage) proposes using 1% of overhead. Where does this 1% figure come from? Provide a justification or remove the specific number.
 
 **Answer:**
+It is evident that this is an exemplary statement and that the 1% is the outcome of the requirement to get funding for one person-year assuming 50 MEUR third-party revenue. So the question should rather be where the 50 MEUR come from. We added a corresponding footnote.
 
 ---
 
@@ -155,6 +210,7 @@
 > Section 5.2.1 on "Initial measures" suggests forming a network without dedicated funding. But networking takes staff time. How should institutions pay for this time if no funding exists? Be realistic.
 
 **Answer:**
+While we certainly appreciate that networking takes staff time, we are realistic here. As a collective of authors, we have been forming networks at and across our institutions without dedicated funding for decades via, for example, in-kind contributions, cross-subsidization from other projects, or taking place outside working hours.
 
 ---
 
@@ -162,6 +218,7 @@
 > Section 5.3 on "Outsourcing" lists disadvantages but admits "this idea so far lacks examples." If there are no examples, why include this section? Either remove it or present it as a speculative thought experiment with a clear disclaimer.
 
 **Answer:**
+Please see our general answer on this manuscript being an _opinion article._
 
 ---
 
@@ -169,6 +226,7 @@
 > Section 5.4 on "Staff acquisition" mentions "RSE master" programs in Berlin, Munich, and Stuttgart. You cite a curated list (reference 60) but do not say whether any graduates from these programs have been hired into central RSE units. Add this if known.
 
 **Answer:**
+We do not have any specific numbers at this point in time.
 
 ---
 
@@ -178,6 +236,7 @@
 > The conclusions repeat claims about "improved funding acquisition" and "enhanced reputational standing" that were not strongly supported earlier. Remove these claims or add direct evidence.
 
 **Answer:**
+Please see our general answer on this manuscript being an _opinion article._
 
 ---
 
@@ -193,6 +252,7 @@ on the risks mentioned by the reviewer.
 > The final sentence encourages "stable funding and long-term career prospects" but you did not show that such careers exist yet in Germany. Acknowledge that this is aspirational.
 
 **Answer:**
+The sentence "By unifying previously scattered RSE efforts into a coordinated approach with clear mandates, stable funding, and long-term career prospects, institutions have the opportunity to significantly enhance their research capabilities and competitiveness in an increasingly digital scientific world." does not imply that those necessarily already exist. They might, at some institutions, or they might not - the notion, as written, is more that by creating such career opportunities (or highlighting them more if they already exist) institutions would gain a number of benefits.
 
 ---
 

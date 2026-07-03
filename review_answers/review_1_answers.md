@@ -6,6 +6,10 @@
 
 ---
 
+Dear reviewer,
+
+We thank you very much for your review and the opportunity to improve our manuscript. While working on your comments, there has been a recurring theme that we would like to bring to your attention: The manuscript is written and published as an opinionated piece. Accordingly, we have selected the F1000 Journal category "Opinion Article", where we felt explicitly encouraged to present our own perspective which is not necessarily grounded in hard empiric facts, but may also be grounded in the decade long experience that the author group has gathered in the field of RSE and building RSE support infrastructures. Additionally, we would like to bring to your attention this manuscript was adopted as an official position paper of the German RSE association de-RSE e.V. (see https://de-rse.org/de/positions.html). The manuscript went through a public review phase with all members of the association and the German RSE community, and the board of the association voted on adopting it as a position of the association. We are mentioning this to highlight that we are not only presenting the opinions of the group of 18 co-authors, but we also have a mandate to speak for the larger community backing this.
+
 ## General remarks
 
 ### Comment 1
@@ -18,8 +22,11 @@
 > The conclusions are generally consistent with the arguments presented, but somewhat stronger than the evidence allows. Recommendations for investing in central RSE units are justified, but statements suggesting widespread institutional improvements should be more carefully balanced with a discussion of risks, costs, governance challenges, and potential failure modes.
 
 **Answer:**
-The reviewer is right to suggest a more elaborate discussion of risks for an RSE unit and we took the opportunity
-to write a separate subsusection on risks in the realisation of an RSE unit.
+The reviewer is right to suggest a more elaborate discussion of risks for an RSE unit and we took the opportunity to write a separate subsusection on risks in the realisation of an RSE unit.
+However, we also did not intend to conduct a statistically significant, representative survey of RSE units.
+Our aim was to collect some feedback that we can use to demmonstrate the breadth of services offered by existing units and to support the selection of service modules we defined.
+We have replaced the term survey with less formal formulations.
+
 ---
 
 ## Specific requests
@@ -35,6 +42,7 @@ to write a separate subsusection on risks in the realisation of an RSE unit.
 > Add stronger empirical evidence for claims of institutional benefits.
 
 **Answer:**
+Please see our note above about this work being an position paper.
 
 ---
 
@@ -49,6 +57,31 @@ to write a separate subsusection on risks in the realisation of an RSE unit.
 > Moderate claims about grant success, reputation, and research quality unless directly supported.
 
 **Answer:**
+We softened several claims in the paper
+
+- In section 3.2, the sentence
+  
+  > RSE consultation services also have a positive impact on grant proposal quality.
+  
+  has been replaced with
+  
+  > RSE consultation services **can** also have a positive impact on grant proposal quality.
+  
+- In section 2.1, the sentence
+  
+  > The results are increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+  has been replaced with
+  
+  > The results **can be** increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+- In the conclusions (section 6), the sentence
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+  
+  has been replaced with
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units **can** also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
 
 ---
 
