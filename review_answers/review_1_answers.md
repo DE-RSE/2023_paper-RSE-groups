@@ -22,6 +22,8 @@ We thank you very much for your review and the opportunity to improve our manusc
 > The conclusions are generally consistent with the arguments presented, but somewhat stronger than the evidence allows. Recommendations for investing in central RSE units are justified, but statements suggesting widespread institutional improvements should be more carefully balanced with a discussion of risks, costs, governance challenges, and potential failure modes.
 
 **Answer:**
+We did not intend to conduct a statistically significant, representative survey of RSE units. Our aim was to collect some feedback that we can use to demmonstrate the breadth of services offered by existing units and to support the selection of service modules we defined. We have replaced the term survey with less formal formulations.
+
 
 ---
 
@@ -52,6 +54,31 @@ We thank you very much for your review and the opportunity to improve our manusc
 > Moderate claims about grant success, reputation, and research quality unless directly supported.
 
 **Answer:**
+We softened several claims in the paper
+
+- In section 3.2, the sentence
+  
+  > RSE consultation services also have a positive impact on grant proposal quality.
+  
+  has been replaced with
+  
+  > RSE consultation services **can** also have a positive impact on grant proposal quality.
+  
+- In section 2.1, the sentence
+  
+  > The results are increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+  has been replaced with
+  
+  > The results **can be** increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+- In the conclusions (section 6), the sentence
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+  
+  has been replaced with
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units **can** also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
 
 ---
 

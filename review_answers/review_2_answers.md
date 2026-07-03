@@ -11,7 +11,7 @@
 ### Comment 1
 > The abstract claims the paper "urges decision makers" but does not state what evidence supports this urging. You should add a one-sentence summary of your survey results or key argument.
 
-**Answer:**
+**Answer:** We refer to our general statement about this being a position paper here. The group of authors and the wider community behind them urge decision makers based on their experiences. If there was a single "key argument", it would indeed be good to mention it here, but we are not able to distill one without oversimplifying our message.
 
 ---
 
@@ -52,6 +52,7 @@ We refer to Gruenpeter M, et al.: Defining research software: A controversial di
 > You say "This position paper focuses on groups of research software engineers." But the paper is not clear whether you are reporting on existing groups or proposing a new model. Clarify this early.
 
 **Answer:**
+In the introduction we make clear that we are only considering groups of RSEs, organised in RSE units. In the next sentence we advocate for the establishment of these groups as there is a need (see first para of introduction) and there are only few units in Germany. We are not proposing a new model since we are looking at established groups in other countries. However, we adapt them to the German academic environment.
 
 ---
 
@@ -61,13 +62,39 @@ We refer to Gruenpeter M, et al.: Defining research software: A controversial di
 > The claim that central RSE units improve "grant success, institutional reputation, and research quality" appears multiple times without strong evidence. You cite only one small survey of 12 units. This is not sufficient. Soften these claims or add more empirical references.
 
 **Answer:**
+See our general comment on the Opinion paper. Unfortunately not all claims can be supported by empirical references, given that central RSE units are still a minority in Germany. Under this aspect, 12 is a large sample size. Nevertheless, we softened several claims in the paper
+
+- In section 3.2, the sentence
+  
+  > RSE consultation services also have a positive impact on grant proposal quality.
+  
+  has been replaced with
+  
+  > RSE consultation services **can** also have a positive impact on grant proposal quality.
+  
+- In section 2.1, the sentence
+  
+  > The results are increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+  has been replaced with
+  
+  > The results **can be** increased research speed and quality and, with that, a higher reputation of the entire research organisation.
+  
+- In the conclusions (section 6), the sentence
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+  
+  has been replaced with
+  
+  > Besides addressing local needs in software development and maintenance, well-established RSE units **can** also bring broader institutional benefits, such as improved funding acquisition or enhanced reputational standing.
+
 
 ---
 
 ### Comment 8
 > Section 2.1 on "Pooling" uses analogies to industry R&D and inhouse consulting. These analogies are helpful but you do not discuss how academic contexts differ from industry (e.g., funding cycles, teaching loads, intellectual property). Add this discussion.
 
-**Answer:**
+**Answer:** We added a paragraph why we think that the pooling idea is even more relevant in the academic context due to the typical, diverse workload of an academic researcher. A general discussion of differences between the industrial and the academic environment seems out of scope for this manuscript without diluting its content. For us, it was important to mention the industrial analogy to not suggest that pooling is an academia-only concept.
 
 ---
 
@@ -102,13 +129,22 @@ We apologize that we cannot see room for clarification here and kindly ask the r
 > The nine modules are presented as equally important but you later assign "weights" without explaining how weights are determined. Explain the weighting method or remove the weight claim.
 
 **Answer:**
+The weight claim has been removed and the sentence in section three has been rephrased such that different RSE units may differ in how they weight the nine modules.
+
+The sentence
+
+> Thus, it is likely that no two RSE units will be, or need to be, alike. However, these nine modules, along with their assigned weights (indicating relative importance), form a simple model of an RSE group.
+
+has been rephrased with
+
+> Thus, it is likely that no two RSE units will be, or need to be, alike, and weight the modules equally. However, these nine modules, form a simple model of an RSE group.
 
 ---
 
 ### Comment 12
 > Module 1 ("Foster a local Network") says central RSE units need "permanent contracts" for deep expertise. But German academic labor laws (WissZeitVG) limit fixed-term contracts. Acknowledge this legal constraint and suggest solutions.
 
-**Answer:**
+**Answer:** The fact that there are legal barriers to hiring on fixed term contracts in Germany has no impact on our statement that this activity highly benefits from permanent positions. Permanent positions for this type of activity exist in Germany, they are just a very scarce resource.
 
 ---
 
@@ -122,7 +158,7 @@ We apologize that we cannot see room for clarification here and kindly ask the r
 ### Comment 14
 > Module 5 ("Create a network of institutional partners") discusses IT units, libraries, and HPC groups. Missing is any mention of legal or ethics departments. Software may have licensing or data protection issues. Add this.
 
-**Answer:**
+**Answer:** We added a paragraph on other partners and mentioned a few.
 
 ---
 
@@ -139,20 +175,21 @@ We apologize that we cannot see room for clarification here and kindly ask the r
 > You surveyed only 12 RSE units. This is very small. State clearly in the text that this is a pilot survey and not representative. You mention this in the data availability section but not in the main text. Add a limitation sentence here.
 
 **Answer:**
-
+We did not intend to conduct a statistically significant, representative survey of RSE units. Our aim was to collect some feedback that we can use to demmonstrate the breadth of services offered by existing units and to support the selection of service modules we defined. We have replaced the term survey with less formal formulations.
 ---
 
 ### Comment 17
 > Figure 1 compares four units (Jena, Heidelberg, Reading, Princeton). But your text says you received twelve responses. Why show only four? Explain the selection criteria.
 
-**Answer:**
+**Answer:** We clarified that we hand-picked illustrative examples for the figure. At the same time, we mention that the interested reader finds the full data in the accompanying data publication on Zenodo.
 
 ---
 
 ### Comment 18
 > You identify two archetypes: those with development services and those without. But you did not collect data on unit size. Larger units may offer more services simply because they have more staff. Acknowledge this confounding factor.
 
-**Answer:**
+**Answer:** The manuscript already contains this paragraph which in our view highlights the issue: "We should note however, that our survey did not collect information about the size of the RSE unit. It is likely that the RSE units offering development services are also larger in size, and that their total resource commitment to teaching and consultation services is similar to that of those RSE units that do not offer development services."
+
 
 ---
 
@@ -170,6 +207,7 @@ It is evident that this is an exemplary statement and that the 1% is the outcome
 > Section 5.2.1 on "Initial measures" suggests forming a network without dedicated funding. But networking takes staff time. How should institutions pay for this time if no funding exists? Be realistic.
 
 **Answer:**
+While we certainly appreciate that networking takes staff time, we are realistic here. As a collective of authors, we have been forming networks at and across our institutions without dedicated funding for decades via, for example, in-kind contributions, cross-subsidization from other projects, or taking place outside working hours.
 
 ---
 
