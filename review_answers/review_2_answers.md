@@ -11,7 +11,7 @@
 ### Comment 1
 > The abstract claims the paper "urges decision makers" but does not state what evidence supports this urging. You should add a one-sentence summary of your survey results or key argument.
 
-**Answer:**
+**Answer:** We refer to our general statement about this being a position paper here. The group of authors and the wider community behind them urge decision makers based on their experiences. If there was a single "key argument", it would indeed be good to mention it here, but we are not able to distill one without oversimplifying our message.
 
 ---
 
