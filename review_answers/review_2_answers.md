@@ -94,7 +94,7 @@ See our general comment on the Opinion paper. Unfortunately not all claims can b
 ### Comment 8
 > Section 2.1 on "Pooling" uses analogies to industry R&D and inhouse consulting. These analogies are helpful but you do not discuss how academic contexts differ from industry (e.g., funding cycles, teaching loads, intellectual property). Add this discussion.
 
-**Answer:**
+**Answer:** We added a paragraph why we think that the pooling idea is even more relevant in the academic context due to the typical, diverse workload of an academic researcher. A general discussion of differences between the industrial and the academic environment seems out of scope for this manuscript without diluting its content. For us, it was important to mention the industrial analogy to not suggest that pooling is an academia-only concept.
 
 ---
 
