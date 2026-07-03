@@ -104,7 +104,6 @@ See our general comment on the Opinion paper. Unfortunately not all claims can b
 **Answer:**
 We think that RDM and RDM units are successful if and only if they benefit researchers and research as a whole.
 Research is influenced by too many factors simultaneously to clearly identify the effect of just one.
-In addition, research success is not clearly defined in any case. 
 Given these conditions it is perhaps not surprising that there are not many rigorous scientific studies to causation or even just correlation.
 However, we added one of the few, in which a correlation between quality and presence of data availability sections (indicating existing RDM) and citations counts is shown.
 
