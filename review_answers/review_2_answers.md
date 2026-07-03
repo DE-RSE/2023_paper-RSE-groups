@@ -155,7 +155,7 @@ has been rephrased with
 > Module 3 ("Development services") includes a success story about mobile app development at Manchester. This is only one example. Add a second example from a different discipline (e.g., life sciences or engineering) to show generalizability.
 
 **Answer:**
-
+A mobile app development was selected as a domain-agnostic example. We have added a sentence at the end of the success story clarifying this.
 ---
 
 ### Comment 14
