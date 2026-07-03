@@ -40,6 +40,7 @@ We did not intend to conduct a statistically significant, representative survey 
 > Add stronger empirical evidence for claims of institutional benefits.
 
 **Answer:**
+Please see our note above about this work being an position paper.
 
 ---
 
