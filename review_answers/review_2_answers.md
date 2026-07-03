@@ -102,6 +102,10 @@ See our general comment on the Opinion paper. Unfortunately not all claims can b
 > Section 2.2.1 compares RSE to Research Data Management. The comparison is reasonable but you assume RDM is already successful. Provide at least one citation showing measurable success of central RDM units in Germany.
 
 **Answer:**
+We think that RDM and RDM units are successful if and only if they benefit researchers and research as a whole.
+Research is influenced by too many factors simultaneously to clearly identify the effect of just one.
+Given these conditions it is perhaps not surprising that there are not many rigorous scientific studies to causation or even just correlation.
+However, we added one of the few, in which a correlation between quality and presence of data availability sections (indicating existing RDM) and citations counts is shown.
 
 ---
 
