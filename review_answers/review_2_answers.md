@@ -176,7 +176,7 @@ We did not intend to conduct a statistically significant, representative survey 
 ### Comment 17
 > Figure 1 compares four units (Jena, Heidelberg, Reading, Princeton). But your text says you received twelve responses. Why show only four? Explain the selection criteria.
 
-**Answer:**
+**Answer:** We clarified that we hand-picked illustrative examples for the figure. At the same time, we mention that the interested reader finds the full data in the accompanying data publication on Zenodo.
 
 ---
 
