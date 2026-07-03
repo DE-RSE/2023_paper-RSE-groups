@@ -140,7 +140,7 @@ The actual number of core modules is not important since we expect RSE units to 
 ### Comment 18
 > You identify two archetypes: those with development services and those without. But you did not collect data on unit size. Larger units may offer more services simply because they have more staff. Acknowledge this confounding factor.
 
-**Answer:** The manuscript already contains this paragraph which in our view highlights the issue sufficiently: "We should note however, that our survey did not collect information about the size of the RSE unit. It is likely that the RSE units offering development services are also larger in size, and that their total resource commitment to teaching and consultation services is similar to that of those RSE units that do not offer development services."
+**Answer:** The manuscript already contains this paragraph which in our view highlights the issue: "We should note however, that our survey did not collect information about the size of the RSE unit. It is likely that the RSE units offering development services are also larger in size, and that their total resource commitment to teaching and consultation services is similar to that of those RSE units that do not offer development services."
 
 
 ---
