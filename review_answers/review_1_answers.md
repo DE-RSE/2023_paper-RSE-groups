@@ -22,7 +22,7 @@ We thank you very much for your review and the opportunity to improve our manusc
 > The conclusions are generally consistent with the arguments presented, but somewhat stronger than the evidence allows. Recommendations for investing in central RSE units are justified, but statements suggesting widespread institutional improvements should be more carefully balanced with a discussion of risks, costs, governance challenges, and potential failure modes.
 
 **Answer:**
-The reviewer is right to suggest a more elaborate discussion of risks for an RSE unit and we took the opportunity to write a separate subsusection on risks in the realisation of an RSE unit.
+The reviewer is right to suggest a more elaborate discussion of risks for an RSE unit and we took the opportunity to write a separate subsection on risks in the realisation of an RSE unit.
 However, we also did not intend to conduct a statistically significant, representative survey of RSE units.
 Our aim was to collect some feedback that we can use to demmonstrate the breadth of services offered by existing units and to support the selection of service modules we defined.
 We have replaced the term survey with less formal formulations.
