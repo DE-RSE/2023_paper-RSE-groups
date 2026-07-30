@@ -32,7 +32,7 @@ We did not intend to conduct a statistically significant, representative survey 
 ### Comment 2
 > Clarify the limitations of the small survey sample.
 
-**Answer:**
+**Answer:** We added a sentence that the small survey size does not allow quantitative analysis.
 
 ---
 
