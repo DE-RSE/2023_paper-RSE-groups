@@ -34,7 +34,7 @@ We have replaced the term survey with less formal formulations.
 ### Comment 2
 > Clarify the limitations of the small survey sample.
 
-**Answer:**
+**Answer:** We added a sentence that the small survey size does not allow quantitative analysis.
 
 ---
 
