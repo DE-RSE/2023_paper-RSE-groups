@@ -262,5 +262,6 @@ The sentence "By unifying previously scattered RSE efforts into a coordinated ap
 > The paper has no separate "Limitations" section. This is a major flaw for a position paper that makes strong claims. Add a section after Conclusions or before Data Availability that explicitly lists: small survey size, lack of longitudinal data, focus on Germany only, no cost-benefit analysis, and no comparison to alternative models (e.g., fully decentralized RSE support).
 
 **Answer:**
+We added a sentence about the small sample size not allowing quantitative analysis to the manuscript. Regarding the strength of claims made in the manuscript, we again refer to this being an opinion article.
 
 ---
