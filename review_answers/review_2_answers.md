@@ -168,7 +168,7 @@ A mobile app development was selected as a domain-agnostic example. We have adde
 ### Comment 15
 > Module 8 ("Software maintenance service") lists three criteria for maintenance but criterion 3 ("mechanism for selecting projects") is not explained. How should institutions prioritize? Give at least two example prioritization strategies.
 
-**Answer:** The criterion reads: "For an overview of potential selection criteria see the section 'How to decide which software to sustain?' in Anzt et al, 2021." We would not want to redundantly repeat the information given there.
+**Answer:** We added a refrence to the section on 'How to decide which software to sustain?' in Anzt et al, 2021.
 
 ---
 
